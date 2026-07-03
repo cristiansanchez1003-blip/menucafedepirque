@@ -27,7 +27,7 @@ export const metadata = {
 }
 
 export const viewport = {
-  themeColor: '#6B3A2A',
+  themeColor: '#24282A',
   width: 'device-width',
   initialScale: 1,
 }
@@ -35,7 +35,7 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" className={`${playfair.variable} ${lato.variable}`}>
-      <body className="font-lato bg-cream text-ink min-h-screen">{children}</body>
+      <body className="font-lato bg-paper text-ink min-h-screen">{children}</body>
     </html>
   )
 }

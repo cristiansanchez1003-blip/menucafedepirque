@@ -1,60 +1,52 @@
 'use client'
 
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { formatCLP } from '@/lib/format'
+import ProductImage from './ProductImage'
 
-export default function ProductCard({ product, onClick }) {
-  const unavailable = !product.available
+export default function ProductCard({ product, emoji, onSelect }) {
+  const unavailable = product.available === false
 
   return (
     <motion.button
       type="button"
-      onClick={() => onClick(product)}
-      whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
-      transition={{ duration: 0.2, ease: 'easeOut' }}
-      className="group flex flex-col overflow-hidden rounded-2xl bg-white text-left shadow-card transition-shadow duration-300 hover:shadow-cardHover"
+      onClick={() => onSelect(product)}
+      initial={{ opacity: 0, y: 18 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-40px' }}
+      transition={{ duration: 0.45, ease: 'easeOut' }}
+      whileTap={{ scale: 0.975 }}
+      className={`flex w-full items-center gap-3.5 rounded-2xl border border-linen/80 bg-card p-3 text-left shadow-card transition-shadow ${
+        unavailable ? 'opacity-60 saturate-50' : ''
+      }`}
     >
-      <div className="relative aspect-[4/3] w-full overflow-hidden">
-        {product.image_url ? (
-          <Image
-            src={product.image_url}
-            alt={product.name}
-            fill
-            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            className="object-cover"
-            loading="lazy"
-          />
-        ) : (
-          <div className="flex h-full w-full items-center justify-center bg-border text-3xl">
-            🍽️
-          </div>
-        )}
-
-        {unavailable && (
-          <>
-            <div className="absolute inset-0 bg-gray-500/50" />
-            <span className="absolute left-2 top-2 rounded-full bg-red-600 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-white shadow">
-              No disponible
-            </span>
-          </>
-        )}
-      </div>
-
-      <div className="flex flex-1 flex-col p-3">
-        <h3 className="font-playfair text-base font-semibold text-ink">
+      <div className="min-w-0 flex-1 py-0.5">
+        <h4 className="font-lato text-[15px] font-bold leading-snug text-ink">
           {product.name}
-        </h3>
+        </h4>
         {product.description && (
-          <p className="mt-1 line-clamp-2 font-lato text-xs text-muted">
+          <p className="mt-1 line-clamp-2 text-[12.5px] leading-relaxed text-muted">
             {product.description}
           </p>
         )}
-        <p className="mt-2 font-lato text-base font-bold text-amber">
-          {formatCLP(product.price)}
-        </p>
+        <div className="mt-1.5 flex items-center gap-2">
+          <span className="font-playfair text-[15.5px] font-bold text-forest">
+            {formatCLP(product.price)}
+          </span>
+          {unavailable && (
+            <span className="rounded-full bg-ink/10 px-2 py-0.5 text-[10.5px] font-bold uppercase tracking-wide text-ink/60">
+              No disponible
+            </span>
+          )}
+        </div>
       </div>
+
+      <ProductImage
+        src={product.image}
+        alt={product.name}
+        emoji={emoji}
+        className="h-[76px] w-[76px] shrink-0 rounded-xl"
+      />
     </motion.button>
   )
 }

@@ -1,152 +1,130 @@
 # ☕ El Café de Pirque — Menú Digital
 
-Menú digital interactivo para **El Café de Pirque**, cafetería ubicada en Av. Ramón Subercaseaux 560, Pirque, Chile. Los clientes escanean un código QR en la mesa y ven el menú completo en su celular; el dueño administra productos, precios y disponibilidad desde un panel privado.
+Menú digital premium para **El Café de Pirque** (Av. Ramón Subercaseaux 560, Local 1, Pirque, Chile). Los clientes escanean un QR y ven el menú en su celular; Marcela administra productos, precios, fotos y datos del local desde un panel privado con usuario y contraseña.
 
-Construido con **Next.js 14 (App Router)**, **Supabase**, **Tailwind CSS**, **Framer Motion** y **qrcode.react**. Diseño mobile-first, estética rústica-premium.
+Construido con **Next.js 14 (App Router)**, **Tailwind CSS**, **Framer Motion** y **qrcode.react**. **Sin Supabase ni servicios pagados**: el menú vive en `data/menu.json` dentro de este repositorio y el panel admin lo edita mediante la **API de GitHub** (gratis, con historial de cambios). Las fotos se suben a **Cloudinary** (plan gratuito).
 
 ---
 
 ## ✨ Funcionalidades
 
-- **Menú público** (`/menu`) — vista a la que apunta el QR. Categorías con navegación sticky, tarjetas de productos, modal de detalle, badge de "No disponible", skeletons de carga.
-- **Panel admin** (`/admin`) — protegido con Supabase Auth.
-  - Gestión de productos por categoría (crear, editar, eliminar, activar/desactivar).
-  - Generador de código QR descargable en PNG.
-- **8 categorías** y **32 productos** de ejemplo precargados (precios en CLP).
+- **Menú público** (`/menu`) — 12 categorías y 219 productos reales (importados desde el menú de Fudo con sus precios exactos). Hero con el logotipo, navegación de categorías con scrollspy, modal de producto tipo bottom-sheet con gesto de arrastre, animaciones de scroll, footer con canales de contacto (WhatsApp, Instagram, correo, Google Maps) y botón flotante de WhatsApp. 100 % mobile-first.
+- **Panel admin** (`/admin`) — login con usuario y contraseña (cookie httpOnly firmada con HMAC).
+  - Productos: crear, editar, eliminar, reordenar, disponibilidad, búsqueda y filtro por categoría.
+  - Imágenes: subida directa a Cloudinary o pegando una URL.
+  - Categorías: crear, renombrar, cambiar emoji, eliminar.
+  - Ajustes del local: horario, dirección, WhatsApp, Instagram, correo, eslogan.
+  - Código QR descargable en PNG.
+- **Persistencia sin base de datos**: cada "Guardar cambios" hace un commit de `data/menu.json` al repo vía API de GitHub. Los cambios se ven en el menú público en segundos (no requiere redeploy).
 
 ---
 
-## 🎨 Identidad visual
+## 🎨 Identidad visual (tomada del logotipo)
 
 | Uso | Color |
 |-----|-------|
-| Fondo principal | `#FDF6EC` (crema cálido) |
-| Primario | `#6B3A2A` (café oscuro) |
-| Acento | `#C4843A` (ámbar dorado) |
-| Texto | `#2C1A0E` (café muy oscuro) |
-| Texto suave | `#8C6A4E` (café medio) |
-| Bordes | `#E8D5B7` (beige) |
+| Fondo | `#F7F4EE` (papel cálido) |
+| Tinta / principal | `#24282A` (charcoal del logo) |
+| Menta | `#BFE5CB` (taza del logo) |
+| Verde profundo | `#2F6B47` (precios y acciones) |
 
 Fuentes: **Playfair Display** (títulos) + **Lato** (texto).
 
 ---
 
-## 🚀 Puesta en marcha — paso a paso
-
-### 1. Clonar el repositorio
-
-```bash
-git clone <url-del-repo>
-cd "Cafetería de Pirque"
-```
-
-### 2. Instalar dependencias
+## 🚀 Puesta en marcha local
 
 ```bash
 npm install
 ```
 
-### 3. Crear un proyecto en Supabase
-
-1. Entra a [supabase.com](https://supabase.com) y crea un proyecto nuevo (gratis).
-2. Espera a que termine de aprovisionarse.
-
-### 4. Ejecutar el esquema SQL
-
-1. En Supabase, abre **SQL Editor**.
-2. Copia y pega **todo** el contenido de [`supabase/schema.sql`](supabase/schema.sql).
-3. Presiona **Run**. Esto crea las tablas `categories` y `products`, las políticas de seguridad (RLS) y carga las 8 categorías con 32 productos de ejemplo.
-
-### 5. Crear el bucket de imágenes (opcional)
-
-Si quieres subir imágenes propias en lugar de usar URLs de internet:
-
-1. Ve a **Storage** → **New bucket**.
-2. Nombre: `product-images`.
-3. Marca la opción **Public bucket** y créalo.
-
-> El proyecto funciona sin esto: en el formulario de productos puedes pegar cualquier URL de imagen.
-
-### 6. Crear el usuario administrador
-
-1. Ve a **Authentication** → **Users** → **Add user**.
-2. Ingresa el correo y la contraseña que usará el dueño para entrar a `/admin`.
-3. (Opcional) En **Authentication → Providers → Email**, desactiva "Confirm email" para que el usuario quede activo de inmediato.
-
-### 7. Configurar las variables de entorno
-
-Copia el archivo de ejemplo y complétalo:
-
-```bash
-cp .env.local.example .env.local
-```
-
-Edita `.env.local`:
+Crea `.env.local` a partir de `.env.local.example`. Para desarrollo basta con:
 
 ```env
-NEXT_PUBLIC_SUPABASE_URL=https://xxxxxxxx.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOi...
-NEXT_PUBLIC_SITE_URL=http://localhost:3000
+ADMIN_USER=marcela
+ADMIN_PASSWORD=una-contraseña
+AUTH_SECRET=cualquier-texto-largo
 ```
 
-> Encuentra la URL y la `anon key` en Supabase → **Project Settings → API**.
-
-### 8. Correr en local
+Sin `GITHUB_TOKEN`, el panel guarda directamente en `data/menu.json` local (ideal para desarrollo).
 
 ```bash
 npm run dev
 ```
 
-Abre [http://localhost:3000](http://localhost:3000) → te redirige a `/menu`. El panel está en [http://localhost:3000/admin](http://localhost:3000/admin).
-
-### 9. Deploy en Vercel
-
-1. Sube el repositorio a GitHub.
-2. En [vercel.com](https://vercel.com), **New Project** → importa el repo.
-3. En **Environment Variables**, agrega las tres variables (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `NEXT_PUBLIC_SITE_URL`).
-   - En `NEXT_PUBLIC_SITE_URL` pon la URL final de Vercel (ej. `https://el-cafe-de-pirque.vercel.app`).
-4. **Deploy**.
-
-### 10. Generar el QR e imprimir
-
-1. Entra a `tu-sitio.vercel.app/admin` y autentícate.
-2. Baja a la sección **Código QR**, presiona **Descargar QR**.
-3. Imprime el PNG y colócalo en mesas y mostrador. ¡Listo!
+- Menú: [http://localhost:3000/menu](http://localhost:3000/menu)
+- Admin: [http://localhost:3000/admin](http://localhost:3000/admin)
 
 ---
 
-## 📁 Estructura del proyecto
+## ☁️ Configuración en Vercel (producción)
+
+En **Vercel → Project → Settings → Environment Variables** agrega:
+
+| Variable | Valor |
+|----------|-------|
+| `ADMIN_USER` | usuario del panel (ej: `marcela`) |
+| `ADMIN_PASSWORD` | contraseña fuerte para Marcela |
+| `AUTH_SECRET` | texto aleatorio largo (firma las sesiones) |
+| `GITHUB_TOKEN` | token *fine-grained* con permiso **Contents: Read & Write** solo sobre este repo |
+| `GITHUB_REPO` | `cristiansanchez1003-blip/menucafedepirque` |
+| `GITHUB_BRANCH` | `main` |
+| `CLOUDINARY_CLOUD_NAME` | desde el dashboard de Cloudinary |
+| `CLOUDINARY_API_KEY` | desde el dashboard de Cloudinary |
+| `CLOUDINARY_API_SECRET` | desde el dashboard de Cloudinary |
+| `NEXT_PUBLIC_SITE_URL` | URL pública (ej: `https://menucafedepirque-chi.vercel.app`) |
+
+### Crear el token de GitHub
+
+1. GitHub → **Settings → Developer settings → Fine-grained tokens → Generate new token**.
+2. Repository access: **Only select repositories** → este repo.
+3. Permissions → Repository permissions → **Contents: Read and write**.
+4. Expiración: 1 año (renovar cuando expire). Copia el token a Vercel.
+
+### Crear la cuenta de Cloudinary (gratis)
+
+1. Regístrate en [cloudinary.com](https://cloudinary.com).
+2. En el **Dashboard** copia *Cloud name*, *API Key* y *API Secret* a Vercel.
+3. Sin Cloudinary el panel funciona igual: se puede pegar la URL de cualquier imagen.
+
+> Después de agregar o cambiar variables, haz **Redeploy** en Vercel.
+
+---
+
+## 📁 Estructura
 
 ```
 app/
-  layout.jsx            Root layout + fuentes Google
-  page.jsx              Redirect a /menu
-  menu/page.jsx         Vista pública del menú (destino del QR)
+  layout.jsx              Root layout + fuentes
+  page.jsx                Redirect a /menu
+  menu/page.jsx           Menú público (scrollspy + modal)
   admin/
-    layout.jsx          Guard de autenticación
-    login/page.jsx      Login con Supabase Auth
-    dashboard/page.jsx  Panel de administración
+    layout.jsx            Guard de sesión
+    login/page.jsx        Login usuario/contraseña
+    dashboard/page.jsx    Panel: productos, ajustes, QR
+  api/
+    menu/route.js         GET menú (público)
+    auth/…                login / logout / me (cookie firmada)
+    admin/menu/route.js   PUT menú completo (commit a GitHub)
+    admin/upload/route.js POST imagen a Cloudinary
 components/
-  menu/                 Header, CategoryNav, ProductCard, ProductModal, MenuGrid, Footer
-  admin/                AdminHeader, ProductForm, ProductTable, QRSection
-hooks/
-  useMenu.js            Fetch de categorías + productos (público)
-  useAdmin.js           CRUD de productos (admin)
-lib/
-  supabase.js           Cliente de Supabase
-  format.js             Formato de precios CLP
-supabase/
-  schema.sql            SQL completo con seed
+  menu/                   Hero, CategoryNav, CategorySection, ProductCard,
+                          ProductModal, ProductImage, Footer, WhatsappFab
+  admin/                  AdminHeader, ProductForm, ProductTable,
+                          SettingsForm, CategoryManager, QRSection
+data/menu.json            ⭐ La "base de datos": settings + categorías + productos
+hooks/                    useMenu (público) · useAdmin (panel)
+lib/                      auth.js (HMAC) · menuStore.js (GitHub/local) · format.js
+public/images/products/   Fotos reales descargadas del menú de Fudo
+public/logo.jpg           Logotipo (hero y login)
 ```
 
 ---
 
-## 🛠️ Personalización rápida
+## 🔒 Notas de seguridad
 
-- **Horario / Instagram / dirección:** edita `components/menu/Footer.jsx`.
-- **Imagen de cabecera:** cambia la URL en `components/menu/Header.jsx`.
-- **Productos y precios:** desde el panel `/admin` (no requiere tocar código).
-
----
+- La contraseña **nunca** está en el código: vive en variables de entorno.
+- La sesión es una cookie httpOnly firmada (HMAC-SHA256) con expiración de 7 días.
+- El token de GitHub solo tiene acceso a este repositorio.
 
 Menú digital por **Espíritu Digital**.

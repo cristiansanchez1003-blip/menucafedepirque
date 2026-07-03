@@ -1,11 +1,11 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
-import { supabase } from '@/lib/supabase'
 
-// Hook para la vista pública del menú:
-// trae las categorías (ordenadas) y todos los productos (ordenados).
+// Hook para la vista pública del menú: trae ajustes, categorías y productos
+// desde /api/menu (que lee data/menu.json desde GitHub o local).
 export function useMenu() {
+  const [settings, setSettings] = useState(null)
   const [categories, setCategories] = useState([])
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
@@ -15,16 +15,16 @@ export function useMenu() {
     setLoading(true)
     setError(null)
     try {
-      const [catRes, prodRes] = await Promise.all([
-        supabase.from('categories').select('*').order('sort_order', { ascending: true }),
-        supabase.from('products').select('*').order('sort_order', { ascending: true }),
-      ])
-
-      if (catRes.error) throw catRes.error
-      if (prodRes.error) throw prodRes.error
-
-      setCategories(catRes.data || [])
-      setProducts(prodRes.data || [])
+      const res = await fetch('/api/menu')
+      if (!res.ok) throw new Error('No se pudo cargar el menú')
+      const data = await res.json()
+      setSettings(data.settings || null)
+      setCategories(
+        [...(data.categories || [])].sort((a, b) => (a.sort || 0) - (b.sort || 0))
+      )
+      setProducts(
+        [...(data.products || [])].sort((a, b) => (a.sort || 0) - (b.sort || 0))
+      )
     } catch (err) {
       console.error('Error cargando el menú:', err)
       setError(err.message || 'No se pudo cargar el menú.')
@@ -37,5 +37,5 @@ export function useMenu() {
     fetchMenu()
   }, [fetchMenu])
 
-  return { categories, products, loading, error, refetch: fetchMenu }
+  return { settings, categories, products, loading, error, refetch: fetchMenu }
 }

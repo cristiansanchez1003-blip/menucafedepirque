@@ -17,45 +17,39 @@ export default function QRSection() {
     const url = canvas.toDataURL('image/png')
     const link = document.createElement('a')
     link.href = url
-    link.download = 'qr-menu-cafe-pirque.png'
+    link.download = 'qr-menu-cafe-de-pirque.png'
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
   }
 
   return (
-    <section className="rounded-2xl border border-border bg-white p-6 shadow-card">
-      <h2 className="font-playfair text-lg font-bold text-coffee">Código QR del menú</h2>
-      <p className="mt-1 font-lato text-sm text-muted">
-        Imprime este QR y colócalo en las mesas y mostrador. Tus clientes lo
+    <section className="rounded-2xl border border-linen bg-card p-5 shadow-card">
+      <h2 className="font-playfair text-lg font-bold text-ink">Código QR del menú</h2>
+      <p className="mt-1 text-[13px] text-muted">
+        Imprime este QR y colócalo en las mesas y el mostrador. Tus clientes lo
         escanean y ven el menú al instante.
       </p>
 
       <div className="mt-5 flex flex-col items-center gap-4">
-        <div
-          ref={wrapperRef}
-          className="rounded-xl border border-border p-4"
-          style={{ backgroundColor: '#FDF6EC' }}
-        >
+        <div ref={wrapperRef} className="rounded-2xl border border-linen bg-white p-5">
           <QRCodeCanvas
             value={menuUrl}
-            size={200}
-            bgColor="#FDF6EC"
-            fgColor="#6B3A2A"
+            size={220}
+            bgColor="#FFFFFF"
+            fgColor="#24282A"
             level="M"
             includeMargin={false}
           />
         </div>
 
-        <p className="break-all text-center font-lato text-xs text-muted">
-          {menuUrl}
-        </p>
+        <p className="break-all text-center text-xs text-muted">{menuUrl}</p>
 
         <button
           onClick={handleDownload}
-          className="rounded-lg bg-coffee px-5 py-2.5 font-lato text-sm font-semibold text-cream transition hover:bg-coffee/90"
+          className="rounded-full bg-ink px-6 py-3 text-[14px] font-bold text-mint shadow-nav active:scale-95"
         >
-          Descargar QR
+          Descargar QR en PNG
         </button>
       </div>
     </section>
