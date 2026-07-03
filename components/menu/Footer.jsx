@@ -1,6 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { localizedField } from '@/lib/i18n'
+import { useApp } from '@/contexts/AppContext'
 
 function ContactLink({ href, label, sub, children }) {
   return (
@@ -26,10 +28,13 @@ function ContactLink({ href, label, sub, children }) {
 }
 
 export default function Footer({ settings }) {
+  const { lang, t } = useApp()
   if (!settings) return null
 
+  const hours = localizedField(settings, 'hours', lang)
+
   return (
-    <footer className="safe-bottom mt-12 bg-ink px-5 pb-10 pt-10">
+    <footer className="safe-bottom mt-12 bg-ink px-5 pb-10 pt-10 dark:bg-carddark">
       <div className="mx-auto max-w-md">
         <motion.h3
           className="text-center font-playfair text-[22px] font-bold text-white"
@@ -38,17 +43,17 @@ export default function Footer({ settings }) {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Nuestros canales de contacto
+          {t('contactSectionTitle')}
         </motion.h3>
         <p className="mt-1.5 text-center text-[13px] text-white/50">
-          Pedidos, encargos de tortas y consultas
+          {t('contactSectionSubtitle')}
         </p>
 
         <div className="mt-6 flex flex-col gap-2.5">
           {settings.whatsapp && (
             <ContactLink
               href={`https://api.whatsapp.com/send?phone=${settings.whatsapp}`}
-              label="WhatsApp"
+              label={t('whatsapp')}
               sub={`+${settings.whatsapp.replace(/^(\d{2})(\d)(\d{4})(\d{4})$/, '$1 $2 $3 $4')}`}
             >
               <svg className="h-5.5 w-5.5" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
@@ -60,7 +65,7 @@ export default function Footer({ settings }) {
           {settings.instagram && (
             <ContactLink
               href={settings.instagram}
-              label="Instagram"
+              label={t('instagram')}
               sub={settings.instagramHandle || '@elcafedepirque'}
             >
               <svg className="h-5.5 w-5.5" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -72,7 +77,7 @@ export default function Footer({ settings }) {
           )}
 
           {settings.email && (
-            <ContactLink href={`mailto:${settings.email}`} label="Correo" sub={settings.email}>
+            <ContactLink href={`mailto:${settings.email}`} label={t('email')} sub={settings.email}>
               <svg className="h-5.5 w-5.5" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="2.5" y="5" width="19" height="14" rx="3" />
                 <path d="m3.5 7 8.5 6 8.5-6" />
@@ -83,7 +88,7 @@ export default function Footer({ settings }) {
           {settings.address && (
             <ContactLink
               href={settings.mapsUrl || '#'}
-              label="Cómo llegar"
+              label={t('directions')}
               sub={settings.address}
             >
               <svg className="h-5.5 w-5.5" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -94,12 +99,12 @@ export default function Footer({ settings }) {
           )}
         </div>
 
-        {settings.hours && (
+        {hours && (
           <div className="mt-6 rounded-2xl border border-white/10 p-4 text-center">
             <span className="block text-[11px] font-bold uppercase tracking-[0.18em] text-mint">
-              Horario de atención
+              {t('hoursLabel')}
             </span>
-            <span className="mt-1 block text-[15px] font-bold text-white">{settings.hours}</span>
+            <span className="mt-1 block text-[15px] font-bold text-white">{hours}</span>
           </div>
         )}
 

@@ -1,10 +1,13 @@
 'use client'
 
-import { useState, useEffect, useMemo, useRef, useCallback } from 'react'
+import { useState, useEffect, useMemo } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
 import { useMenu } from '@/hooks/useMenu'
+import { AppProvider, useApp } from '@/contexts/AppContext'
+import { localizedField } from '@/lib/i18n'
 import Hero from '@/components/menu/Hero'
 import CategoryNav from '@/components/menu/CategoryNav'
-import CategorySection from '@/components/menu/CategorySection'
+import ProductCard from '@/components/menu/ProductCard'
 import ProductModal from '@/components/menu/ProductModal'
 import Footer from '@/components/menu/Footer'
 import WhatsappFab from '@/components/menu/WhatsappFab'
@@ -15,7 +18,7 @@ function SkeletonMenu() {
       <div className="skeleton mb-4 h-7 w-40 rounded-lg" />
       <div className="flex flex-col gap-2.5">
         {Array.from({ length: 6 }).map((_, i) => (
-          <div key={i} className="flex items-center gap-3.5 rounded-2xl bg-card p-3 shadow-card">
+          <div key={i} className="flex items-center gap-3.5 rounded-2xl bg-card p-3 shadow-card dark:bg-carddark">
             <div className="flex-1">
               <div className="skeleton h-4 w-3/4 rounded" />
               <div className="skeleton mt-2 h-3 w-full rounded" />
@@ -29,101 +32,113 @@ function SkeletonMenu() {
   )
 }
 
-export default function MenuPage() {
+function MenuContent() {
   const { settings, categories, products, loading, error } = useMenu()
+  const { theme, lang, t } = useApp()
   const [activeId, setActiveId] = useState(null)
   const [selected, setSelected] = useState(null)
-  const sectionRefs = useRef({})
-  const scrollingTo = useRef(null)
 
-  const productsByCategory = useMemo(() => {
-    const map = {}
-    for (const cat of categories) {
-      map[cat.id] = products.filter((p) => p.categoryId === cat.id)
-    }
-    return map
+  const visibleCategories = useMemo(() => {
+    return categories.filter((c) => products.some((p) => p.categoryId === c.id))
   }, [categories, products])
+
+  useEffect(() => {
+    if ((!activeId || !visibleCategories.some((c) => c.id === activeId)) && visibleCategories.length > 0) {
+      setActiveId(visibleCategories[0].id)
+    }
+  }, [visibleCategories, activeId])
+
+  const activeCategory = useMemo(
+    () => visibleCategories.find((c) => c.id === activeId) || null,
+    [visibleCategories, activeId]
+  )
+
+  const activeProducts = useMemo(
+    () =>
+      products
+        .filter((p) => p.categoryId === activeId)
+        .sort((a, b) => (a.sort || 0) - (b.sort || 0)),
+    [products, activeId]
+  )
 
   const selectedEmoji = useMemo(() => {
     if (!selected) return '☕'
     return categories.find((c) => c.id === selected.categoryId)?.emoji || '☕'
   }, [selected, categories])
 
-  useEffect(() => {
-    if (!activeId && categories.length > 0) setActiveId(categories[0].id)
-  }, [categories, activeId])
-
-  // Scrollspy: marca la categoría visible mientras el usuario se desplaza
-  useEffect(() => {
-    if (loading || categories.length === 0) return
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (scrollingTo.current) return // no interferir durante el scroll programado
-        const visible = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
-        if (visible[0]) {
-          setActiveId(visible[0].target.dataset.category)
-        }
-      },
-      { rootMargin: '-64px 0px -55% 0px', threshold: 0 }
-    )
-    Object.values(sectionRefs.current).forEach((el) => el && observer.observe(el))
-    return () => observer.disconnect()
-  }, [loading, categories])
-
-  const handleSelectCategory = useCallback((catId) => {
-    setActiveId(catId)
-    const el = sectionRefs.current[catId]
-    if (el) {
-      scrollingTo.current = catId
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      // libera el bloqueo del scrollspy cuando termina la animación
-      setTimeout(() => {
-        scrollingTo.current = null
-      }, 900)
-    }
-  }, [])
-
   return (
-    <main className="mx-auto min-h-screen max-w-2xl bg-paper">
-      <Hero settings={settings} />
+    <div className={theme === 'dark' ? 'dark' : ''}>
+      <main className="mx-auto min-h-screen max-w-2xl bg-paper text-ink transition-colors duration-300 dark:bg-paperdark dark:text-paper">
+        <Hero settings={settings} />
 
-      {!loading && categories.length > 0 && (
-        <CategoryNav
-          categories={categories.filter((c) => (productsByCategory[c.id] || []).length > 0)}
-          activeId={activeId}
-          onSelect={handleSelectCategory}
-        />
-      )}
+        {!loading && visibleCategories.length > 0 && (
+          <CategoryNav categories={visibleCategories} activeId={activeId} onSelect={setActiveId} />
+        )}
 
-      {error ? (
-        <div className="px-6 py-20 text-center">
-          <p className="text-4xl">😕</p>
-          <p className="mt-3 font-lato text-muted">
-            No pudimos cargar el menú. Revisa tu conexión e intenta de nuevo.
-          </p>
-        </div>
-      ) : loading ? (
-        <SkeletonMenu />
-      ) : (
-        <div className="pb-6">
-          {categories.map((cat) => (
-            <CategorySection
-              key={cat.id}
-              category={cat}
-              products={productsByCategory[cat.id] || []}
-              onSelect={setSelected}
-              sectionRef={(el) => (sectionRefs.current[cat.id] = el)}
-            />
-          ))}
-        </div>
-      )}
+        {error ? (
+          <div className="px-6 py-20 text-center">
+            <p className="text-4xl">😕</p>
+            <p className="mt-3 font-lato text-muted dark:text-muteddark">{t('loadError')}</p>
+          </div>
+        ) : loading ? (
+          <SkeletonMenu />
+        ) : (
+          <AnimatePresence mode="wait">
+            <motion.section
+              key={activeId}
+              initial={{ opacity: 0, x: 18 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -18 }}
+              transition={{ duration: 0.25, ease: 'easeOut' }}
+              className="px-4 pb-6 pt-6"
+            >
+              {activeCategory && (
+                <div className="mb-3.5 flex items-center gap-2.5 px-1">
+                  <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-mint/60 text-lg dark:bg-forest/30">
+                    {activeCategory.emoji}
+                  </span>
+                  <h2 className="font-playfair text-[21px] font-bold text-ink dark:text-paper">
+                    {localizedField(activeCategory, 'name', lang)}
+                  </h2>
+                  <span className="ml-auto rounded-full bg-ink/5 px-2.5 py-1 text-[11.5px] font-bold text-muted dark:bg-paper/10 dark:text-muteddark">
+                    {activeProducts.length}
+                  </span>
+                </div>
+              )}
 
-      <ProductModal product={selected} emoji={selectedEmoji} onClose={() => setSelected(null)} />
+              {activeProducts.length === 0 ? (
+                <p className="py-16 text-center text-[14px] text-muted dark:text-muteddark">
+                  {t('emptyCategory')}
+                </p>
+              ) : (
+                <div className="flex flex-col gap-2.5">
+                  {activeProducts.map((product) => (
+                    <ProductCard
+                      key={product.id}
+                      product={product}
+                      emoji={activeCategory?.emoji}
+                      onSelect={setSelected}
+                    />
+                  ))}
+                </div>
+              )}
+            </motion.section>
+          </AnimatePresence>
+        )}
 
-      <Footer settings={settings} />
-      <WhatsappFab phone={settings?.whatsapp} />
-    </main>
+        <ProductModal product={selected} emoji={selectedEmoji} onClose={() => setSelected(null)} />
+
+        <Footer settings={settings} />
+        <WhatsappFab phone={settings?.whatsapp} />
+      </main>
+    </div>
+  )
+}
+
+export default function MenuPage() {
+  return (
+    <AppProvider>
+      <MenuContent />
+    </AppProvider>
   )
 }

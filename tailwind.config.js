@@ -1,9 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     './app/**/*.{js,jsx}',
     './components/**/*.{js,jsx}',
     './hooks/**/*.{js,jsx}',
+    './contexts/**/*.{js,jsx}',
   ],
   theme: {
     extend: {
@@ -18,6 +20,11 @@ module.exports = {
         forest: '#2F6B47',
         linen: '#E6E1D6',
         gold: '#C9A227',
+        // Variantes para modo oscuro (mismo espíritu: charcoal + menta)
+        paperdark: '#1B1E1F',
+        carddark: '#242829',
+        linendark: '#343A3B',
+        muteddark: '#9BA3A0',
       },
       fontFamily: {
         playfair: ['var(--font-playfair)', 'serif'],

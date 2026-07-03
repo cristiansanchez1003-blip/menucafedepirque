@@ -58,6 +58,10 @@ body {
   background-size: 800px 100%;
   animation: shimmer 1.4s ease-in-out infinite;
 }
+.dark .skeleton {
+  background: linear-gradient(90deg, #2a2f30 25%, #343a3b 50%, #2a2f30 75%);
+  background-size: 800px 100%;
+}
 
 /* Respeta las zonas seguras del teléfono (notch / barra inferior) */
 .safe-bottom {
@@ -68,4 +72,7 @@ body {
 .hero-texture {
   background-image: radial-gradient(rgba(47, 107, 71, 0.08) 1px, transparent 1px);
   background-size: 18px 18px;
+}
+.dark .hero-texture {
+  background-image: radial-gradient(rgba(191, 229, 203, 0.06) 1px, transparent 1px);
 }

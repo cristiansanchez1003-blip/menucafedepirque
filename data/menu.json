@@ -8,80 +8,94 @@
     "whatsapp": "56962371200",
     "instagram": "https://www.instagram.com/elcafedepirque/",
     "instagramHandle": "@elcafedepirque",
-    "email": "tomahawk.contacto@gmail.com"
+    "email": "tomahawk.contacto@gmail.com",
+    "slogan_en": "Coffee, artisan pastries, and the flavors of Pirque",
+    "hours_en": "Every day · 9:30 AM – 8:00 PM"
   },
   "categories": [
     {
       "id": "cafeteria",
       "name": "Cafetería",
       "emoji": "☕",
-      "sort": 1
+      "sort": 1,
+      "name_en": "Coffee Bar"
     },
     {
       "id": "bebidas",
       "name": "Bebidas",
       "emoji": "🥤",
-      "sort": 2
+      "sort": 2,
+      "name_en": "Beverages"
     },
     {
       "id": "bolleria",
       "name": "Bollería",
       "emoji": "🥐",
-      "sort": 3
+      "sort": 3,
+      "name_en": "Bakery & Pastries"
     },
     {
       "id": "desayuno",
       "name": "Desayunos",
       "emoji": "🍳",
-      "sort": 4
+      "sort": 4,
+      "name_en": "Breakfast"
     },
     {
       "id": "empanadas",
       "name": "Empanadas de Horno",
       "emoji": "🥟",
-      "sort": 5
+      "sort": 5,
+      "name_en": "Baked Empanadas"
     },
     {
       "id": "helados",
       "name": "Helados Artesanales",
       "emoji": "🍦",
-      "sort": 6
+      "sort": 6,
+      "name_en": "Artisan Ice Cream"
     },
     {
       "id": "pasteleria",
       "name": "Pastelería",
       "emoji": "🍰",
-      "sort": 7
+      "sort": 7,
+      "name_en": "Patisserie"
     },
     {
       "id": "postres",
       "name": "Postres",
       "emoji": "🍮",
-      "sort": 8
+      "sort": 8,
+      "name_en": "Desserts"
     },
     {
       "id": "sandwich",
       "name": "Sándwiches",
       "emoji": "🥪",
-      "sort": 9
+      "sort": 9,
+      "name_en": "Sandwiches"
     },
     {
       "id": "tortas",
       "name": "Tortas",
       "emoji": "🎂",
-      "sort": 10
+      "sort": 10,
+      "name_en": "Cakes"
     },
     {
       "id": "cervezas",
       "name": "Cervezas",
       "emoji": "🍺",
-      "sort": 11
+      "sort": 11,
+      "name_en": "Beers"
     },
     {
       "id": "adicionales",
       "name": "Productos Adicionales",
       "emoji": "🛍️",
-      "sort": 12
+      "sort": 12,
+      "name_en": "Extras & Add-ons"
     }
   ],
   "products": [
@@ -93,7 +107,9 @@
       "price": 4300,
       "image": "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 1
+      "sort": 1,
+      "name_en": "Affogato",
+      "description_en": "Timaukel artisan vanilla ice cream drowned in Lavazza espresso."
     },
     {
       "id": "128",
@@ -103,7 +119,9 @@
       "price": 2700,
       "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 2
+      "sort": 2,
+      "name_en": "Americano",
+      "description_en": "Freshly ground Lavazza coffee with hot filtered water."
     },
     {
       "id": "129",
@@ -113,7 +131,9 @@
       "price": 3600,
       "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 3
+      "sort": 3,
+      "name_en": "Double Americano",
+      "description_en": "Double shot of freshly ground Lavazza coffee with filtered water."
     },
     {
       "id": "135",
@@ -123,7 +143,9 @@
       "price": 2100,
       "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 4
+      "sort": 4,
+      "name_en": "Espresso",
+      "description_en": "Freshly ground Lavazza coffee, bold and aromatic."
     },
     {
       "id": "136",
@@ -133,7 +155,9 @@
       "price": 3100,
       "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 5
+      "sort": 5,
+      "name_en": "Double Espresso",
+      "description_en": "A double dose of freshly ground Lavazza coffee."
     },
     {
       "id": "365",
@@ -143,7 +167,9 @@
       "price": 1800,
       "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 6
+      "sort": 6,
+      "name_en": "Ristretto",
+      "description_en": "Short, concentrated espresso — all the flavor in one sip."
     },
     {
       "id": "396",
@@ -153,7 +179,9 @@
       "price": 2600,
       "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 7
+      "sort": 7,
+      "name_en": "Lungo",
+      "description_en": "A longer pull of espresso, smooth and aromatic."
     },
     {
       "id": "130",
@@ -163,7 +191,9 @@
       "price": 3200,
       "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 8
+      "sort": 8,
+      "name_en": "Cappuccino",
+      "description_en": "Espresso with steamed milk and a crown of creamy foam."
     },
     {
       "id": "131",
@@ -173,7 +203,9 @@
       "price": 4000,
       "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 9
+      "sort": 9,
+      "name_en": "Double Cappuccino",
+      "description_en": "Double espresso with steamed milk and silky foam."
     },
     {
       "id": "521",
@@ -183,7 +215,9 @@
       "price": 4200,
       "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 10
+      "sort": 10,
+      "name_en": "Viennese Cappuccino",
+      "description_en": "Cappuccino with cinnamon and whipped cream."
     },
     {
       "id": "522",
@@ -193,7 +227,9 @@
       "price": 5200,
       "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 11
+      "sort": 11,
+      "name_en": "Double Viennese Cappuccino",
+      "description_en": "Double espresso cappuccino with cinnamon and whipped cream."
     },
     {
       "id": "496",
@@ -203,7 +239,9 @@
       "price": 3400,
       "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 12
+      "sort": 12,
+      "name_en": "Lactose-Free Cappuccino",
+      "description_en": "Cappuccino made with lactose-free milk."
     },
     {
       "id": "30",
@@ -213,7 +251,9 @@
       "price": 4200,
       "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 13
+      "sort": 13,
+      "name_en": "Double Lactose-Free Cappuccino",
+      "description_en": "Double espresso with steamed lactose-free milk."
     },
     {
       "id": "139",
@@ -223,7 +263,9 @@
       "price": 4000,
       "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 14
+      "sort": 14,
+      "name_en": "Latte",
+      "description_en": "Smooth espresso with plenty of creamy steamed milk."
     },
     {
       "id": "18",
@@ -233,7 +275,9 @@
       "price": 4200,
       "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 15
+      "sort": 15,
+      "name_en": "Lactose-Free Latte",
+      "description_en": "Latte made with lactose-free milk."
     },
     {
       "id": "132",
@@ -243,7 +287,9 @@
       "price": 4000,
       "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 16
+      "sort": 16,
+      "name_en": "Coffee with Milk",
+      "description_en": "The classic favorite: coffee with hot milk."
     },
     {
       "id": "504",
@@ -253,7 +299,9 @@
       "price": 4300,
       "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 17
+      "sort": 17,
+      "name_en": "Lactose-Free Coffee with Milk",
+      "description_en": "Coffee with hot lactose-free milk."
     },
     {
       "id": "133",
@@ -263,7 +311,9 @@
       "price": 3200,
       "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 18
+      "sort": 18,
+      "name_en": "Cortado",
+      "description_en": "Espresso cut with just the right touch of steamed milk."
     },
     {
       "id": "134",
@@ -273,7 +323,9 @@
       "price": 4000,
       "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 19
+      "sort": 19,
+      "name_en": "Double Cortado",
+      "description_en": "Double espresso cut with steamed milk."
     },
     {
       "id": "4",
@@ -283,7 +335,9 @@
       "price": 3400,
       "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 20
+      "sort": 20,
+      "name_en": "Lactose-Free Cortado",
+      "description_en": "Cortado made with lactose-free milk."
     },
     {
       "id": "497",
@@ -293,7 +347,9 @@
       "price": 4200,
       "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 21
+      "sort": 21,
+      "name_en": "Double Lactose-Free Cortado",
+      "description_en": "Double espresso cortado with lactose-free milk."
     },
     {
       "id": "141",
@@ -303,7 +359,9 @@
       "price": 2600,
       "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 22
+      "sort": 22,
+      "name_en": "Macchiato",
+      "description_en": "Single espresso marked with a touch of milk foam."
     },
     {
       "id": "291",
@@ -313,7 +371,9 @@
       "price": 2800,
       "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 23
+      "sort": 23,
+      "name_en": "Double Macchiato",
+      "description_en": "Double espresso with milk foam."
     },
     {
       "id": "140",
@@ -323,7 +383,9 @@
       "price": 4100,
       "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 24
+      "sort": 24,
+      "name_en": "Mocha",
+      "description_en": "Double espresso with hot chocolate — sweet and bold."
     },
     {
       "id": "498",
@@ -333,7 +395,9 @@
       "price": 4300,
       "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 25
+      "sort": 25,
+      "name_en": "Lactose-Free Mocha",
+      "description_en": "Double espresso with hot chocolate and lactose-free milk."
     },
     {
       "id": "142",
@@ -343,7 +407,9 @@
       "price": 4100,
       "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 26
+      "sort": 26,
+      "name_en": "Hot Chocolate",
+      "description_en": "Creamy hot chocolate, comforting in every sip."
     },
     {
       "id": "374",
@@ -353,7 +419,9 @@
       "price": 4300,
       "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 27
+      "sort": 27,
+      "name_en": "Lactose-Free Hot Chocolate",
+      "description_en": "Creamy hot chocolate made with lactose-free milk."
     },
     {
       "id": "157",
@@ -363,7 +431,9 @@
       "price": 5000,
       "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 28
+      "sort": 28,
+      "name_en": "Iced Coffee",
+      "description_en": "Coffee served over ice, refreshing and full of character."
     },
     {
       "id": "229",
@@ -373,7 +443,9 @@
       "price": 5300,
       "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 29
+      "sort": 29,
+      "name_en": "Lactose-Free Iced Coffee",
+      "description_en": "Iced coffee made with lactose-free milk."
     },
     {
       "id": "460",
@@ -383,7 +455,9 @@
       "price": 4200,
       "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 30
+      "sort": 30,
+      "name_en": "Iced Latte",
+      "description_en": "Cold milk over ice with a shot of Lavazza espresso."
     },
     {
       "id": "10",
@@ -393,7 +467,9 @@
       "price": 4400,
       "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 31
+      "sort": 31,
+      "name_en": "Lactose-Free Iced Latte",
+      "description_en": "Iced latte with lactose-free milk, cool and smooth."
     },
     {
       "id": "232",
@@ -403,7 +479,9 @@
       "price": 4500,
       "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 32
+      "sort": 32,
+      "name_en": "Frappuccino",
+      "description_en": "Creamy blended iced coffee, sweet and refreshing."
     },
     {
       "id": "499",
@@ -413,7 +491,9 @@
       "price": 4600,
       "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 33
+      "sort": 33,
+      "name_en": "Lactose-Free Frappuccino",
+      "description_en": "Blended iced frappuccino with lactose-free milk."
     },
     {
       "id": "482",
@@ -423,7 +503,9 @@
       "price": 3500,
       "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 34
+      "sort": 34,
+      "name_en": "Chai Latte",
+      "description_en": "Spiced chai tea with steamed milk, aromatic and sweet."
     },
     {
       "id": "468",
@@ -433,7 +515,9 @@
       "price": 3600,
       "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 35
+      "sort": 35,
+      "name_en": "Lactose-Free Chai Latte",
+      "description_en": "Spiced chai latte with lactose-free milk."
     },
     {
       "id": "505",
@@ -443,7 +527,9 @@
       "price": 4000,
       "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 36
+      "sort": 36,
+      "name_en": "Dirty Chai",
+      "description_en": "Chai latte with a shot of espresso — spice and coffee in one cup."
     },
     {
       "id": "137",
@@ -453,7 +539,9 @@
       "price": 2000,
       "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 37
+      "sort": 37,
+      "name_en": "Tea",
+      "description_en": "Loose leaf tea, classic and comforting."
     },
     {
       "id": "138",
@@ -463,7 +551,9 @@
       "price": 3000,
       "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 38
+      "sort": 38,
+      "name_en": "Tea with Milk",
+      "description_en": "Freshly brewed tea with hot milk."
     },
     {
       "id": "240",
@@ -473,7 +563,9 @@
       "price": 2500,
       "image": "",
       "available": true,
-      "sort": 39
+      "sort": 39,
+      "name_en": "Bowl of Hot Milk",
+      "description_en": "A warm bowl of hot milk, simple and cozy."
     },
     {
       "id": "387",
@@ -483,7 +575,9 @@
       "price": 4000,
       "image": "/images/products/387.jpg",
       "available": true,
-      "sort": 40
+      "sort": 40,
+      "name_en": "Banana Milk",
+      "description_en": "Natural milk shake with fresh banana."
     },
     {
       "id": "31",
@@ -493,7 +587,9 @@
       "price": 4300,
       "image": "/images/products/387.jpg",
       "available": true,
-      "sort": 41
+      "sort": 41,
+      "name_en": "Lactose-Free Banana Milk",
+      "description_en": "Banana shake made with lactose-free milk."
     },
     {
       "id": "328",
@@ -503,7 +599,9 @@
       "price": 2000,
       "image": "",
       "available": true,
-      "sort": 42
+      "sort": 42,
+      "name_en": "Nescafé Sachet",
+      "description_en": "Individual sachet of Nescafé instant coffee."
     },
     {
       "id": "193",
@@ -513,7 +611,9 @@
       "price": 1000,
       "image": "",
       "available": true,
-      "sort": 43
+      "sort": 43,
+      "name_en": "Whipped Cream Add-on",
+      "description_en": "Add whipped cream to your favorite drink."
     },
     {
       "id": "285",
@@ -523,7 +623,9 @@
       "price": 600,
       "image": "",
       "available": true,
-      "sort": 44
+      "sort": 44,
+      "name_en": "Extra Milk",
+      "description_en": "An extra serving of milk for your coffee."
     },
     {
       "id": "158",
@@ -533,7 +635,9 @@
       "price": 800,
       "image": "",
       "available": true,
-      "sort": 45
+      "sort": 45,
+      "name_en": "Caramel Add-on",
+      "description_en": "A shot of caramel syrup for your drink."
     },
     {
       "id": "192",
@@ -543,7 +647,9 @@
       "price": 800,
       "image": "",
       "available": true,
-      "sort": 46
+      "sort": 46,
+      "name_en": "Vanilla Add-on",
+      "description_en": "A shot of vanilla syrup for your drink."
     },
     {
       "id": "414",
@@ -553,7 +659,9 @@
       "price": 800,
       "image": "",
       "available": true,
-      "sort": 47
+      "sort": 47,
+      "name_en": "Hazelnut Add-on",
+      "description_en": "A shot of hazelnut syrup for your drink."
     },
     {
       "id": "454",
@@ -563,7 +671,9 @@
       "price": 400,
       "image": "",
       "available": true,
-      "sort": 48
+      "sort": 48,
+      "name_en": "Plant-Based Milk Add-on",
+      "description_en": "Switch to plant-based milk in any of your drinks."
     },
     {
       "id": "335",
@@ -573,7 +683,9 @@
       "price": 1800,
       "image": "/images/products/335.jpg",
       "available": true,
-      "sort": 1
+      "sort": 1,
+      "name_en": "Puyehue Still Mineral Water (Glass Bottle)",
+      "description_en": "Still mineral water in a glass bottle."
     },
     {
       "id": "398",
@@ -583,7 +695,9 @@
       "price": 1800,
       "image": "/images/products/335.jpg",
       "available": true,
-      "sort": 2
+      "sort": 2,
+      "name_en": "Puyehue Sparkling Mineral Water (Glass Bottle)",
+      "description_en": "Sparkling mineral water in a glass bottle."
     },
     {
       "id": "143",
@@ -593,7 +707,9 @@
       "price": 3700,
       "image": "/images/products/143.jpg",
       "available": true,
-      "sort": 3
+      "sort": 3,
+      "name_en": "Fresh Juice",
+      "description_en": "Fresh fruit juice made daily."
     },
     {
       "id": "258",
@@ -603,7 +719,9 @@
       "price": 2000,
       "image": "",
       "available": true,
-      "sort": 4
+      "sort": 4,
+      "name_en": "Lipton Lemon Green Tea 600 ml",
+      "description_en": "Chilled green tea with lemon flavor."
     },
     {
       "id": "36",
@@ -613,7 +731,9 @@
       "price": 2000,
       "image": "",
       "available": true,
-      "sort": 5
+      "sort": 5,
+      "name_en": "Lipton Peach Black Tea 600 ml",
+      "description_en": "Chilled black tea with peach flavor."
     },
     {
       "id": "325",
@@ -623,7 +743,9 @@
       "price": 1800,
       "image": "/images/products/325.jpg",
       "available": true,
-      "sort": 6
+      "sort": 6,
+      "name_en": "Crush Orange",
+      "description_en": "Orange-flavored soda."
     },
     {
       "id": "11",
@@ -633,7 +755,9 @@
       "price": 2200,
       "image": "",
       "available": true,
-      "sort": 7
+      "sort": 7,
+      "name_en": "Red Bull",
+      "description_en": "Energy drink."
     },
     {
       "id": "127",
@@ -643,7 +767,9 @@
       "price": 3000,
       "image": "",
       "available": true,
-      "sort": 8
+      "sort": 8,
+      "name_en": "Gatorlit Strawberry Kiwi 620 ml",
+      "description_en": "Strawberry kiwi flavored sports drink."
     },
     {
       "id": "14",
@@ -653,7 +779,9 @@
       "price": 2000,
       "image": "",
       "available": true,
-      "sort": 9
+      "sort": 9,
+      "name_en": "Gatorade 750 ml",
+      "description_en": "Sports drink, Cool Blue or Fruit Tropical."
     },
     {
       "id": "144",
@@ -663,7 +791,9 @@
       "price": 1800,
       "image": "/images/products/144.jpg",
       "available": true,
-      "sort": 10
+      "sort": 10,
+      "name_en": "Canada Dry Ginger Ale 310 cc",
+      "description_en": "Smooth, refreshing ginger ale."
     },
     {
       "id": "264",
@@ -673,7 +803,9 @@
       "price": 1800,
       "image": "/images/products/264.jpg",
       "available": true,
-      "sort": 11
+      "sort": 11,
+      "name_en": "Ginger Zero 350 cc",
+      "description_en": "Sugar-free ginger ale, canned."
     },
     {
       "id": "261",
@@ -683,7 +815,9 @@
       "price": 1800,
       "image": "/images/products/261.jpg",
       "available": true,
-      "sort": 12
+      "sort": 12,
+      "name_en": "Pepsi Regular",
+      "description_en": "Classic cola soda."
     },
     {
       "id": "375",
@@ -693,7 +827,9 @@
       "price": 1800,
       "image": "/images/products/375.jpg",
       "available": true,
-      "sort": 13
+      "sort": 13,
+      "name_en": "Pepsi Zero",
+      "description_en": "Sugar-free cola soda."
     },
     {
       "id": "500",
@@ -703,7 +839,9 @@
       "price": 1800,
       "image": "",
       "available": true,
-      "sort": 14
+      "sort": 14,
+      "name_en": "Coca-Cola Zero 350 cc Can",
+      "description_en": "Sugar-free cola, canned."
     },
     {
       "id": "360",
@@ -713,7 +851,9 @@
       "price": 1800,
       "image": "/images/products/360.jpg",
       "available": true,
-      "sort": 15
+      "sort": 15,
+      "name_en": "Lemon Soda Can 350 cc",
+      "description_en": "Refreshing lemon soda, canned."
     },
     {
       "id": "255",
@@ -723,7 +863,9 @@
       "price": 1800,
       "image": "/images/products/255.jpg",
       "available": true,
-      "sort": 16
+      "sort": 16,
+      "name_en": "Kem Pineapple 350 cc",
+      "description_en": "Pineapple-flavored soda, canned."
     },
     {
       "id": "440",
@@ -733,7 +875,9 @@
       "price": 1800,
       "image": "",
       "available": true,
-      "sort": 17
+      "sort": 17,
+      "name_en": "Bilz Can 350 cc",
+      "description_en": "Classic Chilean Bilz soda."
     },
     {
       "id": "470",
@@ -743,7 +887,9 @@
       "price": 1800,
       "image": "",
       "available": true,
-      "sort": 18
+      "sort": 18,
+      "name_en": "Pap Can 350 cc",
+      "description_en": "Classic Chilean Pap soda."
     },
     {
       "id": "438",
@@ -753,7 +899,9 @@
       "price": 1800,
       "image": "",
       "available": true,
-      "sort": 19
+      "sort": 19,
+      "name_en": "Score",
+      "description_en": "Score energy drink."
     },
     {
       "id": "425",
@@ -763,7 +911,9 @@
       "price": 1700,
       "image": "",
       "available": true,
-      "sort": 20
+      "sort": 20,
+      "name_en": "Jumex Apple Can 350 cc",
+      "description_en": "Canned apple nectar."
     },
     {
       "id": "427",
@@ -773,7 +923,9 @@
       "price": 1700,
       "image": "",
       "available": true,
-      "sort": 21
+      "sort": 21,
+      "name_en": "Jumex Pineapple Coconut Can 350 cc",
+      "description_en": "Canned pineapple-coconut nectar."
     },
     {
       "id": "446",
@@ -783,7 +935,9 @@
       "price": 1800,
       "image": "",
       "available": true,
-      "sort": 22
+      "sort": 22,
+      "name_en": "Jumex Guava",
+      "description_en": "Canned guava nectar."
     },
     {
       "id": "42",
@@ -793,7 +947,9 @@
       "price": 2300,
       "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 1
+      "sort": 1,
+      "name_en": "Homemade Cookies",
+      "description_en": "6 house-baked oatmeal, lemon, and butter cookies."
     },
     {
       "id": "80",
@@ -803,7 +959,9 @@
       "price": 3500,
       "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 2
+      "sort": 2,
+      "name_en": "Chilean Easter Cookies",
+      "description_en": "Artisan spiced Easter cookies."
     },
     {
       "id": "363",
@@ -813,7 +971,9 @@
       "price": 2000,
       "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 3
+      "sort": 3,
+      "name_en": "Cookies (3 pcs)",
+      "description_en": "Cookies filled with manjar (dulce de leche) and a touch of chocolate."
     },
     {
       "id": "162",
@@ -823,7 +983,9 @@
       "price": 1700,
       "image": "",
       "available": true,
-      "sort": 4
+      "sort": 4,
+      "name_en": "Jam-Topped Delights",
+      "description_en": "House-made cookie topped with jam."
     },
     {
       "id": "164",
@@ -833,7 +995,9 @@
       "price": 1700,
       "image": "/images/products/164.jpg",
       "available": true,
-      "sort": 5
+      "sort": 5,
+      "name_en": "Cocadas (4 pcs)",
+      "description_en": "Sweet artisan coconut macaroons, 4 pieces."
     },
     {
       "id": "276",
@@ -843,7 +1007,9 @@
       "price": 2500,
       "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 6
+      "sort": 6,
+      "name_en": "Chocolate Croissant",
+      "description_en": "Flaky puff pastry croissant filled with chocolate."
     },
     {
       "id": "20",
@@ -853,7 +1019,9 @@
       "price": 1200,
       "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 7
+      "sort": 7,
+      "name_en": "Croissant",
+      "description_en": "Classic flaky puff pastry croissant, golden and crisp."
     },
     {
       "id": "161",
@@ -863,7 +1031,9 @@
       "price": 2450,
       "image": "",
       "available": true,
-      "sort": 8
+      "sort": 8,
+      "name_en": "Vanilla or Chocolate Muffin",
+      "description_en": "Fluffy muffin, your choice of vanilla or chocolate."
     },
     {
       "id": "477",
@@ -873,7 +1043,9 @@
       "price": 2900,
       "image": "",
       "available": true,
-      "sort": 9
+      "sort": 9,
+      "name_en": "Glazed Cinnamon Roll",
+      "description_en": "Freshly baked cinnamon roll with sweet glaze."
     },
     {
       "id": "478",
@@ -883,7 +1055,9 @@
       "price": 3500,
       "image": "",
       "available": true,
-      "sort": 10
+      "sort": 10,
+      "name_en": "Nutella-Filled Pretzel",
+      "description_en": "Soft pretzel filled with Nutella and walnuts."
     },
     {
       "id": "484",
@@ -893,7 +1067,9 @@
       "price": 1400,
       "image": "https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 11
+      "sort": 11,
+      "name_en": "Macaron",
+      "description_en": "Delicate French macaron, assorted flavors."
     },
     {
       "id": "514",
@@ -903,7 +1079,9 @@
       "price": 8600,
       "image": "https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 12
+      "sort": 12,
+      "name_en": "Heart Macarons Gift Box",
+      "description_en": "Box of 8 heart-shaped macarons, perfect for gifting."
     },
     {
       "id": "485",
@@ -913,7 +1091,9 @@
       "price": 900,
       "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 13
+      "sort": 13,
+      "name_en": "Mini Donuts",
+      "description_en": "Glazed mini donuts, perfect with coffee."
     },
     {
       "id": "456",
@@ -923,7 +1103,9 @@
       "price": 980,
       "image": "",
       "available": true,
-      "sort": 14
+      "sort": 14,
+      "name_en": "Mini Cornstarch Alfajor",
+      "description_en": "Bite-sized cornstarch alfajor filled with manjar (dulce de leche)."
     },
     {
       "id": "516",
@@ -933,7 +1115,9 @@
       "price": 2800,
       "image": "",
       "available": true,
-      "sort": 15
+      "sort": 15,
+      "name_en": "Heart-Shaped Alfajor",
+      "description_en": "Heart-shaped cornstarch alfajor with homemade manjar (dulce de leche)."
     },
     {
       "id": "448",
@@ -943,7 +1127,9 @@
       "price": 1500,
       "image": "",
       "available": true,
-      "sort": 16
+      "sort": 16,
+      "name_en": "Chilenitos",
+      "description_en": "Traditional chilenitos filled with manjar and topped with meringue."
     },
     {
       "id": "501",
@@ -953,7 +1139,9 @@
       "price": 980,
       "image": "",
       "available": true,
-      "sort": 17
+      "sort": 17,
+      "name_en": "Mini Mendoza-Style Alfajor",
+      "description_en": "Bite-sized chocolate-covered Mendoza-style alfajor."
     },
     {
       "id": "428",
@@ -963,7 +1151,9 @@
       "price": 1000,
       "image": "",
       "available": true,
-      "sort": 18
+      "sort": 18,
+      "name_en": "Brownie Bite",
+      "description_en": "Chocolate-covered brownie bite."
     },
     {
       "id": "435",
@@ -973,7 +1163,9 @@
       "price": 2000,
       "image": "",
       "available": true,
-      "sort": 19
+      "sort": 19,
+      "name_en": "Shell-Coated Peanuts",
+      "description_en": "Candy-coated peanuts with a crunchy shell."
     },
     {
       "id": "357",
@@ -983,7 +1175,9 @@
       "price": 24000,
       "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 20
+      "sort": 20,
+      "name_en": "Whole New York Raspberry Cheesecake",
+      "description_en": "New York-style raspberry cheesecake, whole size."
     },
     {
       "id": "340",
@@ -993,7 +1187,9 @@
       "price": 4000,
       "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 1
+      "sort": 1,
+      "name_en": "Scrambled Eggs with Ciabatta or Toast",
+      "description_en": "Creamy scrambled eggs with ciabatta bread or toast."
     },
     {
       "id": "342",
@@ -1003,7 +1199,9 @@
       "price": 4600,
       "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 2
+      "sort": 2,
+      "name_en": "Scrambled Eggs with Cheese",
+      "description_en": "Scrambled eggs with cheese, served with ciabatta bread or toast."
     },
     {
       "id": "353",
@@ -1013,7 +1211,9 @@
       "price": 4600,
       "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 3
+      "sort": 3,
+      "name_en": "Scrambled Eggs with Ham",
+      "description_en": "Scrambled eggs with ham, served with ciabatta bread or toast."
     },
     {
       "id": "338",
@@ -1023,7 +1223,9 @@
       "price": 5200,
       "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 4
+      "sort": 4,
+      "name_en": "Scrambled Eggs with Ham and Cheese",
+      "description_en": "Scrambled eggs with ham and cheese, served with ciabatta bread or toast."
     },
     {
       "id": "314",
@@ -1033,7 +1235,9 @@
       "price": 4500,
       "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 5
+      "sort": 5,
+      "name_en": "Scrambled Eggs with Tomato",
+      "description_en": "Scrambled eggs with fresh tomato, served with ciabatta bread or toast."
     },
     {
       "id": "345",
@@ -1043,7 +1247,9 @@
       "price": 5500,
       "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 6
+      "sort": 6,
+      "name_en": "Scrambled Eggs with Tomato, Ham, and Cheese",
+      "description_en": "The complete scramble: tomato, ham, and cheese."
     },
     {
       "id": "507",
@@ -1053,7 +1259,9 @@
       "price": 5500,
       "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 7
+      "sort": 7,
+      "name_en": "Scrambled Eggs with Bacon",
+      "description_en": "Scrambled eggs with crispy bacon, served with ciabatta bread or toast."
     },
     {
       "id": "339",
@@ -1063,7 +1271,9 @@
       "price": 4000,
       "image": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 8
+      "sort": 8,
+      "name_en": "2 Fried Eggs with Ciabatta or Toast",
+      "description_en": "Two eggs fried to perfection with your choice of bread."
     },
     {
       "id": "464",
@@ -1073,7 +1283,9 @@
       "price": 6200,
       "image": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 9
+      "sort": 9,
+      "name_en": "2 Eggs, Bacon, and Cheese",
+      "description_en": "Two eggs with bacon and cheese, served with ciabatta or toast."
     },
     {
       "id": "327",
@@ -1083,7 +1295,9 @@
       "price": 5800,
       "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 10
+      "sort": 10,
+      "name_en": "Ham, Cheese, and Tomato Omelette",
+      "description_en": "Fluffy omelette with ham, cheese, and tomato, served with toast."
     },
     {
       "id": "491",
@@ -1093,7 +1307,9 @@
       "price": 5800,
       "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 11
+      "sort": 11,
+      "name_en": "French Toast",
+      "description_en": "2 slices of French toast with seasonal fruit, syrup, and butter."
     },
     {
       "id": "332",
@@ -1103,7 +1319,9 @@
       "price": 4000,
       "image": "https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 12
+      "sort": 12,
+      "name_en": "Avocado Toast",
+      "description_en": "Toast topped with freshly mashed avocado and a touch of salt."
     },
     {
       "id": "318",
@@ -1113,7 +1331,9 @@
       "price": 4900,
       "image": "https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 13
+      "sort": 13,
+      "name_en": "Avocado and Cheese Toast",
+      "description_en": "Toast with creamy avocado and cheese."
     },
     {
       "id": "481",
@@ -1123,7 +1343,9 @@
       "price": 4900,
       "image": "https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 14
+      "sort": 14,
+      "name_en": "Avocado and Ham Toast",
+      "description_en": "Toast with fresh avocado and ham."
     },
     {
       "id": "466",
@@ -1133,7 +1355,9 @@
       "price": 2800,
       "image": "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 15
+      "sort": 15,
+      "name_en": "Toast with Butter and Jam",
+      "description_en": "Warm toast with butter and homemade jam."
     },
     {
       "id": "380",
@@ -1143,7 +1367,9 @@
       "price": 3800,
       "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 16
+      "sort": 16,
+      "name_en": "Ciabatta with Ham and Avocado",
+      "description_en": "Ciabatta bread with ham and fresh avocado."
     },
     {
       "id": "462",
@@ -1153,7 +1379,9 @@
       "price": 3000,
       "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 17
+      "sort": 17,
+      "name_en": "Ciabatta with Ham",
+      "description_en": "Freshly baked ciabatta with ham."
     },
     {
       "id": "228",
@@ -1163,7 +1391,9 @@
       "price": 800,
       "image": "",
       "available": true,
-      "sort": 18
+      "sort": 18,
+      "name_en": "Extra Tomato",
+      "description_en": "An extra serving of fresh tomato."
     },
     {
       "id": "451",
@@ -1173,7 +1403,9 @@
       "price": 1000,
       "image": "",
       "available": true,
-      "sort": 19
+      "sort": 19,
+      "name_en": "Extra Bacon",
+      "description_en": "An extra serving of crispy bacon."
     },
     {
       "id": "378",
@@ -1183,7 +1415,9 @@
       "price": 3200,
       "image": "https://images.unsplash.com/photo-1601000938259-9e92002320b2?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 1
+      "sort": 1,
+      "name_en": "Neapolitan-Style Empanada",
+      "description_en": "Baked empanada with ham, cheese, and tomato."
     },
     {
       "id": "186",
@@ -1193,7 +1427,9 @@
       "price": 4900,
       "image": "https://images.unsplash.com/photo-1614088685112-0a760b71a3c8?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 2
+      "sort": 2,
+      "name_en": "Individual Quiche",
+      "description_en": "Individual quiche with a crisp crust and creamy filling."
     },
     {
       "id": "154",
@@ -1203,7 +1439,9 @@
       "price": 3300,
       "image": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 1
+      "sort": 1,
+      "name_en": "Single Scoop Cone",
+      "description_en": "One flavor of artisan ice cream in a crunchy cone."
     },
     {
       "id": "155",
@@ -1213,7 +1451,9 @@
       "price": 4300,
       "image": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 2
+      "sort": 2,
+      "name_en": "Double Scoop Cone",
+      "description_en": "Two flavors of artisan ice cream in a crunchy cone."
     },
     {
       "id": "272",
@@ -1223,7 +1463,9 @@
       "price": 3300,
       "image": "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 3
+      "sort": 3,
+      "name_en": "Single Scoop",
+      "description_en": "One scoop of artisan ice cream, your choice of flavor."
     },
     {
       "id": "156",
@@ -1233,7 +1475,9 @@
       "price": 5300,
       "image": "https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 4
+      "sort": 4,
+      "name_en": "Ice Cream Cup",
+      "description_en": "3 flavors of artisan ice cream with a cone on the side."
     },
     {
       "id": "247",
@@ -1243,7 +1487,9 @@
       "price": 4690,
       "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 5
+      "sort": 5,
+      "name_en": "Milkshake",
+      "description_en": "Milkshake made with artisan ice cream and whipped cream."
     },
     {
       "id": "515",
@@ -1253,7 +1499,9 @@
       "price": 300,
       "image": "",
       "available": true,
-      "sort": 6
+      "sort": 6,
+      "name_en": "Cone on the Side",
+      "description_en": "A crunchy cone to go with your ice cream."
     },
     {
       "id": "348",
@@ -1263,7 +1511,9 @@
       "price": 4300,
       "image": "/images/products/348.jpg",
       "available": true,
-      "sort": 1
+      "sort": 1,
+      "name_en": "Caluga Layer Cake",
+      "description_en": "Caluga (milk caramel) cake with layers of manjar and sponge cake."
     },
     {
       "id": "178",
@@ -1273,7 +1523,9 @@
       "price": 15500,
       "image": "/images/products/178.jpg",
       "available": true,
-      "sort": 2
+      "sort": 2,
+      "name_en": "Sureño (Southern-Style Pastry)",
+      "description_en": "Southern-style pastry filled with blueberry or raspberry pastry cream."
     },
     {
       "id": "195",
@@ -1283,7 +1535,9 @@
       "price": 3000,
       "image": "/images/products/195.jpg",
       "available": true,
-      "sort": 3
+      "sort": 3,
+      "name_en": "Sureño Slice",
+      "description_en": "Individual slice of the classic Sureño pastry."
     },
     {
       "id": "170",
@@ -1293,7 +1547,9 @@
       "price": 4500,
       "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 4
+      "sort": 4,
+      "name_en": "Cheesecake Slice",
+      "description_en": "Cheesecake slice topped with mixed berry jam."
     },
     {
       "id": "436",
@@ -1303,7 +1559,9 @@
       "price": 4500,
       "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 5
+      "sort": 5,
+      "name_en": "Sugar-Free Raspberry Cheesecake Slice",
+      "description_en": "Raspberry cheesecake sweetened without sugar."
     },
     {
       "id": "509",
@@ -1313,7 +1571,9 @@
       "price": 5000,
       "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 6
+      "sort": 6,
+      "name_en": "Keto Cheesecake Slice",
+      "description_en": "Made with almond flour, gluten-free, and sweetened with allulose."
     },
     {
       "id": "225",
@@ -1323,7 +1583,9 @@
       "price": 37000,
       "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 7
+      "sort": 7,
+      "name_en": "Whole Cheesecake (Serves 12)",
+      "description_en": "A whole cheesecake, serves 12."
     },
     {
       "id": "177",
@@ -1333,7 +1595,9 @@
       "price": 15900,
       "image": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 8
+      "sort": 8,
+      "name_en": "Large Apple Kuchen",
+      "description_en": "Family-size apple kuchen, a traditional recipe from southern Chile."
     },
     {
       "id": "347",
@@ -1343,7 +1607,9 @@
       "price": 30000,
       "image": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 9
+      "sort": 9,
+      "name_en": "Large Apple Peach Kuchen",
+      "description_en": "Large kuchen with apple and peach."
     },
     {
       "id": "175",
@@ -1353,7 +1619,9 @@
       "price": 16900,
       "image": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 10
+      "sort": 10,
+      "name_en": "Large Walnut Kuchen",
+      "description_en": "Family-size walnut kuchen, sweet and crunchy."
     },
     {
       "id": "321",
@@ -1363,7 +1631,9 @@
       "price": 4500,
       "image": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 11
+      "sort": 11,
+      "name_en": "Individual Walnut Kuchen",
+      "description_en": "Individual serving of walnut kuchen."
     },
     {
       "id": "362",
@@ -1373,7 +1643,9 @@
       "price": 3000,
       "image": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 12
+      "sort": 12,
+      "name_en": "Berry Cream Cheese Kuchen Slice",
+      "description_en": "Kuchen with berries and cream cheese."
     },
     {
       "id": "305",
@@ -1383,7 +1655,9 @@
       "price": 3850,
       "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 13
+      "sort": 13,
+      "name_en": "Puff Pastry Cake with Whipped Cream",
+      "description_en": "Layered puff pastry cake with whipped cream."
     },
     {
       "id": "174",
@@ -1393,7 +1667,9 @@
       "price": 4100,
       "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 14
+      "sort": 14,
+      "name_en": "Individual Chocolate Mille-Feuille",
+      "description_en": "Chocolate mille-feuille in an individual portion."
     },
     {
       "id": "457",
@@ -1403,7 +1679,9 @@
       "price": 4000,
       "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 15
+      "sort": 15,
+      "name_en": "Dutch-Style Mille-Feuille with Cream and Raspberry",
+      "description_en": "Dutch-style mille-feuille with cream and raspberry."
     },
     {
       "id": "221",
@@ -1413,7 +1691,9 @@
       "price": 4100,
       "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 16
+      "sort": 16,
+      "name_en": "Pastry Cream-Filled Pancake",
+      "description_en": "Rolled pancake filled with manjar and pastry cream."
     },
     {
       "id": "179",
@@ -1423,7 +1703,9 @@
       "price": 4100,
       "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 17
+      "sort": 17,
+      "name_en": "Individual Manjar Pancake Roll",
+      "description_en": "Rolled pancake with homemade manjar (dulce de leche)."
     },
     {
       "id": "413",
@@ -1433,7 +1715,9 @@
       "price": 4000,
       "image": "",
       "available": true,
-      "sort": 18
+      "sort": 18,
+      "name_en": "Tres Leches Slice",
+      "description_en": "Moist sponge cake soaked in three kinds of milk."
     },
     {
       "id": "167",
@@ -1443,7 +1727,9 @@
       "price": 4600,
       "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 19
+      "sort": 19,
+      "name_en": "Cake Slices",
+      "description_en": "A slice of our artisan cake of the day."
     },
     {
       "id": "350",
@@ -1453,7 +1739,9 @@
       "price": 4900,
       "image": "",
       "available": true,
-      "sort": 20
+      "sort": 20,
+      "name_en": "Rectangular Pound Cake",
+      "description_en": "Homemade pound cake, baked fresh daily."
     },
     {
       "id": "263",
@@ -1463,7 +1751,9 @@
       "price": 32000,
       "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 21
+      "sort": 21,
+      "name_en": "Coquete Cake (Serves 15)",
+      "description_en": "Poppy seed cake with raspberry cheesecake, serves 15."
     },
     {
       "id": "487",
@@ -1473,7 +1763,9 @@
       "price": 40000,
       "image": "",
       "available": true,
-      "sort": 22
+      "sort": 22,
+      "name_en": "Cuatro Leches Cake",
+      "description_en": "Moist cake soaked in four kinds of milk."
     },
     {
       "id": "19",
@@ -1483,7 +1775,9 @@
       "price": 2600,
       "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 1
+      "sort": 1,
+      "name_en": "Brownie",
+      "description_en": "Rich, house-baked chocolate brownie."
     },
     {
       "id": "27",
@@ -1493,7 +1787,9 @@
       "price": 5300,
       "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 2
+      "sort": 2,
+      "name_en": "Brownie with Ice Cream",
+      "description_en": "Warm brownie with a scoop of artisan ice cream."
     },
     {
       "id": "373",
@@ -1503,7 +1799,9 @@
       "price": 4500,
       "image": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 3
+      "sort": 3,
+      "name_en": "Apple Peach Kuchen Slice",
+      "description_en": "A slice of apple and peach kuchen."
     },
     {
       "id": "511",
@@ -1513,7 +1811,9 @@
       "price": 5500,
       "image": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 4
+      "sort": 4,
+      "name_en": "Apple Kuchen Slice with Ice Cream",
+      "description_en": "Apple kuchen with pastry cream and artisan ice cream."
     },
     {
       "id": "244",
@@ -1523,7 +1823,9 @@
       "price": 4900,
       "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 1
+      "sort": 1,
+      "name_en": "Ciabatta with Cheese, Ham, Avocado, Tomato, and Lettuce",
+      "description_en": "The full ciabatta: cheese, ham, avocado, tomato, and lettuce."
     },
     {
       "id": "519",
@@ -1533,7 +1835,9 @@
       "price": 4900,
       "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 2
+      "sort": 2,
+      "name_en": "Ciabatta with Avocado, Cheese, and Ham",
+      "description_en": "Avocado, cheese, and ham on freshly baked ciabatta."
     },
     {
       "id": "235",
@@ -1543,7 +1847,9 @@
       "price": 4900,
       "image": "https://images.unsplash.com/photo-1540713434306-58505cf1b6fc?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 3
+      "sort": 3,
+      "name_en": "Ciabatta with Tuna, Mayo, Chives, Tomato, and Lettuce",
+      "description_en": "Tuna with mayonnaise, chives, tomato, and lettuce on ciabatta."
     },
     {
       "id": "307",
@@ -1553,7 +1859,9 @@
       "price": 4800,
       "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 4
+      "sort": 4,
+      "name_en": "Ciabatta with Chicken Mayo and Avocado",
+      "description_en": "Chicken mayo with creamy avocado on ciabatta bread."
     },
     {
       "id": "513",
@@ -1563,7 +1871,9 @@
       "price": 5200,
       "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 5
+      "sort": 5,
+      "name_en": "Ciabatta with Chicken Mayo, Avocado, Tomato, and Lettuce",
+      "description_en": "The full chicken mayo with avocado, tomato, and lettuce."
     },
     {
       "id": "104",
@@ -1573,7 +1883,9 @@
       "price": 4000,
       "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 6
+      "sort": 6,
+      "name_en": "Ciabatta with Chicken Mayo",
+      "description_en": "Classic chicken mayo on ciabatta bread."
     },
     {
       "id": "434",
@@ -1583,7 +1895,9 @@
       "price": 4500,
       "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 7
+      "sort": 7,
+      "name_en": "Ciabatta with Chicken Mayo and Roasted Pepper",
+      "description_en": "Chicken mayo with roasted pepper on ciabatta."
     },
     {
       "id": "197",
@@ -1593,7 +1907,9 @@
       "price": 4000,
       "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 8
+      "sort": 8,
+      "name_en": "Ciabatta with Ham and Cheese",
+      "description_en": "Ham and cheese on freshly baked ciabatta."
     },
     {
       "id": "311",
@@ -1603,7 +1919,9 @@
       "price": 3900,
       "image": "https://images.unsplash.com/photo-1540713434306-58505cf1b6fc?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 9
+      "sort": 9,
+      "name_en": "Ciabatta with Avocado",
+      "description_en": "Ciabatta bread with freshly mashed avocado."
     },
     {
       "id": "245",
@@ -1613,7 +1931,9 @@
       "price": 4900,
       "image": "https://images.unsplash.com/photo-1540713434306-58505cf1b6fc?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 10
+      "sort": 10,
+      "name_en": "Ciabatta with Avocado and Cheese",
+      "description_en": "Avocado and cheese on ciabatta bread."
     },
     {
       "id": "241",
@@ -1623,7 +1943,9 @@
       "price": 3200,
       "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 11
+      "sort": 11,
+      "name_en": "Ciabatta with Melted Cheese",
+      "description_en": "Warm melted cheese on ciabatta bread."
     },
     {
       "id": "319",
@@ -1633,7 +1955,9 @@
       "price": 4900,
       "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 12
+      "sort": 12,
+      "name_en": "Miga Sandwich with Cheese, Ham, Avocado, Tomato, and Lettuce",
+      "description_en": "The full miga sandwich with cheese, ham, avocado, tomato, and lettuce."
     },
     {
       "id": "520",
@@ -1643,7 +1967,9 @@
       "price": 5000,
       "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 13
+      "sort": 13,
+      "name_en": "Miga Sandwich with Avocado, Cheese, and Ham",
+      "description_en": "Miga sandwich with avocado, cheese, and ham."
     },
     {
       "id": "302",
@@ -1653,7 +1979,9 @@
       "price": 5200,
       "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 14
+      "sort": 14,
+      "name_en": "Miga Sandwich with Chicken Mayo, Avocado, Tomato, and Lettuce",
+      "description_en": "The full chicken mayo miga with avocado, tomato, and lettuce."
     },
     {
       "id": "180",
@@ -1663,7 +1991,9 @@
       "price": 4800,
       "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 15
+      "sort": 15,
+      "name_en": "Miga Sandwich with Chicken Mayo and Avocado",
+      "description_en": "Miga sandwich with chicken mayo and avocado."
     },
     {
       "id": "282",
@@ -1673,7 +2003,9 @@
       "price": 4600,
       "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 16
+      "sort": 16,
+      "name_en": "Miga Sandwich with Chicken Mayo and Roasted Pepper",
+      "description_en": "Miga sandwich with chicken mayo and roasted pepper."
     },
     {
       "id": "183",
@@ -1683,7 +2015,9 @@
       "price": 4000,
       "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 17
+      "sort": 17,
+      "name_en": "Miga Sandwich with Chicken Mayo",
+      "description_en": "Classic miga sandwich with chicken mayo."
     },
     {
       "id": "242",
@@ -1693,7 +2027,9 @@
       "price": 4500,
       "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 18
+      "sort": 18,
+      "name_en": "Miga Sandwich with Chicken and Avocado",
+      "description_en": "Miga sandwich with chicken and avocado."
     },
     {
       "id": "310",
@@ -1703,7 +2039,9 @@
       "price": 2900,
       "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 19
+      "sort": 19,
+      "name_en": "Miga Sandwich with Ham",
+      "description_en": "Miga sandwich with ham."
     },
     {
       "id": "224",
@@ -1713,7 +2051,9 @@
       "price": 3500,
       "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 20
+      "sort": 20,
+      "name_en": "Miga Sandwich with Ham and Cheese",
+      "description_en": "Miga sandwich with ham and cheese."
     },
     {
       "id": "351",
@@ -1723,7 +2063,9 @@
       "price": 4000,
       "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 21
+      "sort": 21,
+      "name_en": "Miga Sandwich with Ham and Avocado",
+      "description_en": "Miga sandwich with ham and avocado."
     },
     {
       "id": "361",
@@ -1733,7 +2075,9 @@
       "price": 2900,
       "image": "https://images.unsplash.com/photo-1540713434306-58505cf1b6fc?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 22
+      "sort": 22,
+      "name_en": "Miga Sandwich with Avocado",
+      "description_en": "Miga sandwich with fresh avocado."
     },
     {
       "id": "359",
@@ -1743,7 +2087,9 @@
       "price": 3200,
       "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 23
+      "sort": 23,
+      "name_en": "Miga Sandwich with Melted Cheese",
+      "description_en": "Miga sandwich with warm melted cheese."
     },
     {
       "id": "494",
@@ -1753,7 +2099,9 @@
       "price": 8000,
       "image": "https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 24
+      "sort": 24,
+      "name_en": "House Sharing Board",
+      "description_en": "A board of cheeses, vegetables, olives, and salami to share."
     },
     {
       "id": "309",
@@ -1763,7 +2111,9 @@
       "price": 1100,
       "image": "",
       "available": true,
-      "sort": 25
+      "sort": 25,
+      "name_en": "Extra Avocado",
+      "description_en": "An extra serving of avocado."
     },
     {
       "id": "524",
@@ -1773,7 +2123,9 @@
       "price": 1100,
       "image": "",
       "available": true,
-      "sort": 26
+      "sort": 26,
+      "name_en": "Extra Chicken",
+      "description_en": "An extra serving of chicken."
     },
     {
       "id": "286",
@@ -1783,7 +2135,9 @@
       "price": 38000,
       "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 1
+      "sort": 1,
+      "name_en": "Mille-Feuille Cake (Serves 15-20)",
+      "description_en": "Mille-feuille cake with homemade manjar, serves 15 to 20."
     },
     {
       "id": "284",
@@ -1793,7 +2147,9 @@
       "price": 38900,
       "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 2
+      "sort": 2,
+      "name_en": "Reina Sofía Cake (Serves 15-20)",
+      "description_en": "Sponge cake filled with smooth manjar, pastry cream, raspberry jam, whipped cream, and choux pastry."
     },
     {
       "id": "217",
@@ -1803,7 +2159,9 @@
       "price": 32900,
       "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 3
+      "sort": 3,
+      "name_en": "Amor Cake (Serves 15-20)",
+      "description_en": "Flaky pastry filled with smooth manjar, pastry cream, and whipped cream."
     },
     {
       "id": "213",
@@ -1813,7 +2171,9 @@
       "price": 30000,
       "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 4
+      "sort": 4,
+      "name_en": "Belgian Chocolate Cake",
+      "description_en": "Brownie-style sponge cake with Belgian chocolate, filled with smooth manjar."
     },
     {
       "id": "222",
@@ -1823,7 +2183,9 @@
       "price": 35000,
       "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 5
+      "sort": 5,
+      "name_en": "Chocolate Manjar Cake",
+      "description_en": "Chocolate cake filled with homemade manjar (dulce de leche)."
     },
     {
       "id": "406",
@@ -1833,7 +2195,9 @@
       "price": 32000,
       "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 6
+      "sort": 6,
+      "name_en": "Chocolate Manjar Cake (Serves 10)",
+      "description_en": "Rich chocolate cake with manjar, serves 10."
     },
     {
       "id": "278",
@@ -1843,7 +2207,9 @@
       "price": 32000,
       "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 7
+      "sort": 7,
+      "name_en": "Caluga Raspberry Cake",
+      "description_en": "Artisan caluga (milk caramel) cake with raspberry."
     },
     {
       "id": "219",
@@ -1853,7 +2219,9 @@
       "price": 30000,
       "image": "",
       "available": true,
-      "sort": 8
+      "sort": 8,
+      "name_en": "Lúcuma Manjar Cake",
+      "description_en": "Lúcuma cake with manjar — a true taste of Chile."
     },
     {
       "id": "216",
@@ -1863,7 +2231,9 @@
       "price": 22000,
       "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 9
+      "sort": 9,
+      "name_en": "Tiramisu Cheesecake",
+      "description_en": "Tiramisu-flavored cheesecake, serves 10 to 12."
     },
     {
       "id": "273",
@@ -1873,7 +2243,9 @@
       "price": 25000,
       "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 10
+      "sort": 10,
+      "name_en": "Sugar-Free Raspberry Cheesecake",
+      "description_en": "Sugar-free raspberry cheesecake, serves 10."
     },
     {
       "id": "173",
@@ -1883,7 +2255,9 @@
       "price": 12000,
       "image": "",
       "available": true,
-      "sort": 11
+      "sort": 11,
+      "name_en": "Brazo de Reina (Swiss Roll)",
+      "description_en": "Classic rolled sponge cake filled with manjar."
     },
     {
       "id": "294",
@@ -1893,7 +2267,9 @@
       "price": 3900,
       "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 1
+      "sort": 1,
+      "name_en": "Austral Calafate Beer",
+      "description_en": "Austral beer brewed with Patagonian calafate berries."
     },
     {
       "id": "518",
@@ -1903,7 +2279,9 @@
       "price": 3900,
       "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 2
+      "sort": 2,
+      "name_en": "Kunstmann Lager Blanc 330 cc",
+      "description_en": "Kunstmann white lager, smooth and refreshing."
     },
     {
       "id": "151",
@@ -1913,7 +2291,9 @@
       "price": 3200,
       "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 3
+      "sort": 3,
+      "name_en": "Kunstmann Non-Alcoholic Lager",
+      "description_en": "Kunstmann lager, alcohol-free."
     },
     {
       "id": "148",
@@ -1923,7 +2303,9 @@
       "price": 3200,
       "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 4
+      "sort": 4,
+      "name_en": "Kunstmann Bock Negra",
+      "description_en": "Kunstmann Bock dark beer, bold and toasty."
     },
     {
       "id": "147",
@@ -1933,7 +2315,9 @@
       "price": 3500,
       "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 5
+      "sort": 5,
+      "name_en": "Torobayo Beer 330 cc",
+      "description_en": "Torobayo craft beer."
     },
     {
       "id": "257",
@@ -1943,7 +2327,9 @@
       "price": 5000,
       "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 6
+      "sort": 6,
+      "name_en": "Torobayo Beer 500 cc",
+      "description_en": "Torobayo craft beer, 500 cc."
     },
     {
       "id": "381",
@@ -1953,7 +2339,9 @@
       "price": 3500,
       "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 7
+      "sort": 7,
+      "name_en": "Dolbek Beer 330 cc",
+      "description_en": "Dolbek dark beer."
     },
     {
       "id": "488",
@@ -1963,7 +2351,9 @@
       "price": 5000,
       "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 8
+      "sort": 8,
+      "name_en": "Dolbek Beer 500 cc",
+      "description_en": "Dolbek craft beer, 500 cc."
     },
     {
       "id": "149",
@@ -1973,7 +2363,9 @@
       "price": 2900,
       "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 9
+      "sort": 9,
+      "name_en": "Heineken",
+      "description_en": "Heineken lager beer."
     },
     {
       "id": "150",
@@ -1983,7 +2375,9 @@
       "price": 2900,
       "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 10
+      "sort": 10,
+      "name_en": "Coors",
+      "description_en": "Coors lager beer."
     },
     {
       "id": "372",
@@ -1993,7 +2387,9 @@
       "price": 2900,
       "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 11
+      "sort": 11,
+      "name_en": "Royal Beer",
+      "description_en": "Royal lager beer."
     },
     {
       "id": "358",
@@ -2003,7 +2399,9 @@
       "price": 2900,
       "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 12
+      "sort": 12,
+      "name_en": "Sol Beer",
+      "description_en": "Sol pale beer."
     },
     {
       "id": "343",
@@ -2013,7 +2411,9 @@
       "price": 2500,
       "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 13
+      "sort": 13,
+      "name_en": "Lemon Stones 470 cc",
+      "description_en": "Beer mix with lemon, 2.5% ABV."
     },
     {
       "id": "403",
@@ -2023,7 +2423,9 @@
       "price": 2900,
       "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 14
+      "sort": 14,
+      "name_en": "Malta",
+      "description_en": "Malt beer, sweet and toasty."
     },
     {
       "id": "489",
@@ -2033,7 +2435,9 @@
       "price": 1000,
       "image": "",
       "available": true,
-      "sort": 15
+      "sort": 15,
+      "name_en": "Michelada",
+      "description_en": "Build your own beer with lemon, salt, and hot sauce."
     },
     {
       "id": "492",
@@ -2043,7 +2447,9 @@
       "price": 900,
       "image": "",
       "available": true,
-      "sort": 16
+      "sort": 16,
+      "name_en": "Chelada",
+      "description_en": "Build your own beer with lemon and salt."
     },
     {
       "id": "445",
@@ -2053,7 +2459,9 @@
       "price": 4500,
       "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 1
+      "sort": 1,
+      "name_en": "Soup of the Day and Salad",
+      "description_en": "Homemade soup of the day with toast, served with a side salad."
     },
     {
       "id": "199",
@@ -2063,7 +2471,9 @@
       "price": 38000,
       "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 2
+      "sort": 2,
+      "name_en": "Lavazza Whole Bean Coffee 1 kg",
+      "description_en": "Lavazza whole bean coffee for home brewing, 1 kilo."
     },
     {
       "id": "262",
@@ -2073,7 +2483,9 @@
       "price": 12500,
       "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 3
+      "sort": 3,
+      "name_en": "Lavazza Classic Ground Filter Coffee",
+      "description_en": "Lavazza ground coffee for filter brewing."
     },
     {
       "id": "200",
@@ -2083,7 +2495,9 @@
       "price": 13600,
       "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 4
+      "sort": 4,
+      "name_en": "Lavazza Prontissimo Intenso Instant Coffee 95 g",
+      "description_en": "Lavazza Prontissimo Intenso instant coffee."
     },
     {
       "id": "386",
@@ -2093,7 +2507,9 @@
       "price": 22000,
       "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 5
+      "sort": 5,
+      "name_en": "Los Boldos French Press",
+      "description_en": "Glass French press coffee maker."
     },
     {
       "id": "450",
@@ -2103,7 +2519,9 @@
       "price": 2600,
       "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 6
+      "sort": 6,
+      "name_en": "Palo de Agua Herbal Tea",
+      "description_en": "Premium herbal infusion: 10 g makes 8 servings of 250 cc."
     },
     {
       "id": "249",
@@ -2113,7 +2531,9 @@
       "price": 14500,
       "image": "",
       "available": true,
-      "sort": 7
+      "sort": 7,
+      "name_en": "White Truffle-Infused Olive Oil 250 ml",
+      "description_en": "Extra virgin olive oil with white truffle slice and edible gold leaf."
     },
     {
       "id": "63",
@@ -2123,7 +2543,9 @@
       "price": 14500,
       "image": "",
       "available": true,
-      "sort": 8
+      "sort": 8,
+      "name_en": "Black Truffle-Infused Olive Oil 250 ml",
+      "description_en": "Extra virgin olive oil with black truffle slice and edible gold leaf."
     },
     {
       "id": "430",
@@ -2133,7 +2555,9 @@
       "price": 7500,
       "image": "",
       "available": true,
-      "sort": 9
+      "sort": 9,
+      "name_en": "White Truffle-Infused Olive Oil 50 ml",
+      "description_en": "Extra virgin olive oil with white truffle aroma, 50 ml."
     },
     {
       "id": "194",
@@ -2143,7 +2567,9 @@
       "price": 7500,
       "image": "",
       "available": true,
-      "sort": 10
+      "sort": 10,
+      "name_en": "Black Truffle-Infused Olive Oil 50 ml",
+      "description_en": "Extra virgin olive oil with black truffle aroma, 50 ml."
     },
     {
       "id": "204",
@@ -2153,7 +2579,9 @@
       "price": 9500,
       "image": "",
       "available": true,
-      "sort": 11
+      "sort": 11,
+      "name_en": "Truffle Balsamic Vinegar Reduction 250 ml",
+      "description_en": "Italian balsamic vinegar of Modena with natural white truffle aroma."
     },
     {
       "id": "326",
@@ -2163,7 +2591,9 @@
       "price": 6890,
       "image": "",
       "available": true,
-      "sort": 12
+      "sort": 12,
+      "name_en": "Truffle Balsamic Vinegar Reduction 50 ml",
+      "description_en": "Truffle-infused balsamic vinegar reduction, 50 ml."
     },
     {
       "id": "334",
@@ -2173,7 +2603,9 @@
       "price": 10000,
       "image": "",
       "available": true,
-      "sort": 13
+      "sort": 13,
+      "name_en": "Morel Mushroom Pâté, Truffle Flavor 125 g",
+      "description_en": "Gourmet morel mushroom pâté with truffle flavor."
     },
     {
       "id": "191",
@@ -2183,7 +2615,9 @@
       "price": 9250,
       "image": "",
       "available": true,
-      "sort": 14
+      "sort": 14,
+      "name_en": "Morel Mushroom Pâté, Port Wine Flavor 125 g",
+      "description_en": "Gourmet morel mushroom pâté with port wine."
     },
     {
       "id": "371",
@@ -2193,7 +2627,9 @@
       "price": 11600,
       "image": "",
       "available": true,
-      "sort": 15
+      "sort": 15,
+      "name_en": "Preserved Black Truffle",
+      "description_en": "Preserved black truffle, gourmet delicacy."
     },
     {
       "id": "206",
@@ -2203,7 +2639,9 @@
       "price": 6200,
       "image": "https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 16
+      "sort": 16,
+      "name_en": "Gouda Cheese",
+      "description_en": "Gouda cheese sweetened with dates."
     },
     {
       "id": "201",
@@ -2213,7 +2651,9 @@
       "price": 5900,
       "image": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 17
+      "sort": 17,
+      "name_en": "Pure Honey 500 g",
+      "description_en": "Pure honey, 500 grams."
     },
     {
       "id": "483",
@@ -2223,7 +2663,9 @@
       "price": 8900,
       "image": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80",
       "available": true,
-      "sort": 18
+      "sort": 18,
+      "name_en": "Pure Honey 1 kg",
+      "description_en": "Pure honey, 1 kilo."
     },
     {
       "id": "349",
@@ -2233,7 +2675,9 @@
       "price": 15000,
       "image": "",
       "available": true,
-      "sort": 19
+      "sort": 19,
+      "name_en": "House Sparkling Wines",
+      "description_en": "Forestal Brut and Yapai sparkling wines."
     },
     {
       "id": "366",
@@ -2243,7 +2687,9 @@
       "price": 500,
       "image": "",
       "available": true,
-      "sort": 20
+      "sort": 20,
+      "name_en": "Full Caramel Candy",
+      "description_en": "Artisan caramel candy."
     },
     {
       "id": "473",
@@ -2253,7 +2699,9 @@
       "price": 650,
       "image": "",
       "available": true,
-      "sort": 21
+      "sort": 21,
+      "name_en": "Florete Mints 25 g",
+      "description_en": "Florete refreshing mints."
     },
     {
       "id": "248",
@@ -2263,7 +2711,9 @@
       "price": 1500,
       "image": "",
       "available": true,
-      "sort": 22
+      "sort": 22,
+      "name_en": "Ronson Rolling Papers",
+      "description_en": "Ronson rolling papers."
     },
     {
       "id": "502",
@@ -2273,7 +2723,9 @@
       "price": 11400,
       "image": "",
       "available": true,
-      "sort": 23
+      "sort": 23,
+      "name_en": "Digital Kitchen Scale",
+      "description_en": "Precision digital kitchen scale."
     }
   ]
 }

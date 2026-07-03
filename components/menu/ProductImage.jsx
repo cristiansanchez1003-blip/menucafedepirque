@@ -10,7 +10,7 @@ export default function ProductImage({ src, alt, emoji, className = '' }) {
   if (!src || failed) {
     return (
       <div
-        className={`flex items-center justify-center bg-gradient-to-br from-mintsoft to-mint/60 ${className}`}
+        className={`flex items-center justify-center bg-gradient-to-br from-mintsoft to-mint/60 dark:from-carddark dark:to-forest/30 ${className}`}
         aria-hidden="true"
       >
         <span className="select-none text-3xl drop-shadow-sm">{emoji || '☕'}</span>
