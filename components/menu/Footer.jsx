@@ -111,6 +111,18 @@ export default function Footer({ settings }) {
         <p className="mt-8 text-center text-[11.5px] text-white/35">
           © {new Date().getFullYear()} {settings.name || 'El Café de Pirque'} · Pirque, Chile
         </p>
+
+        <p className="mt-2 text-center text-[11.5px] text-white/35">
+          {lang === 'en' ? 'Made by' : 'Hecho por'}{' '}
+          <a
+            href="https://www.espiritudigital.cl"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-mint/80 underline decoration-mint/30 underline-offset-2 transition-colors hover:text-mint"
+          >
+            Espíritu Digital
+          </a>
+        </p>
       </div>
     </footer>
   )
