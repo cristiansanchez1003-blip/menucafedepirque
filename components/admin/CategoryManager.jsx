@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 
-// Gestión simple de categorías: renombrar, cambiar emoji, agregar y eliminar.
 export default function CategoryManager({ categories, products, onSave, onDelete }) {
   const [adding, setAdding] = useState(false)
   const [newName, setNewName] = useState('')
@@ -13,7 +12,7 @@ export default function CategoryManager({ categories, products, onSave, onDelete
       name
         .toLowerCase()
         .normalize('NFD')
-        .replace(/[̀-ͯ]/g, '')
+        .replace(/[\u0300-\u036f]/g, '')
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/(^-|-$)/g, '') || `cat-${Date.now()}`
     )
@@ -32,9 +31,14 @@ export default function CategoryManager({ categories, products, onSave, onDelete
     'rounded-xl border border-linen bg-paper px-3 py-2 text-[14px] text-ink outline-none transition focus:border-forest focus:ring-2 focus:ring-mint'
 
   return (
-    <section className="rounded-2xl border border-linen bg-card p-5 shadow-card">
+    <section className="rounded-[18px] border border-linen bg-card p-5 shadow-card">
       <div className="flex items-center justify-between">
-        <h2 className="font-playfair text-lg font-bold text-ink">Categorías</h2>
+        <div>
+          <p className="text-[11px] font-black uppercase tracking-[0.18em] text-forest">
+            Estructura
+          </p>
+          <h2 className="mt-1 font-playfair text-2xl font-bold text-ink">Categorías</h2>
+        </div>
         <button
           onClick={() => setAdding((v) => !v)}
           className="rounded-full bg-ink px-3.5 py-2 text-[12.5px] font-bold text-mint active:scale-95"
@@ -69,7 +73,7 @@ export default function CategoryManager({ categories, products, onSave, onDelete
         </form>
       )}
 
-      <div className="mt-4 flex flex-col gap-2">
+      <div className="mt-4 grid gap-2 md:grid-cols-2">
         {categories.map((cat) => {
           const count = products.filter((p) => p.categoryId === cat.id).length
           return (

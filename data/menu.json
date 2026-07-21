@@ -1,16 +1,152 @@
 {
   "settings": {
-    "name": "El Café de Pirque",
-    "slogan": "Café de grano, pastelería artesanal y sabores de Pirque",
-    "address": "Av. Ramón Subercaseaux 560, Local 1, Pirque",
-    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Av.+Ram%C3%B3n+Subercaseaux+560+Pirque+Chile",
-    "hours": "Todos los días · 9:30 a 20:00",
-    "whatsapp": "56962371200",
-    "instagram": "https://www.instagram.com/elcafedepirque/",
-    "instagramHandle": "@elcafedepirque",
-    "email": "tomahawk.contacto@gmail.com",
-    "slogan_en": "Coffee, artisan pastries, and the flavors of Pirque",
-    "hours_en": "Every day · 9:30 AM – 8:00 PM"
+    "name": "Café Raíz",
+    "slogan": "Cocina de estación, café de especialidad y encuentros de barrio.",
+    "address": "Av. Providencia 2148, Providencia",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Santiago+Chile",
+    "hours": "Lunes a domingo · 8:30 a 23:00",
+    "whatsapp": "56912345678",
+    "instagram": "https://www.instagram.com/",
+    "instagramHandle": "@elcafedigital",
+    "email": "hola@elcafedigital.cl",
+    "city": "Santiago",
+    "brandColor": "#2F6B47",
+    "accentColor": "#D6A85A",
+    "slogan_en": "Premium digital menus for cafés, restaurants, and bars.",
+    "hours_en": "Monday to Sunday · 8:30 AM - 11:00 PM",
+    "business_id": "cafe-raiz",
+    "reviewCta": "Déjanos tu opinión",
+    "newsletterTitle": "Recibe nuestras novedades",
+    "newsletterText": "Entérate del menú del día, eventos y promociones especiales.",
+    "theme": {
+      "logoUrl": "",
+      "colors": {
+        "paper": "#F7F4EE",
+        "ink": "#24282A",
+        "forest": "#2F6B47",
+        "mint": "#BFE5CB",
+        "accent": "#D6A85A"
+      },
+      "radius": "18px",
+      "buttonStyle": "pill",
+      "cardStyle": "soft-shadow",
+      "tone": "cercano, cálido y gastronómico"
+    }
+  },
+  "promotions": [
+    {
+      "id": "menu-dia",
+      "title": "Menú del día",
+      "subtitle": "Plato principal, bebida y café por tiempo limitado.",
+      "badge": "Hoy",
+      "cta": "Ver recomendados",
+      "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1200&q=80",
+      "active": true,
+      "sort": 1,
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "starts_at": "2026-07-14T16:56:57.179Z",
+      "ends_at": "2026-08-04T16:56:57.200Z"
+    },
+    {
+      "id": "brunch",
+      "title": "Brunch de fin de semana",
+      "subtitle": "Opciones dulces, saladas y café de especialidad.",
+      "badge": "Sáb · Dom",
+      "cta": "Explorar brunch",
+      "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=80",
+      "active": true,
+      "sort": 2,
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "starts_at": "2026-07-14T16:56:57.200Z",
+      "ends_at": "2026-08-04T16:56:57.200Z"
+    },
+    {
+      "id": "happy-hour",
+      "title": "Happy hour",
+      "subtitle": "Coctelería, tablas y cervezas para cerrar el día.",
+      "badge": "18:00 - 20:00",
+      "cta": "Ver bar",
+      "image": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1200&q=80",
+      "active": true,
+      "sort": 3,
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "starts_at": "2026-07-14T16:56:57.200Z",
+      "ends_at": "2026-08-04T16:56:57.200Z"
+    }
+  ],
+  "analytics": {
+    "summary": {
+      "scansToday": 184,
+      "scansWeek": 1268,
+      "conversionRate": 18,
+      "avgSessionSeconds": 142
+    },
+    "devices": [
+      {
+        "label": "iPhone",
+        "value": 46
+      },
+      {
+        "label": "Android",
+        "value": 42
+      },
+      {
+        "label": "Desktop",
+        "value": 12
+      }
+    ],
+    "locations": [
+      {
+        "label": "Mesa 01",
+        "value": 212
+      },
+      {
+        "label": "Mesa 07",
+        "value": 168
+      },
+      {
+        "label": "Mostrador",
+        "value": 141
+      },
+      {
+        "label": "Instagram Bio",
+        "value": 96
+      }
+    ],
+    "hours": [
+      {
+        "label": "09:00",
+        "value": 36
+      },
+      {
+        "label": "12:00",
+        "value": 74
+      },
+      {
+        "label": "15:00",
+        "value": 58
+      },
+      {
+        "label": "18:00",
+        "value": 112
+      },
+      {
+        "label": "21:00",
+        "value": 81
+      }
+    ]
   },
   "categories": [
     {
@@ -21,2711 +157,1324 @@
       "name_en": "Coffee Bar"
     },
     {
-      "id": "bebidas",
-      "name": "Bebidas",
-      "emoji": "🥤",
-      "sort": 2,
-      "name_en": "Beverages"
-    },
-    {
-      "id": "bolleria",
-      "name": "Bollería",
-      "emoji": "🥐",
-      "sort": 3,
-      "name_en": "Bakery & Pastries"
-    },
-    {
-      "id": "desayuno",
-      "name": "Desayunos",
+      "id": "brunch",
+      "name": "Brunch",
       "emoji": "🍳",
+      "sort": 2,
+      "name_en": "Brunch"
+    },
+    {
+      "id": "fondos",
+      "name": "Platos de fondo",
+      "emoji": "🍽️",
+      "sort": 3,
+      "name_en": "Mains"
+    },
+    {
+      "id": "sandwiches",
+      "name": "Sándwiches",
+      "emoji": "🥪",
       "sort": 4,
-      "name_en": "Breakfast"
-    },
-    {
-      "id": "empanadas",
-      "name": "Empanadas de Horno",
-      "emoji": "🥟",
-      "sort": 5,
-      "name_en": "Baked Empanadas"
-    },
-    {
-      "id": "helados",
-      "name": "Helados Artesanales",
-      "emoji": "🍦",
-      "sort": 6,
-      "name_en": "Artisan Ice Cream"
-    },
-    {
-      "id": "pasteleria",
-      "name": "Pastelería",
-      "emoji": "🍰",
-      "sort": 7,
-      "name_en": "Patisserie"
+      "name_en": "Sandwiches"
     },
     {
       "id": "postres",
       "name": "Postres",
-      "emoji": "🍮",
-      "sort": 8,
+      "emoji": "🍰",
+      "sort": 5,
       "name_en": "Desserts"
     },
     {
-      "id": "sandwich",
-      "name": "Sándwiches",
-      "emoji": "🥪",
-      "sort": 9,
-      "name_en": "Sandwiches"
+      "id": "bebidas",
+      "name": "Bebidas",
+      "emoji": "🥤",
+      "sort": 6,
+      "name_en": "Drinks"
     },
     {
-      "id": "tortas",
-      "name": "Tortas",
-      "emoji": "🎂",
-      "sort": 10,
-      "name_en": "Cakes"
-    },
-    {
-      "id": "cervezas",
-      "name": "Cervezas",
-      "emoji": "🍺",
-      "sort": 11,
-      "name_en": "Beers"
-    },
-    {
-      "id": "adicionales",
-      "name": "Productos Adicionales",
-      "emoji": "🛍️",
-      "sort": 12,
-      "name_en": "Extras & Add-ons"
+      "id": "bar",
+      "name": "Bar",
+      "emoji": "🍹",
+      "sort": 7,
+      "name_en": "Bar"
     }
   ],
   "products": [
     {
-      "id": "198",
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        },
+        {
+          "id": "grande",
+          "name": "Grande",
+          "price_delta": 700
+        }
+      ],
+      "extras": [
+        {
+          "id": "leche-avena",
+          "name": "Leche de avena",
+          "price": 600
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "espresso-tonic",
       "categoryId": "cafeteria",
-      "name": "Affogato",
-      "description": "Helado artesanal de vainilla Timaukel ahogado en café espresso Lavazza.",
-      "price": 4300,
-      "image": "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=800&q=80",
+      "name": "Espresso tonic",
+      "description": "Espresso doble, tónica premium, hielo y piel de naranja.",
+      "price": 4200,
+      "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=80",
       "available": true,
-      "sort": 1,
-      "name_en": "Affogato",
-      "description_en": "Timaukel artisan vanilla ice cream drowned in Lavazza espresso."
+      "badges": [
+        "nuevo",
+        "recomendado"
+      ],
+      "sort": 1
     },
     {
-      "id": "128",
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        },
+        {
+          "id": "grande",
+          "name": "Grande",
+          "price_delta": 700
+        }
+      ],
+      "extras": [
+        {
+          "id": "leche-avena",
+          "name": "Leche de avena",
+          "price": 600
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "flat-white",
       "categoryId": "cafeteria",
-      "name": "Americano",
-      "description": "Café de grano Lavazza recién molido con agua caliente filtrada.",
-      "price": 2700,
-      "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 2,
-      "name_en": "Americano",
-      "description_en": "Freshly ground Lavazza coffee with hot filtered water."
-    },
-    {
-      "id": "129",
-      "categoryId": "cafeteria",
-      "name": "Americano Doble",
-      "description": "Espresso doble de grano Lavazza recién molido más agua filtrada.",
+      "name": "Flat white",
+      "description": "Café de especialidad con leche texturizada y doble shot.",
       "price": 3600,
-      "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80",
+      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80",
       "available": true,
-      "sort": 3,
-      "name_en": "Double Americano",
-      "description_en": "Double shot of freshly ground Lavazza coffee with filtered water."
+      "badges": [
+        "popular"
+      ],
+      "sort": 2
     },
     {
-      "id": "135",
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        },
+        {
+          "id": "grande",
+          "name": "Grande",
+          "price_delta": 700
+        }
+      ],
+      "extras": [
+        {
+          "id": "leche-avena",
+          "name": "Leche de avena",
+          "price": 600
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "latte-vainilla",
       "categoryId": "cafeteria",
-      "name": "Espresso",
-      "description": "Café de grano Lavazza recién molido, intenso y aromático.",
-      "price": 2100,
-      "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 4,
-      "name_en": "Espresso",
-      "description_en": "Freshly ground Lavazza coffee, bold and aromatic."
-    },
-    {
-      "id": "136",
-      "categoryId": "cafeteria",
-      "name": "Espresso Doble",
-      "description": "Doble carga de café de grano Lavazza recién molido.",
-      "price": 3100,
-      "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 5,
-      "name_en": "Double Espresso",
-      "description_en": "A double dose of freshly ground Lavazza coffee."
-    },
-    {
-      "id": "365",
-      "categoryId": "cafeteria",
-      "name": "Ristretto",
-      "description": "Espresso corto y concentrado, todo el sabor en un sorbo.",
-      "price": 1800,
-      "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 6,
-      "name_en": "Ristretto",
-      "description_en": "Short, concentrated espresso — all the flavor in one sip."
-    },
-    {
-      "id": "396",
-      "categoryId": "cafeteria",
-      "name": "Lungo",
-      "description": "Medida larga de café espresso, suave y aromática.",
-      "price": 2600,
-      "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 7,
-      "name_en": "Lungo",
-      "description_en": "A longer pull of espresso, smooth and aromatic."
-    },
-    {
-      "id": "130",
-      "categoryId": "cafeteria",
-      "name": "Cappuccino",
-      "description": "Espresso con leche vaporizada y una corona de espuma cremosa.",
-      "price": 3200,
-      "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 8,
-      "name_en": "Cappuccino",
-      "description_en": "Espresso with steamed milk and a crown of creamy foam."
-    },
-    {
-      "id": "131",
-      "categoryId": "cafeteria",
-      "name": "Cappuccino Doble",
-      "description": "Doble espresso con leche vaporizada y espuma sedosa.",
-      "price": 4000,
-      "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 9,
-      "name_en": "Double Cappuccino",
-      "description_en": "Double espresso with steamed milk and silky foam."
-    },
-    {
-      "id": "521",
-      "categoryId": "cafeteria",
-      "name": "Cappuccino Vienés",
-      "description": "Cappuccino con canela y crema chantilly.",
-      "price": 4200,
-      "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 10,
-      "name_en": "Viennese Cappuccino",
-      "description_en": "Cappuccino with cinnamon and whipped cream."
-    },
-    {
-      "id": "522",
-      "categoryId": "cafeteria",
-      "name": "Cappuccino Vienés Doble",
-      "description": "Cappuccino doble espresso con canela y crema chantilly.",
-      "price": 5200,
-      "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 11,
-      "name_en": "Double Viennese Cappuccino",
-      "description_en": "Double espresso cappuccino with cinnamon and whipped cream."
-    },
-    {
-      "id": "496",
-      "categoryId": "cafeteria",
-      "name": "Cappuccino Sin Lactosa",
-      "description": "Cappuccino preparado con leche sin lactosa.",
-      "price": 3400,
-      "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 12,
-      "name_en": "Lactose-Free Cappuccino",
-      "description_en": "Cappuccino made with lactose-free milk."
-    },
-    {
-      "id": "30",
-      "categoryId": "cafeteria",
-      "name": "Cappuccino Doble Sin Lactosa",
-      "description": "Doble espresso con leche sin lactosa vaporizada.",
-      "price": 4200,
-      "image": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 13,
-      "name_en": "Double Lactose-Free Cappuccino",
-      "description_en": "Double espresso with steamed lactose-free milk."
-    },
-    {
-      "id": "139",
-      "categoryId": "cafeteria",
-      "name": "Latte",
-      "description": "Espresso suave con abundante leche cremosa vaporizada.",
-      "price": 4000,
-      "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 14,
-      "name_en": "Latte",
-      "description_en": "Smooth espresso with plenty of creamy steamed milk."
-    },
-    {
-      "id": "18",
-      "categoryId": "cafeteria",
-      "name": "Latte Sin Lactosa",
-      "description": "Café latte preparado con leche sin lactosa.",
-      "price": 4200,
-      "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 15,
-      "name_en": "Lactose-Free Latte",
-      "description_en": "Latte made with lactose-free milk."
-    },
-    {
-      "id": "132",
-      "categoryId": "cafeteria",
-      "name": "Café con Leche",
-      "description": "El clásico de siempre: café de grano con leche caliente.",
-      "price": 4000,
-      "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 16,
-      "name_en": "Coffee with Milk",
-      "description_en": "The classic favorite: coffee with hot milk."
-    },
-    {
-      "id": "504",
-      "categoryId": "cafeteria",
-      "name": "Café con Leche Sin Lactosa",
-      "description": "Café de grano con leche sin lactosa caliente.",
-      "price": 4300,
-      "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 17,
-      "name_en": "Lactose-Free Coffee with Milk",
-      "description_en": "Coffee with hot lactose-free milk."
-    },
-    {
-      "id": "133",
-      "categoryId": "cafeteria",
-      "name": "Cortado",
-      "description": "Espresso cortado con un toque justo de leche vaporizada.",
-      "price": 3200,
-      "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 18,
-      "name_en": "Cortado",
-      "description_en": "Espresso cut with just the right touch of steamed milk."
-    },
-    {
-      "id": "134",
-      "categoryId": "cafeteria",
-      "name": "Cortado Doble",
-      "description": "Doble espresso cortado con leche vaporizada.",
-      "price": 4000,
-      "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 19,
-      "name_en": "Double Cortado",
-      "description_en": "Double espresso cut with steamed milk."
-    },
-    {
-      "id": "4",
-      "categoryId": "cafeteria",
-      "name": "Cortado Sin Lactosa",
-      "description": "Cortado preparado con leche sin lactosa.",
-      "price": 3400,
-      "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 20,
-      "name_en": "Lactose-Free Cortado",
-      "description_en": "Cortado made with lactose-free milk."
-    },
-    {
-      "id": "497",
-      "categoryId": "cafeteria",
-      "name": "Cortado Doble Sin Lactosa",
-      "description": "Doble espresso cortado con leche sin lactosa.",
-      "price": 4200,
-      "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 21,
-      "name_en": "Double Lactose-Free Cortado",
-      "description_en": "Double espresso cortado with lactose-free milk."
-    },
-    {
-      "id": "141",
-      "categoryId": "cafeteria",
-      "name": "Macchiato",
-      "description": "Espresso simple manchado con espuma de leche.",
-      "price": 2600,
-      "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 22,
-      "name_en": "Macchiato",
-      "description_en": "Single espresso marked with a touch of milk foam."
-    },
-    {
-      "id": "291",
-      "categoryId": "cafeteria",
-      "name": "Macchiato Doble",
-      "description": "Espresso doble con espuma de leche.",
-      "price": 2800,
-      "image": "https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 23,
-      "name_en": "Double Macchiato",
-      "description_en": "Double espresso with milk foam."
-    },
-    {
-      "id": "140",
-      "categoryId": "cafeteria",
-      "name": "Mocca",
-      "description": "Espresso doble con chocolate caliente, dulce y potente.",
-      "price": 4100,
-      "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 24,
-      "name_en": "Mocha",
-      "description_en": "Double espresso with hot chocolate — sweet and bold."
-    },
-    {
-      "id": "498",
-      "categoryId": "cafeteria",
-      "name": "Mocca Sin Lactosa",
-      "description": "Espresso doble con chocolate caliente y leche sin lactosa.",
-      "price": 4300,
-      "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 25,
-      "name_en": "Lactose-Free Mocha",
-      "description_en": "Double espresso with hot chocolate and lactose-free milk."
-    },
-    {
-      "id": "142",
-      "categoryId": "cafeteria",
-      "name": "Chocolate Caliente",
-      "description": "Chocolate caliente cremoso, reconfortante en cada sorbo.",
-      "price": 4100,
-      "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 26,
-      "name_en": "Hot Chocolate",
-      "description_en": "Creamy hot chocolate, comforting in every sip."
-    },
-    {
-      "id": "374",
-      "categoryId": "cafeteria",
-      "name": "Chocolate Caliente Sin Lactosa",
-      "description": "Chocolate caliente cremoso con leche sin lactosa.",
-      "price": 4300,
-      "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 27,
-      "name_en": "Lactose-Free Hot Chocolate",
-      "description_en": "Creamy hot chocolate made with lactose-free milk."
-    },
-    {
-      "id": "157",
-      "categoryId": "cafeteria",
-      "name": "Café Helado",
-      "description": "Café de grano sobre hielo, refrescante y con carácter.",
-      "price": 5000,
-      "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 28,
-      "name_en": "Iced Coffee",
-      "description_en": "Coffee served over ice, refreshing and full of character."
-    },
-    {
-      "id": "229",
-      "categoryId": "cafeteria",
-      "name": "Café Helado Sin Lactosa",
-      "description": "Café helado preparado con leche sin lactosa.",
-      "price": 5300,
-      "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 29,
-      "name_en": "Lactose-Free Iced Coffee",
-      "description_en": "Iced coffee made with lactose-free milk."
-    },
-    {
-      "id": "460",
-      "categoryId": "cafeteria",
-      "name": "Ice Latte",
-      "description": "Leche fría con hielo y un espresso de café de grano Lavazza.",
-      "price": 4200,
-      "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 30,
-      "name_en": "Iced Latte",
-      "description_en": "Cold milk over ice with a shot of Lavazza espresso."
-    },
-    {
-      "id": "10",
-      "categoryId": "cafeteria",
-      "name": "Ice Latte Sin Lactosa",
-      "description": "Ice latte con leche sin lactosa, fresco y suave.",
-      "price": 4400,
-      "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 31,
-      "name_en": "Lactose-Free Iced Latte",
-      "description_en": "Iced latte with lactose-free milk, cool and smooth."
-    },
-    {
-      "id": "232",
-      "categoryId": "cafeteria",
-      "name": "Frappuccino",
-      "description": "Café frappé cremoso batido con hielo, dulce y refrescante.",
-      "price": 4500,
-      "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 32,
-      "name_en": "Frappuccino",
-      "description_en": "Creamy blended iced coffee, sweet and refreshing."
-    },
-    {
-      "id": "499",
-      "categoryId": "cafeteria",
-      "name": "Frappuccino Sin Lactosa",
-      "description": "Frappuccino batido con hielo y leche sin lactosa.",
-      "price": 4600,
-      "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 33,
-      "name_en": "Lactose-Free Frappuccino",
-      "description_en": "Blended iced frappuccino with lactose-free milk."
-    },
-    {
-      "id": "482",
-      "categoryId": "cafeteria",
-      "name": "Chai Latte",
-      "description": "Té chai especiado con leche vaporizada, aromático y dulce.",
-      "price": 3500,
-      "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 34,
-      "name_en": "Chai Latte",
-      "description_en": "Spiced chai tea with steamed milk, aromatic and sweet."
-    },
-    {
-      "id": "468",
-      "categoryId": "cafeteria",
-      "name": "Chai Latte Sin Lactosa",
-      "description": "Chai latte especiado con leche sin lactosa.",
-      "price": 3600,
-      "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 35,
-      "name_en": "Lactose-Free Chai Latte",
-      "description_en": "Spiced chai latte with lactose-free milk."
-    },
-    {
-      "id": "505",
-      "categoryId": "cafeteria",
-      "name": "Dirty Chai",
-      "description": "Chai latte con un espresso de café en grano: especias y café en una taza.",
-      "price": 4000,
-      "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 36,
-      "name_en": "Dirty Chai",
-      "description_en": "Chai latte with a shot of espresso — spice and coffee in one cup."
-    },
-    {
-      "id": "137",
-      "categoryId": "cafeteria",
-      "name": "Té",
-      "description": "Té de hoja en taza, clásico y reconfortante.",
-      "price": 2000,
-      "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 37,
-      "name_en": "Tea",
-      "description_en": "Loose leaf tea, classic and comforting."
-    },
-    {
-      "id": "138",
-      "categoryId": "cafeteria",
-      "name": "Té con Leche",
-      "description": "Té recién preparado con leche caliente.",
-      "price": 3000,
-      "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 38,
-      "name_en": "Tea with Milk",
-      "description_en": "Freshly brewed tea with hot milk."
-    },
-    {
-      "id": "240",
-      "categoryId": "cafeteria",
-      "name": "Leche Caliente Tazón",
-      "description": "Tazón de leche caliente, simple y acogedor.",
-      "price": 2500,
-      "image": "",
-      "available": true,
-      "sort": 39,
-      "name_en": "Bowl of Hot Milk",
-      "description_en": "A warm bowl of hot milk, simple and cozy."
-    },
-    {
-      "id": "387",
-      "categoryId": "cafeteria",
-      "name": "Leche con Plátano",
-      "description": "Batido natural de leche con plátano fresco.",
-      "price": 4000,
-      "image": "/images/products/387.jpg",
-      "available": true,
-      "sort": 40,
-      "name_en": "Banana Milk",
-      "description_en": "Natural milk shake with fresh banana."
-    },
-    {
-      "id": "31",
-      "categoryId": "cafeteria",
-      "name": "Leche con Plátano Sin Lactosa",
-      "description": "Batido de plátano con leche sin lactosa.",
-      "price": 4300,
-      "image": "/images/products/387.jpg",
-      "available": true,
-      "sort": 41,
-      "name_en": "Lactose-Free Banana Milk",
-      "description_en": "Banana shake made with lactose-free milk."
-    },
-    {
-      "id": "328",
-      "categoryId": "cafeteria",
-      "name": "Nescafé Sachet",
-      "description": "Café instantáneo Nescafé en sachet individual.",
-      "price": 2000,
-      "image": "",
-      "available": true,
-      "sort": 42,
-      "name_en": "Nescafé Sachet",
-      "description_en": "Individual sachet of Nescafé instant coffee."
-    },
-    {
-      "id": "193",
-      "categoryId": "cafeteria",
-      "name": "Adicional Crema Chantilly",
-      "description": "Agrega crema chantilly a tu bebida favorita.",
-      "price": 1000,
-      "image": "",
-      "available": true,
-      "sort": 43,
-      "name_en": "Whipped Cream Add-on",
-      "description_en": "Add whipped cream to your favorite drink."
-    },
-    {
-      "id": "285",
-      "categoryId": "cafeteria",
-      "name": "Adicional de Leche",
-      "description": "Porción extra de leche para tu café.",
-      "price": 600,
-      "image": "",
-      "available": true,
-      "sort": 44,
-      "name_en": "Extra Milk",
-      "description_en": "An extra serving of milk for your coffee."
-    },
-    {
-      "id": "158",
-      "categoryId": "cafeteria",
-      "name": "Adicional Caramelo",
-      "description": "Shot de syrup de caramelo para tu bebida.",
-      "price": 800,
-      "image": "",
-      "available": true,
-      "sort": 45,
-      "name_en": "Caramel Add-on",
-      "description_en": "A shot of caramel syrup for your drink."
-    },
-    {
-      "id": "192",
-      "categoryId": "cafeteria",
-      "name": "Adicional Vainilla",
-      "description": "Shot de syrup de vainilla para tu bebida.",
-      "price": 800,
-      "image": "",
-      "available": true,
-      "sort": 46,
-      "name_en": "Vanilla Add-on",
-      "description_en": "A shot of vanilla syrup for your drink."
-    },
-    {
-      "id": "414",
-      "categoryId": "cafeteria",
-      "name": "Adicional Avellana",
-      "description": "Shot de syrup de avellana para tu bebida.",
-      "price": 800,
-      "image": "",
-      "available": true,
-      "sort": 47,
-      "name_en": "Hazelnut Add-on",
-      "description_en": "A shot of hazelnut syrup for your drink."
-    },
-    {
-      "id": "454",
-      "categoryId": "cafeteria",
-      "name": "Adicional Leche Vegetal",
-      "description": "Cambia a leche vegetal en cualquiera de tus bebidas.",
-      "price": 400,
-      "image": "",
-      "available": true,
-      "sort": 48,
-      "name_en": "Plant-Based Milk Add-on",
-      "description_en": "Switch to plant-based milk in any of your drinks."
-    },
-    {
-      "id": "335",
-      "categoryId": "bebidas",
-      "name": "Agua Mineral Puyehue s/gas Vidrio",
-      "description": "Agua mineral sin gas en botella de vidrio.",
-      "price": 1800,
-      "image": "/images/products/335.jpg",
-      "available": true,
-      "sort": 1,
-      "name_en": "Puyehue Still Mineral Water (Glass Bottle)",
-      "description_en": "Still mineral water in a glass bottle."
-    },
-    {
-      "id": "398",
-      "categoryId": "bebidas",
-      "name": "Agua Mineral Puyehue c/gas Vidrio",
-      "description": "Agua mineral con gas en botella de vidrio.",
-      "price": 1800,
-      "image": "/images/products/335.jpg",
-      "available": true,
-      "sort": 2,
-      "name_en": "Puyehue Sparkling Mineral Water (Glass Bottle)",
-      "description_en": "Sparkling mineral water in a glass bottle."
-    },
-    {
-      "id": "143",
-      "categoryId": "bebidas",
-      "name": "Jugos Naturales",
-      "description": "Jugo de fruta natural recién preparado del día.",
-      "price": 3700,
-      "image": "/images/products/143.jpg",
-      "available": true,
-      "sort": 3,
-      "name_en": "Fresh Juice",
-      "description_en": "Fresh fruit juice made daily."
-    },
-    {
-      "id": "258",
-      "categoryId": "bebidas",
-      "name": "Lipton Té Verde Limón 600 ml",
-      "description": "Té verde frío sabor limón.",
-      "price": 2000,
-      "image": "",
-      "available": true,
-      "sort": 4,
-      "name_en": "Lipton Lemon Green Tea 600 ml",
-      "description_en": "Chilled green tea with lemon flavor."
-    },
-    {
-      "id": "36",
-      "categoryId": "bebidas",
-      "name": "Lipton Té Negro Durazno 600 ml",
-      "description": "Té negro frío sabor durazno.",
-      "price": 2000,
-      "image": "",
-      "available": true,
-      "sort": 5,
-      "name_en": "Lipton Peach Black Tea 600 ml",
-      "description_en": "Chilled black tea with peach flavor."
-    },
-    {
-      "id": "325",
-      "categoryId": "bebidas",
-      "name": "Crush Orange",
-      "description": "Bebida gaseosa sabor naranja.",
-      "price": 1800,
-      "image": "/images/products/325.jpg",
-      "available": true,
-      "sort": 6,
-      "name_en": "Crush Orange",
-      "description_en": "Orange-flavored soda."
-    },
-    {
-      "id": "11",
-      "categoryId": "bebidas",
-      "name": "Red Bull",
-      "description": "Bebida energética.",
-      "price": 2200,
-      "image": "",
-      "available": true,
-      "sort": 7,
-      "name_en": "Red Bull",
-      "description_en": "Energy drink."
-    },
-    {
-      "id": "127",
-      "categoryId": "bebidas",
-      "name": "Gatorlit Frutilla Kiwi 620 ml",
-      "description": "Bebida isotónica sabor frutilla kiwi.",
-      "price": 3000,
-      "image": "",
-      "available": true,
-      "sort": 8,
-      "name_en": "Gatorlit Strawberry Kiwi 620 ml",
-      "description_en": "Strawberry kiwi flavored sports drink."
-    },
-    {
-      "id": "14",
-      "categoryId": "bebidas",
-      "name": "Gatorade 750 ml",
-      "description": "Bebida isotónica Cool Blue o Fruit Tropical.",
-      "price": 2000,
-      "image": "",
-      "available": true,
-      "sort": 9,
-      "name_en": "Gatorade 750 ml",
-      "description_en": "Sports drink, Cool Blue or Fruit Tropical."
-    },
-    {
-      "id": "144",
-      "categoryId": "bebidas",
-      "name": "Ginger Ale Canada Dry 310 cc",
-      "description": "Bebida de jengibre suave y refrescante.",
-      "price": 1800,
-      "image": "/images/products/144.jpg",
-      "available": true,
-      "sort": 10,
-      "name_en": "Canada Dry Ginger Ale 310 cc",
-      "description_en": "Smooth, refreshing ginger ale."
-    },
-    {
-      "id": "264",
-      "categoryId": "bebidas",
-      "name": "Ginger Zero 350 cc",
-      "description": "Ginger ale sin azúcar en lata.",
-      "price": 1800,
-      "image": "/images/products/264.jpg",
-      "available": true,
-      "sort": 11,
-      "name_en": "Ginger Zero 350 cc",
-      "description_en": "Sugar-free ginger ale, canned."
-    },
-    {
-      "id": "261",
-      "categoryId": "bebidas",
-      "name": "Pepsi Normal",
-      "description": "Bebida cola clásica.",
-      "price": 1800,
-      "image": "/images/products/261.jpg",
-      "available": true,
-      "sort": 12,
-      "name_en": "Pepsi Regular",
-      "description_en": "Classic cola soda."
-    },
-    {
-      "id": "375",
-      "categoryId": "bebidas",
-      "name": "Pepsi Zero",
-      "description": "Bebida cola sin azúcar.",
-      "price": 1800,
-      "image": "/images/products/375.jpg",
-      "available": true,
-      "sort": 13,
-      "name_en": "Pepsi Zero",
-      "description_en": "Sugar-free cola soda."
-    },
-    {
-      "id": "500",
-      "categoryId": "bebidas",
-      "name": "Coca Cola Zero 350 cc Lata",
-      "description": "Bebida cola sin azúcar en lata.",
-      "price": 1800,
-      "image": "",
-      "available": true,
-      "sort": 14,
-      "name_en": "Coca-Cola Zero 350 cc Can",
-      "description_en": "Sugar-free cola, canned."
-    },
-    {
-      "id": "360",
-      "categoryId": "bebidas",
-      "name": "Limón Soda Lata 350 cc",
-      "description": "Bebida de limón refrescante en lata.",
-      "price": 1800,
-      "image": "/images/products/360.jpg",
-      "available": true,
-      "sort": 15,
-      "name_en": "Lemon Soda Can 350 cc",
-      "description_en": "Refreshing lemon soda, canned."
-    },
-    {
-      "id": "255",
-      "categoryId": "bebidas",
-      "name": "Kem Piña 350 cc",
-      "description": "Bebida sabor piña en lata.",
-      "price": 1800,
-      "image": "/images/products/255.jpg",
-      "available": true,
-      "sort": 16,
-      "name_en": "Kem Pineapple 350 cc",
-      "description_en": "Pineapple-flavored soda, canned."
-    },
-    {
-      "id": "440",
-      "categoryId": "bebidas",
-      "name": "Bilz Lata 350 cc",
-      "description": "Bebida clásica chilena sabor Bilz.",
-      "price": 1800,
-      "image": "",
-      "available": true,
-      "sort": 17,
-      "name_en": "Bilz Can 350 cc",
-      "description_en": "Classic Chilean Bilz soda."
-    },
-    {
-      "id": "470",
-      "categoryId": "bebidas",
-      "name": "Pap Lata 350 cc",
-      "description": "Bebida clásica chilena sabor Pap.",
-      "price": 1800,
-      "image": "",
-      "available": true,
-      "sort": 18,
-      "name_en": "Pap Can 350 cc",
-      "description_en": "Classic Chilean Pap soda."
-    },
-    {
-      "id": "438",
-      "categoryId": "bebidas",
-      "name": "Score",
-      "description": "Bebida energética Score.",
-      "price": 1800,
-      "image": "",
-      "available": true,
-      "sort": 19,
-      "name_en": "Score",
-      "description_en": "Score energy drink."
-    },
-    {
-      "id": "425",
-      "categoryId": "bebidas",
-      "name": "Jumex Manzana Lata 350 cc",
-      "description": "Néctar de manzana en lata.",
-      "price": 1700,
-      "image": "",
-      "available": true,
-      "sort": 20,
-      "name_en": "Jumex Apple Can 350 cc",
-      "description_en": "Canned apple nectar."
-    },
-    {
-      "id": "427",
-      "categoryId": "bebidas",
-      "name": "Jumex Piña Coco Lata 350 cc",
-      "description": "Néctar de piña coco en lata.",
-      "price": 1700,
-      "image": "",
-      "available": true,
-      "sort": 21,
-      "name_en": "Jumex Pineapple Coconut Can 350 cc",
-      "description_en": "Canned pineapple-coconut nectar."
-    },
-    {
-      "id": "446",
-      "categoryId": "bebidas",
-      "name": "Jumex Guayaba",
-      "description": "Néctar de guayaba en lata.",
-      "price": 1800,
-      "image": "",
-      "available": true,
-      "sort": 22,
-      "name_en": "Jumex Guava",
-      "description_en": "Canned guava nectar."
-    },
-    {
-      "id": "42",
-      "categoryId": "bolleria",
-      "name": "Galletas Caseras",
-      "description": "6 galletas de avena, limón y mantequilla horneadas en casa.",
-      "price": 2300,
-      "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 1,
-      "name_en": "Homemade Cookies",
-      "description_en": "6 house-baked oatmeal, lemon, and butter cookies."
-    },
-    {
-      "id": "80",
-      "categoryId": "bolleria",
-      "name": "Galletas de Pascua",
-      "description": "Galletas artesanales especiadas de pascua.",
-      "price": 3500,
-      "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 2,
-      "name_en": "Chilean Easter Cookies",
-      "description_en": "Artisan spiced Easter cookies."
-    },
-    {
-      "id": "363",
-      "categoryId": "bolleria",
-      "name": "Galletas 3 unid",
-      "description": "Galletas rellenas con manjar y punta de chocolate.",
-      "price": 2000,
-      "image": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 3,
-      "name_en": "Cookies (3 pcs)",
-      "description_en": "Cookies filled with manjar (dulce de leche) and a touch of chocolate."
-    },
-    {
-      "id": "162",
-      "categoryId": "bolleria",
-      "name": "Delicias c/Mermelada",
-      "description": "Galleta artesanal coronada con mermelada.",
-      "price": 1700,
-      "image": "",
-      "available": true,
-      "sort": 4,
-      "name_en": "Jam-Topped Delights",
-      "description_en": "House-made cookie topped with jam."
-    },
-    {
-      "id": "164",
-      "categoryId": "bolleria",
-      "name": "Cocadas 4 unid",
-      "description": "Cocadas artesanales dulces, 4 unidades.",
-      "price": 1700,
-      "image": "/images/products/164.jpg",
-      "available": true,
-      "sort": 5,
-      "name_en": "Cocadas (4 pcs)",
-      "description_en": "Sweet artisan coconut macaroons, 4 pieces."
-    },
-    {
-      "id": "276",
-      "categoryId": "bolleria",
-      "name": "Croissant Chocolate",
-      "description": "Croissant de masa hojaldrada relleno de chocolate.",
-      "price": 2500,
-      "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 6,
-      "name_en": "Chocolate Croissant",
-      "description_en": "Flaky puff pastry croissant filled with chocolate."
-    },
-    {
-      "id": "20",
-      "categoryId": "bolleria",
-      "name": "Media Luna",
-      "description": "Clásica medialuna de masa hojaldrada, dorada y crujiente.",
-      "price": 1200,
-      "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 7,
-      "name_en": "Croissant",
-      "description_en": "Classic flaky puff pastry croissant, golden and crisp."
-    },
-    {
-      "id": "161",
-      "categoryId": "bolleria",
-      "name": "Muffin Vainilla o Chocolate",
-      "description": "Muffin esponjoso a elección: vainilla o chocolate.",
-      "price": 2450,
-      "image": "",
-      "available": true,
-      "sort": 8,
-      "name_en": "Vanilla or Chocolate Muffin",
-      "description_en": "Fluffy muffin, your choice of vanilla or chocolate."
-    },
-    {
-      "id": "477",
-      "categoryId": "bolleria",
-      "name": "Rollo de Canela Glaseado",
-      "description": "Rollo de canela recién horneado con glaseado dulce.",
-      "price": 2900,
-      "image": "",
-      "available": true,
-      "sort": 9,
-      "name_en": "Glazed Cinnamon Roll",
-      "description_en": "Freshly baked cinnamon roll with sweet glaze."
-    },
-    {
-      "id": "478",
-      "categoryId": "bolleria",
-      "name": "Bretzel Relleno con Nutella",
-      "description": "Bretzel relleno con Nutella y nuez.",
-      "price": 3500,
-      "image": "",
-      "available": true,
-      "sort": 10,
-      "name_en": "Nutella-Filled Pretzel",
-      "description_en": "Soft pretzel filled with Nutella and walnuts."
-    },
-    {
-      "id": "484",
-      "categoryId": "bolleria",
-      "name": "Macaron",
-      "description": "Delicado macaron francés de sabores.",
-      "price": 1400,
-      "image": "https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 11,
-      "name_en": "Macaron",
-      "description_en": "Delicate French macaron, assorted flavors."
-    },
-    {
-      "id": "514",
-      "categoryId": "bolleria",
-      "name": "Macarons Corazón Caja",
-      "description": "Caja de 8 macarons con forma de corazón, ideal para regalar.",
-      "price": 8600,
-      "image": "https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 12,
-      "name_en": "Heart Macarons Gift Box",
-      "description_en": "Box of 8 heart-shaped macarons, perfect for gifting."
-    },
-    {
-      "id": "485",
-      "categoryId": "bolleria",
-      "name": "Mini Donuts",
-      "description": "Mini donuts glaseados, perfectos con el café.",
-      "price": 900,
-      "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 13,
-      "name_en": "Mini Donuts",
-      "description_en": "Glazed mini donuts, perfect with coffee."
-    },
-    {
-      "id": "456",
-      "categoryId": "bolleria",
-      "name": "Mini Alfajor Maicena",
-      "description": "Alfajor de maicena con manjar, tamaño bocado.",
-      "price": 980,
-      "image": "",
-      "available": true,
-      "sort": 14,
-      "name_en": "Mini Cornstarch Alfajor",
-      "description_en": "Bite-sized cornstarch alfajor filled with manjar (dulce de leche)."
-    },
-    {
-      "id": "516",
-      "categoryId": "bolleria",
-      "name": "Alfajor Corazón",
-      "description": "Alfajor de maicena con manjar casero en forma de corazón.",
-      "price": 2800,
-      "image": "",
-      "available": true,
-      "sort": 15,
-      "name_en": "Heart-Shaped Alfajor",
-      "description_en": "Heart-shaped cornstarch alfajor with homemade manjar (dulce de leche)."
-    },
-    {
-      "id": "448",
-      "categoryId": "bolleria",
-      "name": "Chilenitos",
-      "description": "Tradicionales chilenitos con manjar y merengue.",
-      "price": 1500,
-      "image": "",
-      "available": true,
-      "sort": 16,
-      "name_en": "Chilenitos",
-      "description_en": "Traditional chilenitos filled with manjar and topped with meringue."
-    },
-    {
-      "id": "501",
-      "categoryId": "bolleria",
-      "name": "Mini Mendocino",
-      "description": "Alfajor mendocino bañado en chocolate, tamaño bocado.",
-      "price": 980,
-      "image": "",
-      "available": true,
-      "sort": 17,
-      "name_en": "Mini Mendoza-Style Alfajor",
-      "description_en": "Bite-sized chocolate-covered Mendoza-style alfajor."
-    },
-    {
-      "id": "428",
-      "categoryId": "bolleria",
-      "name": "Bombón Brownie",
-      "description": "Bocado de brownie bañado en chocolate.",
-      "price": 1000,
-      "image": "",
-      "available": true,
-      "sort": 18,
-      "name_en": "Brownie Bite",
-      "description_en": "Chocolate-covered brownie bite."
-    },
-    {
-      "id": "435",
-      "categoryId": "bolleria",
-      "name": "Maní en Concha",
-      "description": "Maní confitado en concha crujiente.",
-      "price": 2000,
-      "image": "",
-      "available": true,
-      "sort": 19,
-      "name_en": "Shell-Coated Peanuts",
-      "description_en": "Candy-coated peanuts with a crunchy shell."
-    },
-    {
-      "id": "357",
-      "categoryId": "bolleria",
-      "name": "Cheesecake Entero Frambuesa New York",
-      "description": "Cheesecake estilo New York de frambuesa, formato entero.",
-      "price": 24000,
-      "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 20,
-      "name_en": "Whole New York Raspberry Cheesecake",
-      "description_en": "New York-style raspberry cheesecake, whole size."
-    },
-    {
-      "id": "340",
-      "categoryId": "desayuno",
-      "name": "Huevos Revueltos con Pan Ciabatta o Tostadas",
-      "description": "Huevos revueltos cremosos con pan ciabatta o tostadas.",
-      "price": 4000,
-      "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 1,
-      "name_en": "Scrambled Eggs with Ciabatta or Toast",
-      "description_en": "Creamy scrambled eggs with ciabatta bread or toast."
-    },
-    {
-      "id": "342",
-      "categoryId": "desayuno",
-      "name": "Huevos Revueltos con Queso",
-      "description": "Huevos revueltos con queso, acompañados de pan ciabatta o tostadas.",
-      "price": 4600,
-      "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 2,
-      "name_en": "Scrambled Eggs with Cheese",
-      "description_en": "Scrambled eggs with cheese, served with ciabatta bread or toast."
-    },
-    {
-      "id": "353",
-      "categoryId": "desayuno",
-      "name": "Huevos Revueltos con Jamón",
-      "description": "Huevos revueltos con jamón, con pan ciabatta o tostadas.",
-      "price": 4600,
-      "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 3,
-      "name_en": "Scrambled Eggs with Ham",
-      "description_en": "Scrambled eggs with ham, served with ciabatta bread or toast."
-    },
-    {
-      "id": "338",
-      "categoryId": "desayuno",
-      "name": "Huevos Revueltos Jamón y Queso",
-      "description": "Huevos revueltos con jamón y queso, con pan ciabatta o tostadas.",
-      "price": 5200,
-      "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 4,
-      "name_en": "Scrambled Eggs with Ham and Cheese",
-      "description_en": "Scrambled eggs with ham and cheese, served with ciabatta bread or toast."
-    },
-    {
-      "id": "314",
-      "categoryId": "desayuno",
-      "name": "Huevos Revueltos con Tomate",
-      "description": "Huevos revueltos con tomate fresco, con pan ciabatta o tostadas.",
-      "price": 4500,
-      "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 5,
-      "name_en": "Scrambled Eggs with Tomato",
-      "description_en": "Scrambled eggs with fresh tomato, served with ciabatta bread or toast."
-    },
-    {
-      "id": "345",
-      "categoryId": "desayuno",
-      "name": "Huevos Revueltos Tomate, Jamón y Queso",
-      "description": "Huevos revueltos completos: tomate, jamón y queso.",
-      "price": 5500,
-      "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 6,
-      "name_en": "Scrambled Eggs with Tomato, Ham, and Cheese",
-      "description_en": "The complete scramble: tomato, ham, and cheese."
-    },
-    {
-      "id": "507",
-      "categoryId": "desayuno",
-      "name": "Huevos Revueltos con Tocino",
-      "description": "Huevos revueltos con tocino crujiente, con pan ciabatta o tostadas.",
-      "price": 5500,
-      "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 7,
-      "name_en": "Scrambled Eggs with Bacon",
-      "description_en": "Scrambled eggs with crispy bacon, served with ciabatta bread or toast."
-    },
-    {
-      "id": "339",
-      "categoryId": "desayuno",
-      "name": "2 Huevos Fritos con Pan Ciabatta o Tostadas",
-      "description": "Dos huevos fritos a la perfección con pan a elección.",
-      "price": 4000,
-      "image": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 8,
-      "name_en": "2 Fried Eggs with Ciabatta or Toast",
-      "description_en": "Two eggs fried to perfection with your choice of bread."
-    },
-    {
-      "id": "464",
-      "categoryId": "desayuno",
-      "name": "2 Huevos, Tocino y Queso",
-      "description": "Dos huevos con tocino y queso, con ciabatta o tostadas.",
-      "price": 6200,
-      "image": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 9,
-      "name_en": "2 Eggs, Bacon, and Cheese",
-      "description_en": "Two eggs with bacon and cheese, served with ciabatta or toast."
-    },
-    {
-      "id": "327",
-      "categoryId": "desayuno",
-      "name": "Omelette Jamón, Queso y Tomate",
-      "description": "Omelette esponjoso de jamón, queso y tomate con tostadas.",
-      "price": 5800,
-      "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 10,
-      "name_en": "Ham, Cheese, and Tomato Omelette",
-      "description_en": "Fluffy omelette with ham, cheese, and tomato, served with toast."
-    },
-    {
-      "id": "491",
-      "categoryId": "desayuno",
-      "name": "Tostadas Francesas",
-      "description": "2 tostadas francesas con frutas de la estación, syrup y mantequilla.",
-      "price": 5800,
-      "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 11,
-      "name_en": "French Toast",
-      "description_en": "2 slices of French toast with seasonal fruit, syrup, and butter."
-    },
-    {
-      "id": "332",
-      "categoryId": "desayuno",
-      "name": "Tostadas con Palta",
-      "description": "Tostadas con palta fresca molida y un toque de sal.",
-      "price": 4000,
-      "image": "https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 12,
-      "name_en": "Avocado Toast",
-      "description_en": "Toast topped with freshly mashed avocado and a touch of salt."
-    },
-    {
-      "id": "318",
-      "categoryId": "desayuno",
-      "name": "Tostadas con Palta y Queso",
-      "description": "Tostadas con palta cremosa y queso.",
-      "price": 4900,
-      "image": "https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 13,
-      "name_en": "Avocado and Cheese Toast",
-      "description_en": "Toast with creamy avocado and cheese."
-    },
-    {
-      "id": "481",
-      "categoryId": "desayuno",
-      "name": "Tostadas con Palta y Jamón",
-      "description": "Tostadas con palta fresca y jamón.",
-      "price": 4900,
-      "image": "https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 14,
-      "name_en": "Avocado and Ham Toast",
-      "description_en": "Toast with fresh avocado and ham."
-    },
-    {
-      "id": "466",
-      "categoryId": "desayuno",
-      "name": "Tostadas con Mantequilla y Mermelada",
-      "description": "Tostadas tibias con mantequilla y mermelada casera.",
-      "price": 2800,
-      "image": "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 15,
-      "name_en": "Toast with Butter and Jam",
-      "description_en": "Warm toast with butter and homemade jam."
-    },
-    {
-      "id": "380",
-      "categoryId": "desayuno",
-      "name": "Ciabatta Jamón Palta",
-      "description": "Pan ciabatta con jamón y palta fresca.",
-      "price": 3800,
-      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 16,
-      "name_en": "Ciabatta with Ham and Avocado",
-      "description_en": "Ciabatta bread with ham and fresh avocado."
-    },
-    {
-      "id": "462",
-      "categoryId": "desayuno",
-      "name": "Ciabatta Jamón",
-      "description": "Pan ciabatta recién horneado con jamón.",
-      "price": 3000,
-      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 17,
-      "name_en": "Ciabatta with Ham",
-      "description_en": "Freshly baked ciabatta with ham."
-    },
-    {
-      "id": "228",
-      "categoryId": "desayuno",
-      "name": "Adicional Tomate",
-      "description": "Porción extra de tomate fresco.",
-      "price": 800,
-      "image": "",
-      "available": true,
-      "sort": 18,
-      "name_en": "Extra Tomato",
-      "description_en": "An extra serving of fresh tomato."
-    },
-    {
-      "id": "451",
-      "categoryId": "desayuno",
-      "name": "Adicional Tocino",
-      "description": "Porción extra de tocino crujiente.",
-      "price": 1000,
-      "image": "",
-      "available": true,
-      "sort": 19,
-      "name_en": "Extra Bacon",
-      "description_en": "An extra serving of crispy bacon."
-    },
-    {
-      "id": "378",
-      "categoryId": "empanadas",
-      "name": "Empanada Napolitana",
-      "description": "Empanada de horno con jamón, queso y tomate.",
-      "price": 3200,
-      "image": "https://images.unsplash.com/photo-1601000938259-9e92002320b2?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 1,
-      "name_en": "Neapolitan-Style Empanada",
-      "description_en": "Baked empanada with ham, cheese, and tomato."
-    },
-    {
-      "id": "186",
-      "categoryId": "empanadas",
-      "name": "Quiche Individual",
-      "description": "Quiche individual de masa crujiente y relleno cremoso.",
-      "price": 4900,
-      "image": "https://images.unsplash.com/photo-1614088685112-0a760b71a3c8?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 2,
-      "name_en": "Individual Quiche",
-      "description_en": "Individual quiche with a crisp crust and creamy filling."
-    },
-    {
-      "id": "154",
-      "categoryId": "helados",
-      "name": "Barquillo Simple",
-      "description": "Un sabor de helado artesanal en barquillo crujiente.",
-      "price": 3300,
-      "image": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 1,
-      "name_en": "Single Scoop Cone",
-      "description_en": "One flavor of artisan ice cream in a crunchy cone."
-    },
-    {
-      "id": "155",
-      "categoryId": "helados",
-      "name": "Barquillo Doble",
-      "description": "Dos sabores de helado artesanal en barquillo crujiente.",
-      "price": 4300,
-      "image": "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 2,
-      "name_en": "Double Scoop Cone",
-      "description_en": "Two flavors of artisan ice cream in a crunchy cone."
-    },
-    {
-      "id": "272",
-      "categoryId": "helados",
-      "name": "Bolita de Helado",
-      "description": "Una bola de helado artesanal del sabor que elijas.",
-      "price": 3300,
-      "image": "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 3,
-      "name_en": "Single Scoop",
-      "description_en": "One scoop of artisan ice cream, your choice of flavor."
-    },
-    {
-      "id": "156",
-      "categoryId": "helados",
-      "name": "Copa de Helado",
-      "description": "3 sabores de helado artesanal con un barquillo.",
-      "price": 5300,
-      "image": "https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 4,
-      "name_en": "Ice Cream Cup",
-      "description_en": "3 flavors of artisan ice cream with a cone on the side."
-    },
-    {
-      "id": "247",
-      "categoryId": "helados",
-      "name": "Milkshake",
-      "description": "Milkshake con helado artesanal y crema chantilly.",
-      "price": 4690,
-      "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 5,
-      "name_en": "Milkshake",
-      "description_en": "Milkshake made with artisan ice cream and whipped cream."
-    },
-    {
-      "id": "515",
-      "categoryId": "helados",
-      "name": "Barquillo Solo",
-      "description": "Barquillo crujiente para acompañar tu helado.",
-      "price": 300,
-      "image": "",
-      "available": true,
-      "sort": 6,
-      "name_en": "Cone on the Side",
-      "description_en": "A crunchy cone to go with your ice cream."
-    },
-    {
-      "id": "348",
-      "categoryId": "pasteleria",
-      "name": "Pastel Caluga",
-      "description": "Pastel de caluga con capas de manjar y bizcocho.",
-      "price": 4300,
-      "image": "/images/products/348.jpg",
-      "available": true,
-      "sort": 1,
-      "name_en": "Caluga Layer Cake",
-      "description_en": "Caluga (milk caramel) cake with layers of manjar and sponge cake."
-    },
-    {
-      "id": "178",
-      "categoryId": "pasteleria",
-      "name": "Sureño",
-      "description": "Postre sureño con pastelera de arándano o frambuesa.",
-      "price": 15500,
-      "image": "/images/products/178.jpg",
-      "available": true,
-      "sort": 2,
-      "name_en": "Sureño (Southern-Style Pastry)",
-      "description_en": "Southern-style pastry filled with blueberry or raspberry pastry cream."
-    },
-    {
-      "id": "195",
-      "categoryId": "pasteleria",
-      "name": "Trozo Sureño",
-      "description": "Porción individual del clásico postre sureño.",
-      "price": 3000,
-      "image": "/images/products/195.jpg",
-      "available": true,
-      "sort": 3,
-      "name_en": "Sureño Slice",
-      "description_en": "Individual slice of the classic Sureño pastry."
-    },
-    {
-      "id": "170",
-      "categoryId": "pasteleria",
-      "name": "Trozo Cheesecake",
-      "description": "Trozo de cheesecake con mermelada de berries.",
-      "price": 4500,
-      "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 4,
-      "name_en": "Cheesecake Slice",
-      "description_en": "Cheesecake slice topped with mixed berry jam."
-    },
-    {
-      "id": "436",
-      "categoryId": "pasteleria",
-      "name": "Trozo Cheesecake Frambuesa Sin Azúcar",
-      "description": "Cheesecake de frambuesa endulzado sin azúcar.",
-      "price": 4500,
-      "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 5,
-      "name_en": "Sugar-Free Raspberry Cheesecake Slice",
-      "description_en": "Raspberry cheesecake sweetened without sugar."
-    },
-    {
-      "id": "509",
-      "categoryId": "pasteleria",
-      "name": "Trozo Cheesecake Keto",
-      "description": "Con harina de almendra, sin gluten y endulzado con alulosa.",
-      "price": 5000,
-      "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 6,
-      "name_en": "Keto Cheesecake Slice",
-      "description_en": "Made with almond flour, gluten-free, and sweetened with allulose."
-    },
-    {
-      "id": "225",
-      "categoryId": "pasteleria",
-      "name": "Cheesecake Entero 12 pers",
-      "description": "Cheesecake completo para 12 personas.",
-      "price": 37000,
-      "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 7,
-      "name_en": "Whole Cheesecake (Serves 12)",
-      "description_en": "A whole cheesecake, serves 12."
-    },
-    {
-      "id": "177",
-      "categoryId": "pasteleria",
-      "name": "Kuchen Manzana Grande",
-      "description": "Kuchen de manzana familiar, receta tradicional del sur.",
-      "price": 15900,
-      "image": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 8,
-      "name_en": "Large Apple Kuchen",
-      "description_en": "Family-size apple kuchen, a traditional recipe from southern Chile."
-    },
-    {
-      "id": "347",
-      "categoryId": "pasteleria",
-      "name": "Kuchen Manzana Durazno Grande",
-      "description": "Kuchen grande de manzana y durazno.",
-      "price": 30000,
-      "image": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 9,
-      "name_en": "Large Apple Peach Kuchen",
-      "description_en": "Large kuchen with apple and peach."
-    },
-    {
-      "id": "175",
-      "categoryId": "pasteleria",
-      "name": "Kuchen de Nuez Grande",
-      "description": "Kuchen de nuez familiar, dulce y crocante.",
-      "price": 16900,
-      "image": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 10,
-      "name_en": "Large Walnut Kuchen",
-      "description_en": "Family-size walnut kuchen, sweet and crunchy."
-    },
-    {
-      "id": "321",
-      "categoryId": "pasteleria",
-      "name": "Kuchen Nuez Individual",
-      "description": "Porción individual de kuchen de nuez.",
-      "price": 4500,
-      "image": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 11,
-      "name_en": "Individual Walnut Kuchen",
-      "description_en": "Individual serving of walnut kuchen."
-    },
-    {
-      "id": "362",
-      "categoryId": "pasteleria",
-      "name": "Trozo Kuchen Berries Queso Crema",
-      "description": "Kuchen de berries con queso crema.",
-      "price": 3000,
-      "image": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 12,
-      "name_en": "Berry Cream Cheese Kuchen Slice",
-      "description_en": "Kuchen with berries and cream cheese."
-    },
-    {
-      "id": "305",
-      "categoryId": "pasteleria",
-      "name": "Pastel Hoja Chantilly",
-      "description": "Pastel de hojarasca con crema chantilly.",
-      "price": 3850,
-      "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 13,
-      "name_en": "Puff Pastry Cake with Whipped Cream",
-      "description_en": "Layered puff pastry cake with whipped cream."
-    },
-    {
-      "id": "174",
-      "categoryId": "pasteleria",
-      "name": "Mil Hojas Chocolate Individual",
-      "description": "Mil hojas de chocolate en porción individual.",
-      "price": 4100,
-      "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 14,
-      "name_en": "Individual Chocolate Mille-Feuille",
-      "description_en": "Chocolate mille-feuille in an individual portion."
-    },
-    {
-      "id": "457",
-      "categoryId": "pasteleria",
-      "name": "Holandés Mil Hoja Crema y Frambuesa",
-      "description": "Mil hojas holandés con crema y frambuesa.",
-      "price": 4000,
-      "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 15,
-      "name_en": "Dutch-Style Mille-Feuille with Cream and Raspberry",
-      "description_en": "Dutch-style mille-feuille with cream and raspberry."
-    },
-    {
-      "id": "221",
-      "categoryId": "pasteleria",
-      "name": "Panqueque Pastelera",
-      "description": "Panqueque relleno de manjar y crema pastelera.",
-      "price": 4100,
-      "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 16,
-      "name_en": "Pastry Cream-Filled Pancake",
-      "description_en": "Rolled pancake filled with manjar and pastry cream."
-    },
-    {
-      "id": "179",
-      "categoryId": "pasteleria",
-      "name": "Panqueque Manjar Individual",
-      "description": "Panqueque enrollado con manjar casero.",
-      "price": 4100,
-      "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 17,
-      "name_en": "Individual Manjar Pancake Roll",
-      "description_en": "Rolled pancake with homemade manjar (dulce de leche)."
-    },
-    {
-      "id": "413",
-      "categoryId": "pasteleria",
-      "name": "Trozo Tres Leches",
-      "description": "Bizcocho húmedo bañado en tres leches.",
-      "price": 4000,
-      "image": "",
-      "available": true,
-      "sort": 18,
-      "name_en": "Tres Leches Slice",
-      "description_en": "Moist sponge cake soaked in three kinds of milk."
-    },
-    {
-      "id": "167",
-      "categoryId": "pasteleria",
-      "name": "Trozos de Tortas",
-      "description": "Porción de nuestras tortas artesanales del día.",
-      "price": 4600,
-      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 19,
-      "name_en": "Cake Slices",
-      "description_en": "A slice of our artisan cake of the day."
-    },
-    {
-      "id": "350",
-      "categoryId": "pasteleria",
-      "name": "Queque Rectangular",
-      "description": "Queque casero horneado del día.",
-      "price": 4900,
-      "image": "",
-      "available": true,
-      "sort": 20,
-      "name_en": "Rectangular Pound Cake",
-      "description_en": "Homemade pound cake, baked fresh daily."
-    },
-    {
-      "id": "263",
-      "categoryId": "pasteleria",
-      "name": "Torta Coquete 15 pers",
-      "description": "Torta de amapola con cheesecake de frambuesa, 15 personas.",
-      "price": 32000,
-      "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 21,
-      "name_en": "Coquete Cake (Serves 15)",
-      "description_en": "Poppy seed cake with raspberry cheesecake, serves 15."
-    },
-    {
-      "id": "487",
-      "categoryId": "pasteleria",
-      "name": "Torta Cuatro Leches",
-      "description": "Torta húmeda bañada en cuatro leches.",
-      "price": 40000,
-      "image": "",
-      "available": true,
-      "sort": 22,
-      "name_en": "Cuatro Leches Cake",
-      "description_en": "Moist cake soaked in four kinds of milk."
-    },
-    {
-      "id": "19",
-      "categoryId": "postres",
-      "name": "Brownie",
-      "description": "Brownie de chocolate intenso horneado en casa.",
-      "price": 2600,
-      "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 1,
-      "name_en": "Brownie",
-      "description_en": "Rich, house-baked chocolate brownie."
-    },
-    {
-      "id": "27",
-      "categoryId": "postres",
-      "name": "Brownie con Helado",
-      "description": "Brownie tibio con una bola de helado artesanal.",
-      "price": 5300,
-      "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 2,
-      "name_en": "Brownie with Ice Cream",
-      "description_en": "Warm brownie with a scoop of artisan ice cream."
-    },
-    {
-      "id": "373",
-      "categoryId": "postres",
-      "name": "Trozo Kuchen Manzana Durazno",
-      "description": "Porción de kuchen de manzana y durazno.",
-      "price": 4500,
-      "image": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 3,
-      "name_en": "Apple Peach Kuchen Slice",
-      "description_en": "A slice of apple and peach kuchen."
-    },
-    {
-      "id": "511",
-      "categoryId": "postres",
-      "name": "Trozo Kuchen de Manzana con Helado",
-      "description": "Kuchen de manzana con pastelera y helado artesanal.",
-      "price": 5500,
-      "image": "https://images.unsplash.com/photo-1568571780765-9276ac8b75a2?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 4,
-      "name_en": "Apple Kuchen Slice with Ice Cream",
-      "description_en": "Apple kuchen with pastry cream and artisan ice cream."
-    },
-    {
-      "id": "244",
-      "categoryId": "sandwich",
-      "name": "Ciabatta Queso Jamón Palta Tomate Lechuga",
-      "description": "Ciabatta completa: queso, jamón, palta, tomate y lechuga.",
-      "price": 4900,
-      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 1,
-      "name_en": "Ciabatta with Cheese, Ham, Avocado, Tomato, and Lettuce",
-      "description_en": "The full ciabatta: cheese, ham, avocado, tomato, and lettuce."
-    },
-    {
-      "id": "519",
-      "categoryId": "sandwich",
-      "name": "Ciabatta Palta Queso Jamón",
-      "description": "Palta, queso y jamón en pan ciabatta recién horneado.",
-      "price": 4900,
-      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 2,
-      "name_en": "Ciabatta with Avocado, Cheese, and Ham",
-      "description_en": "Avocado, cheese, and ham on freshly baked ciabatta."
-    },
-    {
-      "id": "235",
-      "categoryId": "sandwich",
-      "name": "Ciabatta Atún Mayo Ciboulette Tomate Lechuga",
-      "description": "Atún con mayonesa, ciboulette, tomate y lechuga en ciabatta.",
-      "price": 4900,
-      "image": "https://images.unsplash.com/photo-1540713434306-58505cf1b6fc?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 3,
-      "name_en": "Ciabatta with Tuna, Mayo, Chives, Tomato, and Lettuce",
-      "description_en": "Tuna with mayonnaise, chives, tomato, and lettuce on ciabatta."
-    },
-    {
-      "id": "307",
-      "categoryId": "sandwich",
-      "name": "Ciabatta Ave Mayo Palta",
-      "description": "Ave mayo con palta cremosa en pan ciabatta.",
-      "price": 4800,
-      "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 4,
-      "name_en": "Ciabatta with Chicken Mayo and Avocado",
-      "description_en": "Chicken mayo with creamy avocado on ciabatta bread."
-    },
-    {
-      "id": "513",
-      "categoryId": "sandwich",
-      "name": "Ciabatta Ave Mayo Palta, Tomate y Lechuga",
-      "description": "Ave mayo completa con palta, tomate y lechuga.",
-      "price": 5200,
-      "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 5,
-      "name_en": "Ciabatta with Chicken Mayo, Avocado, Tomato, and Lettuce",
-      "description_en": "The full chicken mayo with avocado, tomato, and lettuce."
-    },
-    {
-      "id": "104",
-      "categoryId": "sandwich",
-      "name": "Ciabatta Ave Mayo",
-      "description": "Clásico ave mayo en pan ciabatta.",
-      "price": 4000,
-      "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 6,
-      "name_en": "Ciabatta with Chicken Mayo",
-      "description_en": "Classic chicken mayo on ciabatta bread."
-    },
-    {
-      "id": "434",
-      "categoryId": "sandwich",
-      "name": "Ciabatta Ave Mayo Pimentón",
-      "description": "Ave mayo con pimentón asado en ciabatta.",
-      "price": 4500,
-      "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 7,
-      "name_en": "Ciabatta with Chicken Mayo and Roasted Pepper",
-      "description_en": "Chicken mayo with roasted pepper on ciabatta."
-    },
-    {
-      "id": "197",
-      "categoryId": "sandwich",
-      "name": "Ciabatta Jamón Queso",
-      "description": "Jamón y queso en pan ciabatta recién horneado.",
-      "price": 4000,
-      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 8,
-      "name_en": "Ciabatta with Ham and Cheese",
-      "description_en": "Ham and cheese on freshly baked ciabatta."
-    },
-    {
-      "id": "311",
-      "categoryId": "sandwich",
-      "name": "Ciabatta Palta",
-      "description": "Pan ciabatta con palta fresca molida.",
+      "name": "Latte de vainilla",
+      "description": "Latte suave con vainilla natural y crema ligera.",
       "price": 3900,
-      "image": "https://images.unsplash.com/photo-1540713434306-58505cf1b6fc?auto=format&fit=crop&w=800&q=80",
+      "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=80",
       "available": true,
-      "sort": 9,
-      "name_en": "Ciabatta with Avocado",
-      "description_en": "Ciabatta bread with freshly mashed avocado."
+      "badges": [],
+      "sort": 3
     },
     {
-      "id": "245",
-      "categoryId": "sandwich",
-      "name": "Ciabatta Palta Queso",
-      "description": "Palta y queso en pan ciabatta.",
-      "price": 4900,
-      "image": "https://images.unsplash.com/photo-1540713434306-58505cf1b6fc?auto=format&fit=crop&w=800&q=80",
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "brunch-club",
+      "categoryId": "brunch",
+      "name": "Brunch club",
+      "description": "Huevos revueltos, palta, tostadas, fruta fresca y café filtrado.",
+      "price": 10900,
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80",
       "available": true,
-      "sort": 10,
-      "name_en": "Ciabatta with Avocado and Cheese",
-      "description_en": "Avocado and cheese on ciabatta bread."
+      "badges": [
+        "recomendado"
+      ],
+      "sort": 1
     },
     {
-      "id": "241",
-      "categoryId": "sandwich",
-      "name": "Ciabatta Queso Caliente",
-      "description": "Queso fundido caliente en pan ciabatta.",
-      "price": 3200,
-      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "tostada-paltra",
+      "categoryId": "brunch",
+      "name": "Tostada de palta",
+      "description": "Pan de masa madre, palta, huevo pochado, semillas y aceite de oliva.",
+      "price": 7900,
+      "image": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=900&q=80",
       "available": true,
-      "sort": 11,
-      "name_en": "Ciabatta with Melted Cheese",
-      "description_en": "Warm melted cheese on ciabatta bread."
+      "badges": [
+        "popular"
+      ],
+      "sort": 2
     },
     {
-      "id": "319",
-      "categoryId": "sandwich",
-      "name": "Miga Queso Jamón Palta Tomate Lechuga",
-      "description": "Sándwich de miga completo con queso, jamón, palta, tomate y lechuga.",
-      "price": 4900,
-      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "panqueques-frutos",
+      "categoryId": "brunch",
+      "name": "Panqueques con frutos rojos",
+      "description": "Panqueques esponjosos con berries, miel y crema batida.",
+      "price": 7200,
+      "image": "https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=900&q=80",
       "available": true,
-      "sort": 12,
-      "name_en": "Miga Sandwich with Cheese, Ham, Avocado, Tomato, and Lettuce",
-      "description_en": "The full miga sandwich with cheese, ham, avocado, tomato, and lettuce."
+      "badges": [
+        "nuevo"
+      ],
+      "sort": 3
     },
     {
-      "id": "520",
-      "categoryId": "sandwich",
-      "name": "Miga Palta Queso Jamón",
-      "description": "Sándwich de miga con palta, queso y jamón.",
-      "price": 5000,
-      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "risotto-hongos",
+      "categoryId": "fondos",
+      "name": "Risotto de hongos",
+      "description": "Arroz cremoso, mix de hongos, parmesano y aceite de trufa.",
+      "price": 11900,
+      "image": "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=900&q=80",
       "available": true,
-      "sort": 13,
-      "name_en": "Miga Sandwich with Avocado, Cheese, and Ham",
-      "description_en": "Miga sandwich with avocado, cheese, and ham."
+      "badges": [
+        "recomendado"
+      ],
+      "sort": 1
     },
     {
-      "id": "302",
-      "categoryId": "sandwich",
-      "name": "Miga Ave Mayo Palta, Tomate y Lechuga",
-      "description": "Miga de ave mayo completa con palta, tomate y lechuga.",
-      "price": 5200,
-      "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=800&q=80",
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "salmon-citrico",
+      "categoryId": "fondos",
+      "name": "Salmón cítrico",
+      "description": "Salmón grillado con papas rústicas, ensalada verde y salsa de limón.",
+      "price": 13900,
+      "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=900&q=80",
       "available": true,
-      "sort": 14,
-      "name_en": "Miga Sandwich with Chicken Mayo, Avocado, Tomato, and Lettuce",
-      "description_en": "The full chicken mayo miga with avocado, tomato, and lettuce."
+      "badges": [
+        "popular"
+      ],
+      "sort": 2
     },
     {
-      "id": "180",
-      "categoryId": "sandwich",
-      "name": "Miga Ave Mayo Palta",
-      "description": "Sándwich de miga con ave mayo y palta.",
-      "price": 4800,
-      "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 15,
-      "name_en": "Miga Sandwich with Chicken Mayo and Avocado",
-      "description_en": "Miga sandwich with chicken mayo and avocado."
-    },
-    {
-      "id": "282",
-      "categoryId": "sandwich",
-      "name": "Miga Ave Mayo Pimentón",
-      "description": "Sándwich de miga con ave mayo y pimentón.",
-      "price": 4600,
-      "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 16,
-      "name_en": "Miga Sandwich with Chicken Mayo and Roasted Pepper",
-      "description_en": "Miga sandwich with chicken mayo and roasted pepper."
-    },
-    {
-      "id": "183",
-      "categoryId": "sandwich",
-      "name": "Miga Ave Mayo",
-      "description": "Clásico sándwich de miga con ave mayo.",
-      "price": 4000,
-      "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 17,
-      "name_en": "Miga Sandwich with Chicken Mayo",
-      "description_en": "Classic miga sandwich with chicken mayo."
-    },
-    {
-      "id": "242",
-      "categoryId": "sandwich",
-      "name": "Miga Ave Palta",
-      "description": "Sándwich de miga con ave y palta.",
-      "price": 4500,
-      "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 18,
-      "name_en": "Miga Sandwich with Chicken and Avocado",
-      "description_en": "Miga sandwich with chicken and avocado."
-    },
-    {
-      "id": "310",
-      "categoryId": "sandwich",
-      "name": "Miga Jamón",
-      "description": "Sándwich de miga con jamón.",
-      "price": 2900,
-      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 19,
-      "name_en": "Miga Sandwich with Ham",
-      "description_en": "Miga sandwich with ham."
-    },
-    {
-      "id": "224",
-      "categoryId": "sandwich",
-      "name": "Miga Jamón Queso",
-      "description": "Sándwich de miga con jamón y queso.",
-      "price": 3500,
-      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 20,
-      "name_en": "Miga Sandwich with Ham and Cheese",
-      "description_en": "Miga sandwich with ham and cheese."
-    },
-    {
-      "id": "351",
-      "categoryId": "sandwich",
-      "name": "Miga Jamón Palta",
-      "description": "Sándwich de miga con jamón y palta.",
-      "price": 4000,
-      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 21,
-      "name_en": "Miga Sandwich with Ham and Avocado",
-      "description_en": "Miga sandwich with ham and avocado."
-    },
-    {
-      "id": "361",
-      "categoryId": "sandwich",
-      "name": "Miga Palta",
-      "description": "Sándwich de miga con palta fresca.",
-      "price": 2900,
-      "image": "https://images.unsplash.com/photo-1540713434306-58505cf1b6fc?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 22,
-      "name_en": "Miga Sandwich with Avocado",
-      "description_en": "Miga sandwich with fresh avocado."
-    },
-    {
-      "id": "359",
-      "categoryId": "sandwich",
-      "name": "Miga Queso Caliente",
-      "description": "Sándwich de miga con queso fundido caliente.",
-      "price": 3200,
-      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 23,
-      "name_en": "Miga Sandwich with Melted Cheese",
-      "description_en": "Miga sandwich with warm melted cheese."
-    },
-    {
-      "id": "494",
-      "categoryId": "sandwich",
-      "name": "Tabla de la Casa",
-      "description": "Tabla de quesos, verduras, aceitunas y salamín para compartir.",
-      "price": 8000,
-      "image": "https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 24,
-      "name_en": "House Sharing Board",
-      "description_en": "A board of cheeses, vegetables, olives, and salami to share."
-    },
-    {
-      "id": "309",
-      "categoryId": "sandwich",
-      "name": "Adicional Palta",
-      "description": "Porción extra de palta.",
-      "price": 1100,
-      "image": "",
-      "available": true,
-      "sort": 25,
-      "name_en": "Extra Avocado",
-      "description_en": "An extra serving of avocado."
-    },
-    {
-      "id": "524",
-      "categoryId": "sandwich",
-      "name": "Adicional Ave",
-      "description": "Porción extra de ave.",
-      "price": 1100,
-      "image": "",
-      "available": true,
-      "sort": 26,
-      "name_en": "Extra Chicken",
-      "description_en": "An extra serving of chicken."
-    },
-    {
-      "id": "286",
-      "categoryId": "tortas",
-      "name": "Torta Mil Hojas 15 a 20 pers",
-      "description": "Torta de mil hojas con manjar casero, para 15 a 20 personas.",
-      "price": 38000,
-      "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 1,
-      "name_en": "Mille-Feuille Cake (Serves 15-20)",
-      "description_en": "Mille-feuille cake with homemade manjar, serves 15 to 20."
-    },
-    {
-      "id": "284",
-      "categoryId": "tortas",
-      "name": "Torta Reina Sofía 15 a 20 pers",
-      "description": "Bizcocho relleno de manjar suave, crema pastelera, mermelada de frambuesa, chantilly y masa choux.",
-      "price": 38900,
-      "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 2,
-      "name_en": "Reina Sofía Cake (Serves 15-20)",
-      "description_en": "Sponge cake filled with smooth manjar, pastry cream, raspberry jam, whipped cream, and choux pastry."
-    },
-    {
-      "id": "217",
-      "categoryId": "tortas",
-      "name": "Torta Amor 15 a 20 pers",
-      "description": "Hojarasca rellena de suave manjar, crema pastelera y crema batida.",
-      "price": 32900,
-      "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 3,
-      "name_en": "Amor Cake (Serves 15-20)",
-      "description_en": "Flaky pastry filled with smooth manjar, pastry cream, and whipped cream."
-    },
-    {
-      "id": "213",
-      "categoryId": "tortas",
-      "name": "Torta Chocolate Belga",
-      "description": "Bizcocho de brownie con chocolate belga, rellena de suave manjar.",
-      "price": 30000,
-      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 4,
-      "name_en": "Belgian Chocolate Cake",
-      "description_en": "Brownie-style sponge cake with Belgian chocolate, filled with smooth manjar."
-    },
-    {
-      "id": "222",
-      "categoryId": "tortas",
-      "name": "Torta Chocolate Manjar",
-      "description": "Torta de chocolate rellena con manjar casero.",
-      "price": 35000,
-      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 5,
-      "name_en": "Chocolate Manjar Cake",
-      "description_en": "Chocolate cake filled with homemade manjar (dulce de leche)."
-    },
-    {
-      "id": "406",
-      "categoryId": "tortas",
-      "name": "Torta Chocolatosa Manjar 10 pers",
-      "description": "Torta chocolatosa con manjar para 10 personas.",
-      "price": 32000,
-      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 6,
-      "name_en": "Chocolate Manjar Cake (Serves 10)",
-      "description_en": "Rich chocolate cake with manjar, serves 10."
-    },
-    {
-      "id": "278",
-      "categoryId": "tortas",
-      "name": "Torta Caluga Frambuesa",
-      "description": "Torta artesanal de caluga con frambuesa.",
-      "price": 32000,
-      "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 7,
-      "name_en": "Caluga Raspberry Cake",
-      "description_en": "Artisan caluga (milk caramel) cake with raspberry."
-    },
-    {
-      "id": "219",
-      "categoryId": "tortas",
-      "name": "Torta Lúcuma Manjar",
-      "description": "Torta de lúcuma con manjar, sabor bien chileno.",
-      "price": 30000,
-      "image": "",
-      "available": true,
-      "sort": 8,
-      "name_en": "Lúcuma Manjar Cake",
-      "description_en": "Lúcuma cake with manjar — a true taste of Chile."
-    },
-    {
-      "id": "216",
-      "categoryId": "tortas",
-      "name": "Cheesecake Tiramisú",
-      "description": "Cheesecake sabor tiramisú, formato 10 a 12 personas.",
-      "price": 22000,
-      "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 9,
-      "name_en": "Tiramisu Cheesecake",
-      "description_en": "Tiramisu-flavored cheesecake, serves 10 to 12."
-    },
-    {
-      "id": "273",
-      "categoryId": "tortas",
-      "name": "Cheesecake Frambuesa Sin Azúcar",
-      "description": "Cheesecake de frambuesa sin azúcar, 10 personas.",
-      "price": 25000,
-      "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 10,
-      "name_en": "Sugar-Free Raspberry Cheesecake",
-      "description_en": "Sugar-free raspberry cheesecake, serves 10."
-    },
-    {
-      "id": "173",
-      "categoryId": "tortas",
-      "name": "Brazo Reina",
-      "description": "Clásico brazo de reina relleno con manjar.",
-      "price": 12000,
-      "image": "",
-      "available": true,
-      "sort": 11,
-      "name_en": "Brazo de Reina (Swiss Roll)",
-      "description_en": "Classic rolled sponge cake filled with manjar."
-    },
-    {
-      "id": "294",
-      "categoryId": "cervezas",
-      "name": "Cerveza Austral Calafate",
-      "description": "Cerveza austral con calafate patagónico.",
-      "price": 3900,
-      "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 1,
-      "name_en": "Austral Calafate Beer",
-      "description_en": "Austral beer brewed with Patagonian calafate berries."
-    },
-    {
-      "id": "518",
-      "categoryId": "cervezas",
-      "name": "Cerveza Kunstmann Lager Blanc 330 cc",
-      "description": "Lager blanca Kunstmann, suave y refrescante.",
-      "price": 3900,
-      "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 2,
-      "name_en": "Kunstmann Lager Blanc 330 cc",
-      "description_en": "Kunstmann white lager, smooth and refreshing."
-    },
-    {
-      "id": "151",
-      "categoryId": "cervezas",
-      "name": "Cerveza Kunstmann Lager Sin Alcohol",
-      "description": "Lager Kunstmann sin alcohol.",
-      "price": 3200,
-      "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 3,
-      "name_en": "Kunstmann Non-Alcoholic Lager",
-      "description_en": "Kunstmann lager, alcohol-free."
-    },
-    {
-      "id": "148",
-      "categoryId": "cervezas",
-      "name": "Kunstmann Bock Negra",
-      "description": "Cerveza negra Kunstmann Bock, intensa y tostada.",
-      "price": 3200,
-      "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 4,
-      "name_en": "Kunstmann Bock Negra",
-      "description_en": "Kunstmann Bock dark beer, bold and toasty."
-    },
-    {
-      "id": "147",
-      "categoryId": "cervezas",
-      "name": "Cerveza Torobayo 330 cc",
-      "description": "Cerveza artesanal Torobayo.",
-      "price": 3500,
-      "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 5,
-      "name_en": "Torobayo Beer 330 cc",
-      "description_en": "Torobayo craft beer."
-    },
-    {
-      "id": "257",
-      "categoryId": "cervezas",
-      "name": "Cerveza Torobayo 500 cc",
-      "description": "Cerveza artesanal Torobayo formato 500 cc.",
-      "price": 5000,
-      "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 6,
-      "name_en": "Torobayo Beer 500 cc",
-      "description_en": "Torobayo craft beer, 500 cc."
-    },
-    {
-      "id": "381",
-      "categoryId": "cervezas",
-      "name": "Cerveza Dolbek 330 cc",
-      "description": "Cerveza negra Dolbek.",
-      "price": 3500,
-      "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 7,
-      "name_en": "Dolbek Beer 330 cc",
-      "description_en": "Dolbek dark beer."
-    },
-    {
-      "id": "488",
-      "categoryId": "cervezas",
-      "name": "Cerveza Dolbek 500 cc",
-      "description": "Cerveza artesanal Dolbek formato 500 cc.",
-      "price": 5000,
-      "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 8,
-      "name_en": "Dolbek Beer 500 cc",
-      "description_en": "Dolbek craft beer, 500 cc."
-    },
-    {
-      "id": "149",
-      "categoryId": "cervezas",
-      "name": "Cerveza Heineken",
-      "description": "Cerveza lager Heineken.",
-      "price": 2900,
-      "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 9,
-      "name_en": "Heineken",
-      "description_en": "Heineken lager beer."
-    },
-    {
-      "id": "150",
-      "categoryId": "cervezas",
-      "name": "Cerveza Coors",
-      "description": "Cerveza lager Coors.",
-      "price": 2900,
-      "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 10,
-      "name_en": "Coors",
-      "description_en": "Coors lager beer."
-    },
-    {
-      "id": "372",
-      "categoryId": "cervezas",
-      "name": "Cerveza Royal",
-      "description": "Cerveza lager Royal.",
-      "price": 2900,
-      "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 11,
-      "name_en": "Royal Beer",
-      "description_en": "Royal lager beer."
-    },
-    {
-      "id": "358",
-      "categoryId": "cervezas",
-      "name": "Cerveza Sol",
-      "description": "Cerveza clara Sol.",
-      "price": 2900,
-      "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 12,
-      "name_en": "Sol Beer",
-      "description_en": "Sol pale beer."
-    },
-    {
-      "id": "343",
-      "categoryId": "cervezas",
-      "name": "Lemon Stones 470 cc",
-      "description": "Mix de cerveza con limón, 2,5° GL.",
-      "price": 2500,
-      "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 13,
-      "name_en": "Lemon Stones 470 cc",
-      "description_en": "Beer mix with lemon, 2.5% ABV."
-    },
-    {
-      "id": "403",
-      "categoryId": "cervezas",
-      "name": "Malta",
-      "description": "Cerveza malta, dulce y tostada.",
-      "price": 2900,
-      "image": "https://images.unsplash.com/photo-1608270586620-248524c67de9?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 14,
-      "name_en": "Malta",
-      "description_en": "Malt beer, sweet and toasty."
-    },
-    {
-      "id": "489",
-      "categoryId": "cervezas",
-      "name": "Michelada",
-      "description": "Prepara tu cerveza con limón, sal y tabasco.",
-      "price": 1000,
-      "image": "",
-      "available": true,
-      "sort": 15,
-      "name_en": "Michelada",
-      "description_en": "Build your own beer with lemon, salt, and hot sauce."
-    },
-    {
-      "id": "492",
-      "categoryId": "cervezas",
-      "name": "Chelada",
-      "description": "Prepara tu cerveza con limón y sal.",
-      "price": 900,
-      "image": "",
-      "available": true,
-      "sort": 16,
-      "name_en": "Chelada",
-      "description_en": "Build your own beer with lemon and salt."
-    },
-    {
-      "id": "445",
-      "categoryId": "adicionales",
-      "name": "Sopa del Día y Ensalada",
-      "description": "Sopa casera del día con tostadas, acompañada de ensalada.",
-      "price": 4500,
-      "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 1,
-      "name_en": "Soup of the Day and Salad",
-      "description_en": "Homemade soup of the day with toast, served with a side salad."
-    },
-    {
-      "id": "199",
-      "categoryId": "adicionales",
-      "name": "Café de Grano 1 kg Lavazza",
-      "description": "Café de grano Lavazza para preparar en casa, 1 kilo.",
-      "price": 38000,
-      "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 2,
-      "name_en": "Lavazza Whole Bean Coffee 1 kg",
-      "description_en": "Lavazza whole bean coffee for home brewing, 1 kilo."
-    },
-    {
-      "id": "262",
-      "categoryId": "adicionales",
-      "name": "Café Molido Filtro Clásico Lavazza",
-      "description": "Café molido Lavazza para filtro.",
-      "price": 12500,
-      "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 3,
-      "name_en": "Lavazza Classic Ground Filter Coffee",
-      "description_en": "Lavazza ground coffee for filter brewing."
-    },
-    {
-      "id": "200",
-      "categoryId": "adicionales",
-      "name": "Café Prontissimo Intenso 95 g",
-      "description": "Café instantáneo Lavazza Prontissimo Intenso.",
-      "price": 13600,
-      "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 4,
-      "name_en": "Lavazza Prontissimo Intenso Instant Coffee 95 g",
-      "description_en": "Lavazza Prontissimo Intenso instant coffee."
-    },
-    {
-      "id": "386",
-      "categoryId": "adicionales",
-      "name": "Cafetera Francesa Los Boldos",
-      "description": "Cafetera de vidrio tipo prensa francesa.",
-      "price": 22000,
-      "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 5,
-      "name_en": "Los Boldos French Press",
-      "description_en": "Glass French press coffee maker."
-    },
-    {
-      "id": "450",
-      "categoryId": "adicionales",
-      "name": "Infusiones Palo de Agua",
-      "description": "Infusión premium: 10 g para 8 porciones de 250 cc.",
-      "price": 2600,
-      "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 6,
-      "name_en": "Palo de Agua Herbal Tea",
-      "description_en": "Premium herbal infusion: 10 g makes 8 servings of 250 cc."
-    },
-    {
-      "id": "249",
-      "categoryId": "adicionales",
-      "name": "Aceite de Oliva Aroma Trufa Blanca 250 ml",
-      "description": "Aceite de oliva extra virgen con lámina de trufa blanca y lámina de oro comestible.",
-      "price": 14500,
-      "image": "",
-      "available": true,
-      "sort": 7,
-      "name_en": "White Truffle-Infused Olive Oil 250 ml",
-      "description_en": "Extra virgin olive oil with white truffle slice and edible gold leaf."
-    },
-    {
-      "id": "63",
-      "categoryId": "adicionales",
-      "name": "Aceite de Oliva Aroma Trufa Negra 250 ml",
-      "description": "Aceite de oliva extra virgen con lámina de trufa negra y lámina de oro comestible.",
-      "price": 14500,
-      "image": "",
-      "available": true,
-      "sort": 8,
-      "name_en": "Black Truffle-Infused Olive Oil 250 ml",
-      "description_en": "Extra virgin olive oil with black truffle slice and edible gold leaf."
-    },
-    {
-      "id": "430",
-      "categoryId": "adicionales",
-      "name": "Aceite de Oliva Aroma Trufa Blanca 50 ml",
-      "description": "Aceite de oliva extra virgen con aroma a trufa blanca, formato 50 ml.",
-      "price": 7500,
-      "image": "",
-      "available": true,
-      "sort": 9,
-      "name_en": "White Truffle-Infused Olive Oil 50 ml",
-      "description_en": "Extra virgin olive oil with white truffle aroma, 50 ml."
-    },
-    {
-      "id": "194",
-      "categoryId": "adicionales",
-      "name": "Aceite de Oliva Aroma Trufa Negra 50 ml",
-      "description": "Aceite de oliva extra virgen con aroma a trufa negra, formato 50 ml.",
-      "price": 7500,
-      "image": "",
-      "available": true,
-      "sort": 10,
-      "name_en": "Black Truffle-Infused Olive Oil 50 ml",
-      "description_en": "Extra virgin olive oil with black truffle aroma, 50 ml."
-    },
-    {
-      "id": "204",
-      "categoryId": "adicionales",
-      "name": "Reducción de Aceto Balsámico Trufado 250 ml",
-      "description": "Vinagre balsámico de Módena italiano con aroma natural a trufa blanca.",
-      "price": 9500,
-      "image": "",
-      "available": true,
-      "sort": 11,
-      "name_en": "Truffle Balsamic Vinegar Reduction 250 ml",
-      "description_en": "Italian balsamic vinegar of Modena with natural white truffle aroma."
-    },
-    {
-      "id": "326",
-      "categoryId": "adicionales",
-      "name": "Reducción de Aceto Balsámico Trufado 50 ml",
-      "description": "Reducción de aceto balsámico trufado, formato 50 ml.",
-      "price": 6890,
-      "image": "",
-      "available": true,
-      "sort": 12,
-      "name_en": "Truffle Balsamic Vinegar Reduction 50 ml",
-      "description_en": "Truffle-infused balsamic vinegar reduction, 50 ml."
-    },
-    {
-      "id": "334",
-      "categoryId": "adicionales",
-      "name": "Paté de Morchelas Sabor Trufas 125 g",
-      "description": "Paté gourmet de morchelas con sabor a trufa.",
-      "price": 10000,
-      "image": "",
-      "available": true,
-      "sort": 13,
-      "name_en": "Morel Mushroom Pâté, Truffle Flavor 125 g",
-      "description_en": "Gourmet morel mushroom pâté with truffle flavor."
-    },
-    {
-      "id": "191",
-      "categoryId": "adicionales",
-      "name": "Paté de Morchelas Sabor Oporto 125 g",
-      "description": "Paté gourmet de morchelas al oporto.",
-      "price": 9250,
-      "image": "",
-      "available": true,
-      "sort": 14,
-      "name_en": "Morel Mushroom Pâté, Port Wine Flavor 125 g",
-      "description_en": "Gourmet morel mushroom pâté with port wine."
-    },
-    {
-      "id": "371",
-      "categoryId": "adicionales",
-      "name": "Trufa Negra en Conserva",
-      "description": "Trufa negra en conserva, delicatessen gourmet.",
-      "price": 11600,
-      "image": "",
-      "available": true,
-      "sort": 15,
-      "name_en": "Preserved Black Truffle",
-      "description_en": "Preserved black truffle, gourmet delicacy."
-    },
-    {
-      "id": "206",
-      "categoryId": "adicionales",
-      "name": "Queso Gouda",
-      "description": "Queso gouda endulzado con dátiles.",
-      "price": 6200,
-      "image": "https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 16,
-      "name_en": "Gouda Cheese",
-      "description_en": "Gouda cheese sweetened with dates."
-    },
-    {
-      "id": "201",
-      "categoryId": "adicionales",
-      "name": "Miel Pura 500 g",
-      "description": "Miel pura de abeja, 500 gramos.",
-      "price": 5900,
-      "image": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80",
-      "available": true,
-      "sort": 17,
-      "name_en": "Pure Honey 500 g",
-      "description_en": "Pure honey, 500 grams."
-    },
-    {
-      "id": "483",
-      "categoryId": "adicionales",
-      "name": "Miel Pura 1 kg",
-      "description": "Miel pura de abeja, formato 1 kilo.",
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "bowl-mediterraneo",
+      "categoryId": "fondos",
+      "name": "Bowl mediterráneo",
+      "description": "Quinoa, hummus, vegetales asados, hojas verdes y dressing de yogurt.",
       "price": 8900,
-      "image": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80",
+      "image": "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=900&q=80",
       "available": true,
-      "sort": 18,
-      "name_en": "Pure Honey 1 kg",
-      "description_en": "Pure honey, 1 kilo."
+      "badges": [
+        "nuevo"
+      ],
+      "sort": 3
     },
     {
-      "id": "349",
-      "categoryId": "adicionales",
-      "name": "Espumantes de la Casa",
-      "description": "Espumantes Forestal Brut y Yapai.",
-      "price": 15000,
-      "image": "",
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "sandwich-brisket",
+      "categoryId": "sandwiches",
+      "name": "Sándwich brisket",
+      "description": "Brisket cocido lentamente, cebolla caramelizada, queso y salsa ahumada.",
+      "price": 9800,
+      "image": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=900&q=80",
       "available": true,
-      "sort": 19,
-      "name_en": "House Sparkling Wines",
-      "description_en": "Forestal Brut and Yapai sparkling wines."
+      "badges": [
+        "popular"
+      ],
+      "sort": 1
     },
     {
-      "id": "366",
-      "categoryId": "adicionales",
-      "name": "Caramelo Full",
-      "description": "Caramelo artesanal.",
-      "price": 500,
-      "image": "",
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "croissant-pollo",
+      "categoryId": "sandwiches",
+      "name": "Croissant de pollo",
+      "description": "Croissant artesanal con pollo, hojas verdes, tomate y mayonesa casera.",
+      "price": 7600,
+      "image": "https://images.unsplash.com/photo-1603903631889-b5f3ba4d5b9b?auto=format&fit=crop&w=900&q=80",
       "available": true,
-      "sort": 20,
-      "name_en": "Full Caramel Candy",
-      "description_en": "Artisan caramel candy."
+      "badges": [],
+      "sort": 2
     },
     {
-      "id": "473",
-      "categoryId": "adicionales",
-      "name": "Mentitas Florete 25 g",
-      "description": "Mentitas refrescantes Florete.",
-      "price": 650,
-      "image": "",
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [
+        "gluten",
+        "lácteos"
+      ],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "cheesecake-maracuya",
+      "categoryId": "postres",
+      "name": "Cheesecake de maracuyá",
+      "description": "Base crocante, crema suave y salsa ácida de maracuyá.",
+      "price": 5200,
+      "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=900&q=80",
       "available": true,
-      "sort": 21,
-      "name_en": "Florete Mints 25 g",
-      "description_en": "Florete refreshing mints."
+      "badges": [
+        "recomendado"
+      ],
+      "sort": 1
     },
     {
-      "id": "248",
-      "categoryId": "adicionales",
-      "name": "Papelillos Ronson",
-      "description": "Papelillos para tabaco Ronson.",
-      "price": 1500,
-      "image": "",
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [
+        "gluten",
+        "lácteos"
+      ],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "torta-chocolate",
+      "categoryId": "postres",
+      "name": "Torta húmeda de chocolate",
+      "description": "Bizcocho de cacao, ganache intenso y crema inglesa.",
+      "price": 5900,
+      "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=80",
       "available": true,
-      "sort": 22,
-      "name_en": "Ronson Rolling Papers",
-      "description_en": "Ronson rolling papers."
+      "badges": [
+        "popular"
+      ],
+      "sort": 2
     },
     {
-      "id": "502",
-      "categoryId": "adicionales",
-      "name": "Pesa de Cocina Digital",
-      "description": "Pesa digital de cocina de precisión.",
-      "price": 11400,
-      "image": "",
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "limonada-menta",
+      "categoryId": "bebidas",
+      "name": "Limonada menta jengibre",
+      "description": "Limón natural, menta fresca, jengibre y hielo frappé.",
+      "price": 3900,
+      "image": "https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=900&q=80",
       "available": true,
-      "sort": 23,
-      "name_en": "Digital Kitchen Scale",
-      "description_en": "Precision digital kitchen scale."
+      "badges": [
+        "popular"
+      ],
+      "sort": 1
+    },
+    {
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "kombucha-berries",
+      "categoryId": "bebidas",
+      "name": "Kombucha berries",
+      "description": "Kombucha fría con frutos rojos, notas florales y burbuja natural.",
+      "price": 4600,
+      "image": "https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=900&q=80",
+      "available": true,
+      "badges": [
+        "nuevo"
+      ],
+      "sort": 2
+    },
+    {
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "spritz-casa",
+      "categoryId": "bar",
+      "name": "Spritz de la casa",
+      "description": "Aperitivo cítrico, espumante, soda y naranja fresca.",
+      "price": 6900,
+      "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=900&q=80",
+      "available": true,
+      "badges": [
+        "recomendado"
+      ],
+      "sort": 1
+    },
+    {
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "tabla-compartir",
+      "categoryId": "bar",
+      "name": "Tabla para compartir",
+      "description": "Quesos, charcutería, frutos secos, panes y encurtidos.",
+      "price": 14900,
+      "image": "https://images.unsplash.com/photo-1541544181051-e46607bc22a4?auto=format&fit=crop&w=900&q=80",
+      "available": true,
+      "badges": [
+        "popular"
+      ],
+      "sort": 2
+    },
+    {
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        },
+        {
+          "id": "grande",
+          "name": "Grande",
+          "price_delta": 700
+        }
+      ],
+      "extras": [
+        {
+          "id": "leche-avena",
+          "name": "Leche de avena",
+          "price": 600
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "roll-canela",
+      "categoryId": "cafeteria",
+      "name": "Roll de canela",
+      "description": "Masa suave, canela, glaseado cítrico y nueces tostadas.",
+      "price": 3900,
+      "image": "https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=900&q=80",
+      "available": true,
+      "badges": [
+        "popular"
+      ],
+      "sort": 4
+    },
+    {
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        },
+        {
+          "id": "grande",
+          "name": "Grande",
+          "price_delta": 700
+        }
+      ],
+      "extras": [
+        {
+          "id": "leche-avena",
+          "name": "Leche de avena",
+          "price": 600
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "chai-avena",
+      "categoryId": "cafeteria",
+      "name": "Chai latte avena",
+      "description": "Té especiado con leche de avena, canela y cardamomo.",
+      "price": 4100,
+      "image": "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?auto=format&fit=crop&w=900&q=80",
+      "available": true,
+      "badges": [
+        "nuevo"
+      ],
+      "sort": 5
+    },
+    {
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "granola-casa",
+      "categoryId": "brunch",
+      "name": "Granola de la casa",
+      "description": "Yogurt natural, granola, fruta de estación y miel.",
+      "price": 5900,
+      "image": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=900&q=80",
+      "available": true,
+      "badges": [
+        "recomendado"
+      ],
+      "sort": 4
+    },
+    {
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [],
+      "dietary": [
+        "vegano"
+      ],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "ensalada-quinoa",
+      "categoryId": "fondos",
+      "name": "Ensalada tibia de quinoa",
+      "description": "Quinoa, zapallo asado, hojas verdes, almendras y dressing cítrico.",
+      "price": 8600,
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80",
+      "available": true,
+      "badges": [
+        "nuevo"
+      ],
+      "sort": 4
+    },
+    {
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "gnocchi-pesto",
+      "categoryId": "fondos",
+      "name": "Gnocchi al pesto",
+      "description": "Gnocchi de papa, pesto de albahaca, tomates confitados y parmesano.",
+      "price": 9900,
+      "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&q=80",
+      "available": true,
+      "badges": [],
+      "sort": 5
+    },
+    {
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [],
+      "dietary": [
+        "vegano"
+      ],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "sandwich-veggie",
+      "categoryId": "sandwiches",
+      "name": "Sándwich veggie",
+      "description": "Pan ciabatta, hummus, berenjena asada, rúcula y tomate.",
+      "price": 7900,
+      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=80",
+      "available": true,
+      "badges": [
+        "recomendado"
+      ],
+      "sort": 3
+    },
+    {
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [
+        "gluten",
+        "lácteos"
+      ],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "brownie-nueces",
+      "categoryId": "postres",
+      "name": "Brownie con nueces",
+      "description": "Chocolate intenso, nueces y salsa tibia de manjar.",
+      "price": 4700,
+      "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=80",
+      "available": true,
+      "badges": [
+        "popular"
+      ],
+      "sort": 3
+    },
+    {
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [
+        "gluten",
+        "lácteos"
+      ],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "tarta-limon",
+      "categoryId": "postres",
+      "name": "Tarta de limón",
+      "description": "Masa sablé, crema de limón y merengue italiano.",
+      "price": 5100,
+      "image": "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=900&q=80",
+      "available": true,
+      "badges": [],
+      "sort": 4
+    },
+    {
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "jugo-temporada",
+      "categoryId": "bebidas",
+      "name": "Jugo de temporada",
+      "description": "Fruta de estación prensada al momento.",
+      "price": 4300,
+      "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=900&q=80",
+      "available": true,
+      "badges": [
+        "nuevo"
+      ],
+      "sort": 3
+    },
+    {
+      "business_id": "cafe-raiz",
+      "branch_ids": [
+        "providencia",
+        "nunoa"
+      ],
+      "variants": [
+        {
+          "id": "regular",
+          "name": "Regular",
+          "price_delta": 0
+        }
+      ],
+      "extras": [
+        {
+          "id": "extra-palta",
+          "name": "Extra palta",
+          "price": 1200
+        }
+      ],
+      "allergens": [],
+      "dietary": [],
+      "available_days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ],
+      "available_hours": null,
+      "seasonal": false,
+      "sold_out": false,
+      "id": "negroni-cafe",
+      "categoryId": "bar",
+      "name": "Negroni café",
+      "description": "Gin, vermut, bitter y cold brew de la casa.",
+      "price": 7900,
+      "image": "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=900&q=80",
+      "available": true,
+      "badges": [
+        "recomendado"
+      ],
+      "sort": 3
     }
   ]
 }

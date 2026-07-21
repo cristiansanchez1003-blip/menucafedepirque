@@ -1,130 +1,122 @@
-# ☕ El Café de Pirque — Menú Digital
+# Cafe Raiz - Demo SaaS gastronomica
 
-Menú digital premium para **El Café de Pirque** (Av. Ramón Subercaseaux 560, Local 1, Pirque, Chile). Los clientes escanean un QR y ven el menú en su celular; Marcela administra productos, precios, fotos y datos del local desde un panel privado con usuario y contraseña.
+Demo funcional de un ecosistema digital para cafeterias, restaurantes y bares. La carta publica es la puerta de entrada, pero el producto tambien administra sucursales, QR, promociones, reservas, pedidos, newsletter, resenas, integraciones, salud digital, metricas y recomendaciones accionables.
 
-Construido con **Next.js 14 (App Router)**, **Tailwind CSS**, **Framer Motion** y **qrcode.react**. **Sin Supabase ni servicios pagados**: el menú vive en `data/menu.json` dentro de este repositorio y el panel admin lo edita mediante la **API de GitHub** (gratis, con historial de cambios). Las fotos se suben a **Cloudinary** (plan gratuito).
+Stack: **Next.js 14**, **Tailwind CSS**, **Framer Motion**, **qrcode.react** y persistencia JSON respaldada por GitHub para demos desplegadas en Vercel.
 
----
+## Rutas publicas
 
-## ✨ Funcionalidades
+- `/menu`: carta publica responsive.
+- `/menu?branch=providencia&qr=mesa-01`: carta con sucursal y QR de origen.
+- `/api/track`: registra eventos de QR, vistas, clics e interacciones.
+- `/api/newsletter`: guarda suscriptores con consentimiento.
+- `/api/reservations`: guarda solicitudes de reserva.
+- `/api/orders`: guarda pedidos con pago al retirar.
 
-- **Menú público** (`/menu`) — 12 categorías y 219 productos reales (importados desde el menú de Fudo con sus precios exactos). Hero con el logotipo, navegación de categorías con scrollspy, modal de producto tipo bottom-sheet con gesto de arrastre, animaciones de scroll, footer con canales de contacto (WhatsApp, Instagram, correo, Google Maps) y botón flotante de WhatsApp. 100 % mobile-first.
-- **Panel admin** (`/admin`) — login con usuario y contraseña (cookie httpOnly firmada con HMAC).
-  - Productos: crear, editar, eliminar, reordenar, disponibilidad, búsqueda y filtro por categoría.
-  - Imágenes: subida directa a Cloudinary o pegando una URL.
-  - Categorías: crear, renombrar, cambiar emoji, eliminar.
-  - Ajustes del local: horario, dirección, WhatsApp, Instagram, correo, eslogan.
-  - Código QR descargable en PNG.
-- **Persistencia sin base de datos**: cada "Guardar cambios" hace un commit de `data/menu.json` al repo vía API de GitHub. Los cambios se ven en el menú público en segundos (no requiere redeploy).
+## Rutas administrativas
 
----
+- `/admin/login`: inicio de sesion.
+- `/admin/dashboard`: panel SaaS con Inicio, Carta, Promos, Operaciones, Clientes, Sucursales, Analitica, Crecimiento, Integraciones, Salud, Ajustes y QR.
+- `/api/platform`: datos operativos, metricas y recomendaciones.
+- `/api/admin/menu`: guarda carta y configuracion.
+- `/api/admin/subscribers/export`: exporta newsletter en CSV.
 
-## 🎨 Identidad visual (tomada del logotipo)
+## Usuarios demo y roles
 
-| Uso | Color |
-|-----|-------|
-| Fondo | `#F7F4EE` (papel cálido) |
-| Tinta / principal | `#24282A` (charcoal del logo) |
-| Menta | `#BFE5CB` (taza del logo) |
-| Verde profundo | `#2F6B47` (precios y acciones) |
+La autenticacion actual usa `ADMIN_USER` y `ADMIN_PASSWORD`. El seed crea usuarios/roles dentro de `data/platform.json` para modelar multi-tenant:
 
-Fuentes: **Playfair Display** (títulos) + **Lato** (texto).
+- `superadmin@cafedigital.cl`: superadmin.
+- `duena@caferaiz.cl`: propietario.
+- `admin@caferaiz.cl`: administrador.
+- `encargada@caferaiz.cl`: editor.
 
----
+La UI ya representa esos roles en datos, pero el control granular por rol sigue pendiente de migrar a una base real con sesiones multiusuario.
 
-## 🚀 Puesta en marcha local
+## Variables de entorno
 
-```bash
-npm install
-```
-
-Crea `.env.local` a partir de `.env.local.example`. Para desarrollo basta con:
+Copia `.env.local.example` a `.env.local` para desarrollo local. En Vercel configura las mismas variables en `Project Settings > Environment Variables`.
 
 ```env
-ADMIN_USER=marcela
-ADMIN_PASSWORD=una-contraseña
-AUTH_SECRET=cualquier-texto-largo
+ADMIN_USER=admin
+ADMIN_PASSWORD=cambia-esta-contrasena
+AUTH_SECRET=genera-un-secreto-largo-aleatorio
+NEXT_PUBLIC_SITE_URL=https://tu-demo.vercel.app
+
+GITHUB_TOKEN=
+GITHUB_REPO=usuario/repositorio
+GITHUB_BRANCH=main
+
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+CLOUDINARY_FOLDER=el-cafe-digital
 ```
 
-Sin `GITHUB_TOKEN`, el panel guarda directamente en `data/menu.json` local (ideal para desarrollo).
+Para Vercel, `GITHUB_TOKEN` y `GITHUB_REPO` son recomendados porque el filesystem serverless no conserva escrituras. Usa un token fine-grained de GitHub con permiso **Contents: Read and write** solo sobre este repositorio. Con eso se guardan cambios del admin, metricas QR, newsletter, reservas y pedidos en `data/menu.json` y `data/platform.json`.
+
+Cloudinary es opcional. Sin esas variables el administrador puede pegar URLs de imagenes manualmente, pero no subir archivos desde el panel.
+
+## Preparar datos demo
 
 ```bash
-npm run dev
+npm run seed
 ```
 
-- Menú: [http://localhost:3000/menu](http://localhost:3000/menu)
-- Admin: [http://localhost:3000/admin](http://localhost:3000/admin)
+El seed es idempotente y crea:
 
----
+- Negocio ficticio realista: Cafe Raiz.
+- 2 sucursales: Casa Providencia y Terraza Nunoa.
+- 25+ productos con variantes, extras, alergenos, disponibilidad, temporada y etiquetas.
+- Promociones, menu del dia, brunch y happy hour.
+- Fuentes QR, eventos historicos, reservas, pedidos, newsletter, fidelizacion, resenas de ejemplo e integraciones.
 
-## ☁️ Configuración en Vercel (producción)
+No hay migraciones SQL porque esta demo usa JSON. Al migrar a Supabase/Postgres, las entidades ya estan separadas por `business_id`.
 
-En **Vercel → Project → Settings → Environment Variables** agrega:
+## Verificacion local
 
-| Variable | Valor |
-|----------|-------|
-| `ADMIN_USER` | usuario del panel (ej: `marcela`) |
-| `ADMIN_PASSWORD` | contraseña fuerte para Marcela |
-| `AUTH_SECRET` | texto aleatorio largo (firma las sesiones) |
-| `GITHUB_TOKEN` | token *fine-grained* con permiso **Contents: Read & Write** solo sobre este repo |
-| `GITHUB_REPO` | `cristiansanchez1003-blip/menucafedepirque` |
-| `GITHUB_BRANCH` | `main` |
-| `CLOUDINARY_CLOUD_NAME` | desde el dashboard de Cloudinary |
-| `CLOUDINARY_API_KEY` | desde el dashboard de Cloudinary |
-| `CLOUDINARY_API_SECRET` | desde el dashboard de Cloudinary |
-| `NEXT_PUBLIC_SITE_URL` | URL pública (ej: `https://menucafedepirque-chi.vercel.app`) |
-
-### Crear el token de GitHub
-
-1. GitHub → **Settings → Developer settings → Fine-grained tokens → Generate new token**.
-2. Repository access: **Only select repositories** → este repo.
-3. Permissions → Repository permissions → **Contents: Read and write**.
-4. Expiración: 1 año (renovar cuando expire). Copia el token a Vercel.
-
-### Crear la cuenta de Cloudinary (gratis)
-
-1. Regístrate en [cloudinary.com](https://cloudinary.com).
-2. En el **Dashboard** copia *Cloud name*, *API Key* y *API Secret* a Vercel.
-3. Sin Cloudinary el panel funciona igual: se puede pegar la URL de cualquier imagen.
-
-> Después de agregar o cambiar variables, haz **Redeploy** en Vercel.
-
----
-
-## 📁 Estructura
-
-```
-app/
-  layout.jsx              Root layout + fuentes
-  page.jsx                Redirect a /menu
-  menu/page.jsx           Menú público (scrollspy + modal)
-  admin/
-    layout.jsx            Guard de sesión
-    login/page.jsx        Login usuario/contraseña
-    dashboard/page.jsx    Panel: productos, ajustes, QR
-  api/
-    menu/route.js         GET menú (público)
-    auth/…                login / logout / me (cookie firmada)
-    admin/menu/route.js   PUT menú completo (commit a GitHub)
-    admin/upload/route.js POST imagen a Cloudinary
-components/
-  menu/                   Hero, CategoryNav, CategorySection, ProductCard,
-                          ProductModal, ProductImage, Footer, WhatsappFab
-  admin/                  AdminHeader, ProductForm, ProductTable,
-                          SettingsForm, CategoryManager, QRSection
-data/menu.json            ⭐ La "base de datos": settings + categorías + productos
-hooks/                    useMenu (público) · useAdmin (panel)
-lib/                      auth.js (HMAC) · menuStore.js (GitHub/local) · format.js
-public/images/products/   Fotos reales descargadas del menú de Fudo
-public/logo.jpg           Logotipo (hero y login)
+```bash
+npm run seed
+npm run test
+npm run verify:production
+npm run build
 ```
 
----
+`npm run test` ejecuta un smoke test de consistencia de datos SaaS. `npm run verify:production` revisa reglas de deploy: datos completos, marca demo limpia, variables ejemplo y ausencia de etiquetas sin stock.
 
-## 🔒 Notas de seguridad
+## Deploy en Vercel
 
-- La contraseña **nunca** está en el código: vive en variables de entorno.
-- La sesión es una cookie httpOnly firmada (HMAC-SHA256) con expiración de 7 días.
-- El token de GitHub solo tiene acceso a este repositorio.
+1. Sube el repositorio a GitHub.
+2. En Vercel, importa el repositorio como proyecto Next.js.
+3. Configura las variables de entorno de `.env.local.example`.
+4. Asegura que `NEXT_PUBLIC_SITE_URL` tenga la URL final de Vercel o tu dominio.
+5. Crea un `GITHUB_TOKEN` fine-grained con acceso solo a este repo y permiso `Contents: Read and write`.
+6. Define `GITHUB_REPO` como `usuario/repositorio` y `GITHUB_BRANCH` como la rama de deploy.
+7. Despliega.
 
-Menú digital por **Espíritu Digital**.
+Despues del deploy, prueba:
+
+- `/menu`
+- `/menu?branch=providencia&qr=mesa-01`
+- `/admin/login`
+- Pestaña `QR` del admin.
+- Alta de newsletter, reserva o pedido.
+- Pestaña `Analitica` despues de abrir una URL con `qr=...`.
+
+## Probar QR y metricas
+
+1. Ejecuta `npm run dev`.
+2. Abre `/admin/dashboard` y entra a la pestaña `QR`.
+3. Selecciona una fuente, por ejemplo `Mesa 1`.
+4. Abre la URL generada, por ejemplo `/menu?branch=providencia&qr=mesa-01`.
+5. El escaneo se registra en `data/platform.json` local o en GitHub si `GITHUB_TOKEN` esta configurado.
+6. Abre un producto, cambia categoria o haz clic en WhatsApp/Maps/Reviews.
+7. Vuelve a `Analitica`: las metricas usan eventos reales y deduplican escaneos repetidos dentro de una ventana corta por sesion.
+
+## Limitaciones reales
+
+- GitHub JSON sirve para una demo vendible y de bajo trafico, pero no es una base de datos transaccional.
+- Antes de operar clientes reales concurrentes conviene migrar persistencia a Supabase/Postgres con RLS, roles reales y auditoria.
+- El RBAC granular esta modelado, pero no aplicado todavia a cada accion administrativa.
+- Google Business, Google Ads, Meta Ads y proveedores de email estan preparados como estados/adaptadores, pero requieren OAuth y credenciales reales.
+- No se simulan pagos exitosos: los pedidos quedan como pago al retirar.
+- La ubicacion precisa no se obtiene ni se debe obtener sin permiso explicito; la demo usa QR por mesa/sucursal/campana e inferencia no invasiva.

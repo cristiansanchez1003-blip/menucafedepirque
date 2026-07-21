@@ -11,10 +11,15 @@ export default function AdminHeader({ dirty, saving, onSave }) {
   }
 
   return (
-    <header className="sticky top-0 z-40 border-b border-linen bg-paper/95 backdrop-blur">
-      <div className="mx-auto flex max-w-3xl items-center gap-3 px-4 py-3">
-        <img src="/logo.jpg" alt="El Café de Pirque" className="h-9 mix-blend-multiply" />
-        <span className="hidden text-[13px] font-bold text-muted sm:block">Panel admin</span>
+    <header className="sticky top-0 z-40 border-b border-linen bg-paper/95 backdrop-blur-xl">
+      <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3 sm:px-6">
+        <span className="flex h-10 w-10 items-center justify-center rounded-full bg-ink font-playfair text-lg font-bold text-mint">
+          CR
+        </span>
+        <div>
+          <p className="font-lato text-[14px] font-black leading-tight text-ink">Café Raíz</p>
+          <p className="hidden text-[12px] font-bold text-muted sm:block">Panel de administración</p>
+        </div>
 
         <div className="ml-auto flex items-center gap-2">
           {dirty && (
@@ -26,7 +31,7 @@ export default function AdminHeader({ dirty, saving, onSave }) {
               {saving ? (
                 <>
                   <span className="h-3.5 w-3.5 animate-spin rounded-full border-2 border-white/40 border-t-white" />
-                  Guardando…
+                  Guardando...
                 </>
               ) : (
                 <>
@@ -34,7 +39,7 @@ export default function AdminHeader({ dirty, saving, onSave }) {
                     <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2Z" />
                     <path d="M17 21v-8H7v8M7 3v5h8" />
                   </svg>
-                  Guardar cambios
+                  Guardar
                 </>
               )}
             </button>

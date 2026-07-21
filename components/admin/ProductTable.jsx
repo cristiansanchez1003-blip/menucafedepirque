@@ -2,8 +2,12 @@
 
 import { formatCLP } from '@/lib/format'
 
-// Lista de productos de una categoría con acciones rápidas:
-// editar, disponibilidad, reordenar y eliminar.
+const BADGE_LABELS = {
+  nuevo: 'Nuevo',
+  popular: 'Popular',
+  recomendado: 'Recomendado',
+}
+
 export default function ProductTable({
   products,
   onEdit,
@@ -12,32 +16,41 @@ export default function ProductTable({
   onDelete,
 }) {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="grid gap-2 md:grid-cols-2">
       {products.map((p, idx) => (
         <div
           key={p.id}
-          className={`flex items-center gap-2.5 rounded-xl border border-linen bg-card p-2.5 ${
+          className={`flex items-center gap-3 rounded-[16px] border border-linen bg-card p-2.5 shadow-card ${
             p.available === false ? 'opacity-55' : ''
           }`}
         >
-          <div className="h-12 w-12 shrink-0 overflow-hidden rounded-lg bg-mintsoft">
+          <div className="h-14 w-14 shrink-0 overflow-hidden rounded-xl bg-mintsoft">
             {p.image ? (
               <img src={p.image} alt="" loading="lazy" className="h-full w-full object-cover" />
             ) : (
-              <div className="flex h-full w-full items-center justify-center text-lg">🍽️</div>
+              <div className="flex h-full w-full items-center justify-center text-lg">☕</div>
             )}
           </div>
 
           <button onClick={() => onEdit(p)} className="min-w-0 flex-1 text-left">
-            <span className="block truncate text-[13.5px] font-bold text-ink">{p.name}</span>
+            <span className="block truncate text-[13.5px] font-black text-ink">{p.name}</span>
             <span className="block text-[12.5px] font-semibold text-forest">
               {formatCLP(p.price)}
               {p.available === false && (
                 <span className="ml-2 text-[11px] font-bold uppercase text-ink/40">
-                  No disponible
+                  Oculto
                 </span>
               )}
             </span>
+            {p.badges?.length > 0 && (
+              <span className="mt-1 flex flex-wrap gap-1">
+                {p.badges.filter((badge) => BADGE_LABELS[badge]).map((badge) => (
+                  <span key={badge} className="rounded-full bg-mintsoft px-2 py-0.5 text-[10px] font-bold text-forest">
+                    {BADGE_LABELS[badge]}
+                  </span>
+                ))}
+              </span>
+            )}
           </button>
 
           <div className="flex shrink-0 items-center gap-1">
@@ -64,7 +77,7 @@ export default function ProductTable({
               onClick={() => onToggle(p.id)}
               role="switch"
               aria-checked={p.available !== false}
-              aria-label="Disponibilidad"
+              aria-label="Visibilidad"
               className={`relative h-6 w-10 rounded-full transition-colors ${
                 p.available !== false ? 'bg-forest' : 'bg-ink/20'
               }`}

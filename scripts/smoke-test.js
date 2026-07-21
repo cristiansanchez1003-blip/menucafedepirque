@@ -1,0 +1,22 @@
+const assert = require('assert')
+const fs = require('fs')
+const path = require('path')
+
+const root = process.cwd()
+const menu = JSON.parse(fs.readFileSync(path.join(root, 'data', 'menu.json'), 'utf8'))
+const platform = JSON.parse(fs.readFileSync(path.join(root, 'data', 'platform.json'), 'utf8'))
+
+assert(menu.settings.business_id, 'menu.settings.business_id debe existir')
+assert(menu.products.length >= 25, 'deben existir al menos 25 productos')
+assert(menu.products.every((product) => product.business_id === menu.settings.business_id), 'productos deben tener business_id')
+assert(platform.businesses.length >= 1, 'debe existir un negocio')
+assert(platform.branches.length >= 2, 'deben existir al menos dos sucursales')
+assert(platform.qr_sources.length >= 5, 'deben existir fuentes QR')
+assert(platform.events.some((event) => event.type === 'qr_scan'), 'deben existir eventos de escaneo QR')
+assert(platform.events.some((event) => event.type === 'product_view'), 'deben existir vistas de productos')
+assert(platform.newsletter_subscribers.every((subscriber) => subscriber.consent === true), 'newsletter requiere consentimiento')
+assert(platform.reservations.every((reservation) => reservation.status), 'reservas deben tener estado')
+assert(platform.orders.every((order) => order.payment_method !== 'paid_online'), 'no se deben simular pagos online')
+assert(platform.integrations.every((integration) => integration.status !== 'connected'), 'no se deben fingir integraciones externas conectadas')
+
+console.log('Smoke test OK: datos SaaS demo consistentes.')

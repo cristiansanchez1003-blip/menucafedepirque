@@ -5,8 +5,8 @@ import { translate } from '@/lib/i18n'
 
 const AppContext = createContext(null)
 
-const LANG_KEY = 'cafe-pirque-lang'
-const THEME_KEY = 'cafe-pirque-theme'
+const LANG_KEY = 'cafe-digital-lang'
+const THEME_KEY = 'cafe-digital-theme'
 
 // Provee idioma (es/en) y tema (light/dark) a todo el árbol del menú público,
 // con persistencia en localStorage y detección de preferencia del sistema

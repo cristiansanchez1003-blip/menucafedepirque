@@ -2,8 +2,6 @@
 
 import { useState } from 'react'
 
-// Imagen de producto con fallback elegante: si no hay imagen o falla la carga,
-// muestra una baldosa de marca con el emoji de la categoría.
 export default function ProductImage({ src, alt, emoji, className = '' }) {
   const [failed, setFailed] = useState(false)
 

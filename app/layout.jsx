@@ -10,18 +10,18 @@ const playfair = Playfair_Display({
 
 const lato = Lato({
   subsets: ['latin'],
-  weight: ['300', '400', '700'],
+  weight: ['300', '400', '700', '900'],
   variable: '--font-lato',
   display: 'swap',
 })
 
 export const metadata = {
-  title: 'El Café de Pirque — Menú Digital',
+  title: 'Café Raíz · Ecosistema Gastronómico',
   description:
-    'Menú digital de El Café de Pirque. Cafés, desayunos, sándwiches, tortas y más en Pirque, Chile.',
+    'Demo funcional de un ecosistema SaaS para cafeterías, restaurantes y bares con carta, QR, analítica, reservas, pedidos y crecimiento.',
   openGraph: {
-    title: 'El Café de Pirque',
-    description: 'Nuestro menú, siempre fresco. Escanea, mira y disfruta.',
+    title: 'Café Raíz',
+    description: 'Carta digital y sistema operativo gastronómico para locales modernos.',
     type: 'website',
   },
 }
@@ -35,7 +35,7 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" className={`${playfair.variable} ${lato.variable}`}>
-      <body className="font-lato bg-paper text-ink min-h-screen">{children}</body>
+      <body className="min-h-screen bg-paper font-lato text-ink">{children}</body>
     </html>
   )
 }

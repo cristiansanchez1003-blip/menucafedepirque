@@ -31,28 +31,30 @@ export default function LoginPage() {
   }
 
   return (
-    <main className="hero-texture flex min-h-screen items-center justify-center bg-paper px-5">
+    <main className="flex min-h-screen items-center justify-center bg-ink px-5">
+      <img
+        src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=80"
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover opacity-42"
+      />
+      <div className="absolute inset-0 bg-ink/72" />
+
       <motion.div
-        className="w-full max-w-sm"
+        className="relative w-full max-w-sm"
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
-        <img
-          src="/logo.jpg"
-          alt="El Café de Pirque"
-          className="mx-auto mb-6 w-56 mix-blend-multiply"
-        />
+        <div className="mb-6 text-center text-white">
+          <span className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-white/16 bg-white/10 font-playfair text-2xl font-bold text-mint backdrop-blur">
+            CR
+          </span>
+          <h1 className="mt-4 font-playfair text-3xl font-bold">Café Raíz</h1>
+          <p className="mt-1 text-[13px] font-bold text-white/55">Panel de administración</p>
+        </div>
 
-        <div className="rounded-3xl border border-linen bg-card p-6 shadow-cardHover">
-          <h1 className="text-center font-playfair text-xl font-bold text-ink">
-            Panel de administración
-          </h1>
-          <p className="mt-1 text-center text-[13px] text-muted">
-            Acceso exclusivo para la administración
-          </p>
-
-          <form onSubmit={handleSubmit} className="mt-6 flex flex-col gap-3.5">
+        <div className="rounded-[24px] border border-white/12 bg-paper p-6 shadow-cardHover">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-3.5">
             <label className="block">
               <span className="mb-1.5 block text-[12.5px] font-bold text-ink/70">Usuario</span>
               <input
@@ -62,7 +64,7 @@ export default function LoginPage() {
                 autoComplete="username"
                 autoCapitalize="none"
                 required
-                className="w-full rounded-xl border border-linen bg-paper px-4 py-3 text-[15px] text-ink outline-none transition focus:border-forest focus:ring-2 focus:ring-mint"
+                className="w-full rounded-xl border border-linen bg-card px-4 py-3 text-[15px] text-ink outline-none transition focus:border-forest focus:ring-2 focus:ring-mint"
                 placeholder="marcela"
               />
             </label>
@@ -75,7 +77,7 @@ export default function LoginPage() {
                 onChange={(e) => setPassword(e.target.value)}
                 autoComplete="current-password"
                 required
-                className="w-full rounded-xl border border-linen bg-paper px-4 py-3 text-[15px] text-ink outline-none transition focus:border-forest focus:ring-2 focus:ring-mint"
+                className="w-full rounded-xl border border-linen bg-card px-4 py-3 text-[15px] text-ink outline-none transition focus:border-forest focus:ring-2 focus:ring-mint"
                 placeholder="••••••••"
               />
             </label>
@@ -95,13 +97,13 @@ export default function LoginPage() {
               disabled={loading}
               className="mt-1 rounded-xl bg-ink py-3.5 text-[15px] font-bold text-mint shadow-nav transition active:scale-[0.98] disabled:opacity-60"
             >
-              {loading ? 'Ingresando…' : 'Ingresar'}
+              {loading ? 'Ingresando...' : 'Ingresar'}
             </button>
           </form>
         </div>
 
-        <p className="mt-6 text-center text-[12px] text-muted">
-          El Café de Pirque · Menú digital
+        <p className="mt-6 text-center text-[12px] text-white/45">
+          Ecosistema SaaS para cafeterías, restaurantes y bares
         </p>
       </motion.div>
     </main>

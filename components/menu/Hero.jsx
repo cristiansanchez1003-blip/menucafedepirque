@@ -4,71 +4,88 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { localizedField } from '@/lib/i18n'
 import { useApp } from '@/contexts/AppContext'
 
-export default function Hero({ settings }) {
+export default function Hero({ settings, productCount = 0, promotionCount = 0 }) {
   const { scrollY } = useScroll()
   const { lang } = useApp()
-  // Parallax sutil: el logo se desplaza y desvanece al hacer scroll
-  const y = useTransform(scrollY, [0, 300], [0, 60])
-  const opacity = useTransform(scrollY, [0, 260], [1, 0.25])
+  const y = useTransform(scrollY, [0, 360], [0, 46])
+  const opacity = useTransform(scrollY, [0, 320], [1, 0.32])
 
   const slogan = settings ? localizedField(settings, 'slogan', lang) : ''
   const hours = settings ? localizedField(settings, 'hours', lang) : ''
 
   return (
-    <header className="hero-texture relative overflow-hidden bg-paper pb-8 pt-10 dark:bg-paperdark">
-      {/* halo verde decorativo */}
-      <div className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-mint/40 blur-3xl dark:bg-forest/20" />
-      <div className="pointer-events-none absolute -left-20 top-32 h-48 w-48 rounded-full bg-mint/30 blur-3xl dark:bg-forest/15" />
+    <header className="relative min-h-[430px] overflow-hidden bg-ink text-white sm:min-h-[500px] lg:min-h-[580px]">
+      <img
+        src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1800&q=85"
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover opacity-75"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-ink/68 via-ink/38 to-ink" />
 
-      <motion.div style={{ y, opacity }} className="relative mx-auto max-w-lg px-6">
-        <motion.img
-          src="/logo.jpg"
-          alt="El Café de Pirque"
-          className="mx-auto w-full max-w-[320px] mix-blend-multiply dark:mix-blend-normal dark:rounded-2xl"
-          initial={{ opacity: 0, scale: 0.94 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7, ease: 'easeOut' }}
-        />
-
-        <motion.p
-          className="mt-4 text-center font-lato text-[15px] leading-relaxed text-muted dark:text-muteddark"
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.25, duration: 0.6 }}
-        >
-          {slogan}
-        </motion.p>
-
-        <motion.div
-          className="mt-5 flex flex-wrap items-center justify-center gap-2"
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.6 }}
-        >
-          {hours && (
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-forest/20 bg-mintsoft px-3.5 py-1.5 text-[13px] font-semibold text-forest dark:border-mint/25 dark:bg-carddark dark:text-mint">
-              <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
-                <circle cx="12" cy="12" r="9" />
-                <path d="M12 7v5l3 2" />
-              </svg>
-              {hours}
+      <motion.div
+        style={{ y, opacity }}
+        className="relative mx-auto flex min-h-[430px] max-w-6xl flex-col justify-end px-5 pb-7 pt-7 sm:min-h-[500px] sm:px-8 lg:min-h-[580px] lg:px-10"
+      >
+        <div className="mb-auto flex items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 font-playfair text-xl font-bold backdrop-blur">
+              CD
             </span>
-          )}
-          {settings?.address && (
-            <a
-              href={settings.mapsUrl || '#'}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-full border border-linen bg-card px-3.5 py-1.5 text-[13px] font-semibold text-ink shadow-card active:scale-95 transition-transform dark:border-linendark dark:bg-carddark dark:text-paper"
+            <div>
+              <p className="text-[11px] font-black uppercase tracking-[0.2em] text-mint">
+                Demo gastronómica
+              </p>
+              <p className="font-lato text-[14px] font-bold text-white/86">
+                {settings?.city || 'Menú digital'}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-3xl">
+          <motion.h1
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            className="font-playfair text-[42px] font-bold leading-[0.94] text-white sm:text-[66px] lg:text-[84px]"
+          >
+            {settings?.name || 'Café Raíz'}
+          </motion.h1>
+
+          {slogan && (
+            <motion.p
+              className="mt-5 max-w-2xl text-[16px] leading-relaxed text-white/78 sm:text-[19px]"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.18, duration: 0.55 }}
             >
-              <svg className="h-3.5 w-3.5 text-forest dark:text-mint" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z" />
-                <circle cx="12" cy="10" r="3" />
-              </svg>
-              Pirque
-            </a>
+              {slogan}
+            </motion.p>
           )}
-        </motion.div>
+
+          <motion.div
+            className="mt-6 flex flex-wrap items-center gap-2.5"
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.55 }}
+          >
+            {hours && (
+              <span className="inline-flex items-center gap-2 rounded-full border border-white/16 bg-white/12 px-4 py-2 text-[13px] font-bold text-white backdrop-blur">
+                <svg className="h-4 w-4 text-mint" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+                {hours}
+              </span>
+            )}
+            <span className="inline-flex rounded-full border border-white/16 bg-white/12 px-4 py-2 text-[13px] font-bold text-white backdrop-blur">
+              {productCount} productos
+            </span>
+            <span className="inline-flex rounded-full border border-white/16 bg-white/12 px-4 py-2 text-[13px] font-bold text-white backdrop-blur">
+              {promotionCount} campañas activas
+            </span>
+          </motion.div>
+        </div>
       </motion.div>
     </header>
   )

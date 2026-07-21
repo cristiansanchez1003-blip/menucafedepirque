@@ -3,8 +3,6 @@
 import { useEffect, useState } from 'react'
 import { usePathname, useRouter } from 'next/navigation'
 
-// Guard de autenticación: protege todo /admin/* excepto /admin/login.
-// La sesión vive en una cookie httpOnly firmada; se verifica en /api/auth/me.
 export default function AdminLayout({ children }) {
   const router = useRouter()
   const pathname = usePathname()
@@ -44,7 +42,7 @@ export default function AdminLayout({ children }) {
       <div className="flex min-h-screen items-center justify-center bg-paper">
         <div className="flex flex-col items-center gap-3">
           <div className="h-8 w-8 animate-spin rounded-full border-2 border-linen border-t-forest" />
-          <p className="font-lato text-sm text-muted">Cargando…</p>
+          <p className="font-lato text-sm text-muted">Cargando...</p>
         </div>
       </div>
     )

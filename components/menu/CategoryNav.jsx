@@ -5,9 +5,6 @@ import { localizedField } from '@/lib/i18n'
 import { useApp } from '@/contexts/AppContext'
 import ControlsBar from './ControlsBar'
 
-// Barra de pestañas de categoría, sticky, con scroll horizontal.
-// Cada categoría es una "pestaña": tocarla reemplaza el contenido visible,
-// no hace scroll a una sección (ver app/menu/page.jsx).
 export default function CategoryNav({ categories, activeId, onSelect }) {
   const barRef = useRef(null)
   const pillRefs = useRef({})
@@ -23,8 +20,8 @@ export default function CategoryNav({ categories, activeId, onSelect }) {
   }, [activeId])
 
   return (
-    <nav className="sticky top-0 z-30 border-b border-linen/70 bg-paper/90 backdrop-blur-md dark:border-linendark/70 dark:bg-paperdark/90">
-      <div className="flex items-center gap-2 px-3 py-3">
+    <nav className="sticky top-0 z-30 border-b border-linen/70 bg-paper/92 backdrop-blur-xl dark:border-linendark/70 dark:bg-paperdark/92">
+      <div className="mx-auto flex max-w-6xl items-center gap-3 px-3 py-3 sm:px-6">
         <div
           ref={barRef}
           className="no-scrollbar flex min-w-0 flex-1 gap-2 overflow-x-auto"
@@ -40,10 +37,10 @@ export default function CategoryNav({ categories, activeId, onSelect }) {
                 role="tab"
                 aria-selected={active}
                 onClick={() => onSelect(cat.id)}
-                className={`flex shrink-0 items-center gap-1.5 rounded-full px-4 py-2 text-[13.5px] font-bold transition-all duration-200 active:scale-95 ${
+                className={`flex shrink-0 items-center gap-2 rounded-full px-4 py-2 text-[13px] font-black transition-all duration-200 active:scale-95 sm:px-5 ${
                   active
                     ? 'bg-ink text-mint shadow-nav dark:bg-mint dark:text-ink'
-                    : 'border border-linen bg-card text-ink/70 dark:border-linendark dark:bg-carddark dark:text-paper/70'
+                    : 'border border-linen bg-card text-ink/70 hover:border-forest/30 hover:text-ink dark:border-linendark dark:bg-carddark dark:text-paper/70'
                 }`}
               >
                 <span aria-hidden="true">{cat.emoji}</span>

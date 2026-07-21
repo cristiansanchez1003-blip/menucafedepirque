@@ -2,8 +2,6 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react'
 
-// Hook del panel admin: mantiene una copia editable del menú en memoria
-// y la guarda completa mediante PUT /api/admin/menu (commit a GitHub).
 export function useAdmin() {
   const [menu, setMenu] = useState(null)
   const [loading, setLoading] = useState(true)
@@ -33,7 +31,6 @@ export function useAdmin() {
     load()
   }, [load])
 
-  // Aplica un cambio inmutable sobre el menú y marca el estado como "sin guardar".
   const update = useCallback((updater) => {
     setMenu((prev) => {
       const next = updater(structuredClone(prev))
@@ -71,8 +68,6 @@ export function useAdmin() {
     if (!res.ok) throw new Error(data.error || 'No se pudo subir la imagen')
     return data.url
   }, [])
-
-  // --- Operaciones sobre productos ---
 
   const saveProduct = useCallback(
     (product) => {
@@ -132,8 +127,6 @@ export function useAdmin() {
     [update]
   )
 
-  // --- Operaciones sobre categorías y ajustes ---
-
   const saveCategory = useCallback(
     (category) => {
       update((m) => {
@@ -171,6 +164,44 @@ export function useAdmin() {
     [update]
   )
 
+  const savePromotion = useCallback(
+    (promotion) => {
+      update((m) => {
+        m.promotions = m.promotions || []
+        const idx = m.promotions.findIndex((p) => p.id === promotion.id)
+        if (idx >= 0) {
+          m.promotions[idx] = promotion
+        } else {
+          promotion.sort = Math.max(0, ...m.promotions.map((p) => p.sort || 0)) + 1
+          m.promotions.push(promotion)
+        }
+        return m
+      })
+    },
+    [update]
+  )
+
+  const deletePromotion = useCallback(
+    (id) => {
+      update((m) => {
+        m.promotions = (m.promotions || []).filter((p) => p.id !== id)
+        return m
+      })
+    },
+    [update]
+  )
+
+  const togglePromotion = useCallback(
+    (id) => {
+      update((m) => {
+        const promotion = (m.promotions || []).find((p) => p.id === id)
+        if (promotion) promotion.active = promotion.active === false
+        return m
+      })
+    },
+    [update]
+  )
+
   return {
     menu,
     loading,
@@ -187,5 +218,8 @@ export function useAdmin() {
     saveCategory,
     deleteCategory,
     saveSettings,
+    savePromotion,
+    deletePromotion,
+    togglePromotion,
   }
 }
